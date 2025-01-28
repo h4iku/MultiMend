@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"%.10f\",abs(c*pi));",
+      "patch": "printf(\"%.10f\",fabs(c*pi));",
+      "target": "printf(\"%.10f\",abs(c)*pi);",
+      "exact_match": false
+    }
+  ]
+}

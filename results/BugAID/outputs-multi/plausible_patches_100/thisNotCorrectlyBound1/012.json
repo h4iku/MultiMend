@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (err) { callback(err, true); }",
+      "target": "var self = this;",
+      "exact_match": false
+    }
+  ]
+}

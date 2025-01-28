@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "long a[n],b[100000]={0};",
+      "patch": "long a[n],b[200000]={0};",
+      "target": "long a[n],b[100001]={0};",
+      "exact_match": false
+    }
+  ]
+}

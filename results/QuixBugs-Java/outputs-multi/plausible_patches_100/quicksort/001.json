@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "} else if (x > pivot) {",
+      "patch": "} else if (x >= pivot) {",
+      "target": "} else if (x >= pivot) {",
+      "exact_match": true
+    }
+  ]
+}

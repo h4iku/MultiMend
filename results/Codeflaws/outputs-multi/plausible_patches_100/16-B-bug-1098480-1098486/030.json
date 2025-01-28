@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "while (n > 0)",
+      "patch": "while (n > 0 && c[i].a)",
+      "target": "while (n > 0 && i < m)",
+      "exact_match": false
+    }
+  ]
+}

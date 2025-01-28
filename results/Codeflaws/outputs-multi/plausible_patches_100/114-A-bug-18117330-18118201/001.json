@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "res=(float)(pow(k,i));",
+      "patch": "res=(int)(pow(k,i));",
+      "target": "res=res*k;",
+      "exact_match": false
+    }
+  ]
+}

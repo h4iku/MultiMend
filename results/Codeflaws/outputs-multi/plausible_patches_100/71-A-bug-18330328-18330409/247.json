@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "char words[100][100];",
+      "patch": "char words[100][100];",
+      "target": "char words[110][110];",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "printf(\"%d\\n\", l);",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

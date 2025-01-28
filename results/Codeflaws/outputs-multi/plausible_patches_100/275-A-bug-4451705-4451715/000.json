@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(j==3)",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "else printf(\"%d \",b[i][j]);",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

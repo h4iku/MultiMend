@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "case 5: printf(\"3\");break;",
+      "patch": "case 5: printf(\"1\");break;",
+      "target": "case 5: printf(\"1\");break;",
+      "exact_match": true
+    }
+  ]
+}

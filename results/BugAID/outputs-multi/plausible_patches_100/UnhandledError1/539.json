@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "response.headers['if-none-match'] = false;",
+      "target": "} } catch (e) { response.statusCode = 500;",
+      "exact_match": false
+    }
+  ]
+}

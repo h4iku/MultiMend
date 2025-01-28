@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "tmp=(team == 'y');",
+      "patch": "tmp=(team == 'a');",
+      "target": "tmp = (team == 'a');",
+      "exact_match": true
+    }
+  ]
+}

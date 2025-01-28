@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "#define N 10000",
+      "patch": "#define N 100000",
+      "target": "#define N 100000",
+      "exact_match": true
+    }
+  ]
+}

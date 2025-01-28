@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "$('.progress.progress-bar').removeClass(\"progress-bar-danger\").addClass(\"progress-bar-warning\").attr('data-transitiongoal', 0)",
+      "target": "if (typeof torLink === 'string') {",
+      "exact_match": false
+    }
+  ]
+}

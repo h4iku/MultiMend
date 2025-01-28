@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if ((znak[i] == 'd') && (znak[i + 1] == 'o') && (znak[i + 2] == 't') && ((i + 3) != maxi)){",
+      "patch": "if ((znak[i] == 'd') && (znak[i + 1] == 'o') && (znak[i + 2] == 't') && ((i + 4)!= maxi)){",
+      "target": "if ((znak[i] == 'd') && (znak[i + 1] == 'o') && (znak[i + 2] == 't') && ((i + 4) != maxi)){",
+      "exact_match": true
+    }
+  ]
+}

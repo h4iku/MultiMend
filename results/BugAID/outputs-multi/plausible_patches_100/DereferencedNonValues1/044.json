@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "_currentItem = target.parts[powGlobals.current.playingPart];",
+      "target": "if (!target.parts) return;",
+      "exact_match": false
+    }
+  ]
+}

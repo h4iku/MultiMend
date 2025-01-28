@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return (Double.isNaN(x) && Double.isNaN(y)) || x == y;",
+      "patch": "return (Math.abs(x) > Math.abs(y)) || x == y;",
+      "target": "return equals(x, y, 1);",
+      "exact_match": false
+    }
+  ]
+}

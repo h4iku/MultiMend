@@ -1,0 +1,48 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (offset + len > len) { offset += len; len -= len; }",
+      "target": "if (len <= buf.length) { text.getChars(offset, offset+len, buf, 0); _writeRawSegment(buf, 0, len); return; }     final int maxChunk = (_outputEnd >> 2) + (_outputEnd >> 4); final int maxBytes = maxChunk * 3;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "int len2 = Math.min(buf.length, len);",
+      "patch": "int len2 = Math.min(buf.length, len);",
+      "target": "int len2 = Math.min(maxChunk, len);",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "writeRaw(buf, 0, len2);",
+      "patch": "writeRaw(buf, 0, len2);",
+      "target": "if ((_outputTail + maxBytes) > _outputEnd) { _flushBuffer(); }",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "",
+      "patch": "",
+      "target": "if (len > 0) { char ch = buf[len2-1]; if ((ch >= SURR1_FIRST) && (ch <= SURR1_LAST)) { --len2; } } _writeRawSegment(buf, 0, len2);",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "",
+      "patch": "",
+      "target": "private void _writeRawSegment(char[] cbuf, int offset, int end) throws IOException { main_loop: while (offset < end) { inner_loop: while (true) { int ch = (int) cbuf[offset]; if (ch > 0x7F) { break inner_loop; } _outputBuffer[_outputTail++] = (byte) ch; if (++offset >= end) { break main_loop; } } char ch = cbuf[offset++]; if (ch < 0x800) { _outputBuffer[_outputTail++] = (byte) (0xc0 | (ch >> 6)); _outputBuffer[_outputTail++] = (byte) (0x80 | (ch & 0x3f)); } else { offset = _outputRawMultiByteChar(ch, cbuf, offset, end); } } }",
+      "exact_match": false
+    },
+    {
+      "hunk": 5,
+      "source": "_reportError(\"Split surrogate on writeRaw() input (last character)\");",
+      "patch": "_reportError(\"Split surrogate on writeRaw() input (last character)\");",
+      "target": "_reportError(String.format( \"Split surrogate on writeRaw() input (last character): first character 0x%4x\", ch));",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "String elName = endTag.name();",
+      "patch": "String elName = endTag.name().toLowerCase();",
+      "target": "String elName = endTag.normalName();",
+      "exact_match": false
+    }
+  ]
+}

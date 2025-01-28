@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "memset(str, 0, 10000003);",
+      "patch": "",
+      "target": "memset(str, 0, 1000003);",
+      "exact_match": false
+    }
+  ]
+}

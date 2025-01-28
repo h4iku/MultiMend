@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int g = (int) ((value - this.lowerBound) / (this.upperBound",
+      "patch": "int g = (int) ((int)(value - lowerBound) / (upperBound",
+      "target": "int g = (int) ((v - this.lowerBound) / (this.upperBound",
+      "exact_match": false
+    }
+  ]
+}

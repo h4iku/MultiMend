@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"%d \",j<=min ? 1 : j);",
+      "patch": "printf(\"%d \",j<=min? 1 : (j - min));",
+      "target": "printf(\"%d \",j<=min ? 1 : j-min);",
+      "exact_match": true
+    }
+  ]
+}

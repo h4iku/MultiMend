@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"%s\", n&(n-1) ? \"YES\" : \"NO\");",
+      "patch": "printf(\"%s\", n&(n-1)? \"NO\" : \"YES\");",
+      "target": "printf(\"%s\", n&(n-1) ? \"NO\" : \"YES\");",
+      "exact_match": true
+    }
+  ]
+}

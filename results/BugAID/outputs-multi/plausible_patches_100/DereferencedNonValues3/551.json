@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "$('.progress.progress-bar').removeClass(\"progress-bar\").addClass(\"progress-bar-warning\").attr('data-transitiongoal', 0);",
+      "target": "}",
+      "exact_match": false
+    }
+  ]
+}

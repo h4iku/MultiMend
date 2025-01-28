@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(a[i+1]>'5')",
+      "patch": "if(a[i+1]>'4')",
+      "target": "if(a[i+1]>='5')",
+      "exact_match": false
+    }
+  ]
+}

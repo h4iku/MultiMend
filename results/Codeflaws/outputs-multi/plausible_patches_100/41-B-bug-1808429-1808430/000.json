@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"%d %d %ld %ld\\n\",min,max,val,ans);",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

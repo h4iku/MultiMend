@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(a[1]>15) printf(\"15\");",
+      "patch": "if(a[0]>15) printf(\"15\");",
+      "target": "if(a[1]>15) { printf(\"15\"); break; }",
+      "exact_match": false
+    }
+  ]
+}

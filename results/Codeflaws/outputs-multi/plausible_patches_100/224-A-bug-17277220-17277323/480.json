@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "int sum;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "printf(\"%f\",(4*(sqrt(a * b / c) + sqrt(a * c / b) + sqrt(b * c / a))));",
+      "patch": "printf(\"%.0f\",(4*(sqrt(a * b / c) + sqrt(a * c / b) + sqrt(b * c / a))));",
+      "target": "printf(\"%d\",sum=(4*(sqrt(a * b / c) + sqrt(a * c / b) + sqrt(b * c / a))));",
+      "exact_match": false
+    }
+  ]
+}

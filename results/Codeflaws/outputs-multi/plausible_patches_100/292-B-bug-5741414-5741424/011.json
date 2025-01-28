@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"unknow topology\");",
+      "patch": "printf(\"unknown topology\");",
+      "target": "printf(\"unknown topology\");",
+      "exact_match": true
+    }
+  ]
+}

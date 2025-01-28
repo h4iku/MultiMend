@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "isHistory = typeof isHistory!== 'undefined'? isHistory : false;",
+      "target": "}",
+      "exact_match": false
+    }
+  ]
+}

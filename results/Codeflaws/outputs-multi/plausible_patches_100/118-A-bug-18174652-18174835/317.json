@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "#include<math.h>",
+      "patch": "#include<math.h>",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "if(arr[i]=='a' || arr[i]=='e' || arr[i]=='i' || arr[i]=='o' || arr[i]=='u')",
+      "patch": "if(arr[i]=='a' || arr[i]=='e' || arr[i]=='i' || arr[i]=='o' || arr[i]=='u' || arr[i]=='y')",
+      "target": "if(arr[i]=='a' || arr[i]=='e' || arr[i]=='i' || arr[i]=='o' || arr[i]=='u' || arr[i]=='y')",
+      "exact_match": true
+    }
+  ]
+}

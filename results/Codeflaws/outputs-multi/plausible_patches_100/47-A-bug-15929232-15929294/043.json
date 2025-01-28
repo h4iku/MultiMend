@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(((i*i)+n)/2==n){",
+      "patch": "if(((i*i)+i)/2==n){",
+      "target": "if((i*(i+1))/2==n){",
+      "exact_match": false
+    }
+  ]
+}

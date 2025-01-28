@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(str[i]=='H'||str[i]=='Q'||str[i]=='9'||str[i]=='+')",
+      "patch": "if(str[i]=='H'||str[i]=='Q'||str[i]=='9')",
+      "target": "if(str[i]=='H'||str[i]=='Q'||str[i]=='9')",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "return 0;",
+      "exact_match": false
+    }
+  ]
+}

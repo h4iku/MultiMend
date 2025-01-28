@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "long storedSum = 0;",
+      "patch": "long storedSum = 0;",
+      "target": "long storedSum = parseOctal(header, CHKSUM_OFFSET, CHKSUMLEN);",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "if ('0' <= b && b <= '7' && digits++ < 6) { storedSum = storedSum * 8 + b - '0'; } else if (digits > 0) { digits = 6; }",
+      "patch": "if ('0' <= b && b <= '7') { storedSum = storedSum * 8 + b - '0'; } else if (digits > 0) { digits = 6; }",
+      "target": "",
+      "exact_match": false
+    }
+  ]
+}

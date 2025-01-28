@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "while (scanf(\"%d%d\",&n,&m)!=0)",
+      "patch": "while (scanf(\"%d%d\",&n,&m)!=-1)",
+      "target": "while (scanf(\"%d%d\",&n,&m)!=EOF)",
+      "exact_match": false
+    }
+  ]
+}

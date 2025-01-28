@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for (i=0;i<=n-p;i++)",
+      "patch": "for (i=0;i<=n;i++)",
+      "target": "for (i=0;i<p;i++)",
+      "exact_match": false
+    }
+  ]
+}

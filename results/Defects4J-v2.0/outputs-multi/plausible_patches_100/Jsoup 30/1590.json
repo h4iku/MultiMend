@@ -1,0 +1,69 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "import org.jsoup.select.NodeTraversor; import org.jsoup.select.NodeVisitor;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "private int copySafeNodes(Element root, Element destination) { List<Node> sourceChildren = root.childNodes(); int numDiscarded = 0;",
+      "patch": "private int copySafeNodes(Element root, Element destination) { List<Node> sourceChildren = root.childNodes(); int numDiscarded = 0;",
+      "target": "private final class CleaningVisitor implements NodeVisitor { private int numDiscarded = 0; private final Element root; private Element destination;",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "for (Node source : sourceChildren) {",
+      "patch": "for (Node source : sourceChildren) {",
+      "target": "private CleaningVisitor(Element root, Element destination) { this.root = root; this.destination = destination; }  public void head(Node source, int depth) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "numDiscarded += copySafeNodes(sourceEl, destChild); } else {",
+      "patch": "numDiscarded += copySafeNodes(sourceEl, destChild); } else {",
+      "target": "destination = destChild; } else if (source != root) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "numDiscarded += copySafeNodes(sourceEl, destination);",
+      "patch": "numDiscarded += copySafeNodes(sourceEl, destination);",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 5,
+      "source": "",
+      "patch": "} else { numDiscarded++;",
+      "target": "} else { numDiscarded++;",
+      "exact_match": true
+    },
+    {
+      "hunk": 6,
+      "source": "return numDiscarded;",
+      "patch": "return numDiscarded;",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 7,
+      "source": "",
+      "patch": "",
+      "target": "public void tail(Node source, int depth) { if (source instanceof Element && whitelist.isSafeTag(source.nodeName())) { destination = destination.parent(); } } }",
+      "exact_match": false
+    },
+    {
+      "hunk": 8,
+      "source": "",
+      "patch": "",
+      "target": "private int copySafeNodes(Element source, Element dest) { CleaningVisitor cleaningVisitor = new CleaningVisitor(source, dest); NodeTraversor traversor = new NodeTraversor(cleaningVisitor); traversor.traverse(source); return cleaningVisitor.numDiscarded;",
+      "exact_match": false
+    }
+  ]
+}

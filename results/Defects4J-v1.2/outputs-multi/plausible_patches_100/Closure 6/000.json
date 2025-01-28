@@ -1,0 +1,34 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if ((leftType.isConstructor() || leftType.isEnumType()) && (rightType.isConstructor() || rightType.isEnumType())) { registerMismatch(rightType, leftType, null); } else {",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "}",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    },
+    {
+      "hunk": 2,
+      "source": "if ((leftType.isConstructor() || leftType.isEnumType()) && (rightType.isConstructor() || rightType.isEnumType())) { registerMismatch(rightType, leftType, null); } else {",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    },
+    {
+      "hunk": 3,
+      "source": "}",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

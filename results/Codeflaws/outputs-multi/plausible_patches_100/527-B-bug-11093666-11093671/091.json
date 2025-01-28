@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"%d\\n%d %d\",ans-2,map[i][j],map[i][j]);",
+      "patch": "printf(\"%d\\n%d %d\",ans-2,map[i][j],map[j][i]);",
+      "target": "printf(\"%d\\n%d %d\",ans-2,map[i][j],map[j][i]);",
+      "exact_match": true
+    }
+  ]
+}

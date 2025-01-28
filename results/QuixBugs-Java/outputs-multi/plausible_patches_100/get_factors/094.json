@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return new ArrayList<Integer>();",
+      "patch": "return new ArrayList(Arrays.asList(n));",
+      "target": "return new ArrayList<Integer>(Arrays.asList(n));",
+      "exact_match": false
+    }
+  ]
+}

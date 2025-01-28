@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(a[i]<min&&a[i]>max)",
+      "patch": "if(a[i]<min||a[i]>max)",
+      "target": "if(a[i]<min || a[i]>max)",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(t<90)",
+      "patch": "if(t<75)",
+      "target": "if((t+15)<90)",
+      "exact_match": false
+    }
+  ]
+}

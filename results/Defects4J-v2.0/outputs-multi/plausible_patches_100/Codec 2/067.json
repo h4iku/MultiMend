@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (lineLength > 0) {",
+      "patch": "if (lineLength > 0 && pos > 0) {",
+      "target": "if (lineLength > 0 && pos > 0) {",
+      "exact_match": true
+    }
+  ]
+}

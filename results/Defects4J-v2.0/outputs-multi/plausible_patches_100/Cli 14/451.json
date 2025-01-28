@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (validate) { option.validate(commandLine); }",
+      "patch": "if (validate) { option.validate(commandLine); }",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "if (option.isRequired()) { return; }",
+      "target": "validate = true; }  if (validate) {",
+      "exact_match": false
+    }
+  ]
+}

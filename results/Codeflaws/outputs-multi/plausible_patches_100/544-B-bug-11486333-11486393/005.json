@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "count=n*n/4+((n/2)+1)*((n/2)+1);",
+      "patch": "count=n*n/4+((n/2)+1)*(n/2)+1;",
+      "target": "count=(n/2)*(n/2)+((n/2)+1)*((n/2)+1);",
+      "exact_match": false
+    }
+  ]
+}

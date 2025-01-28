@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int time2 = t - time1 - time2;",
+      "patch": "int time2 = t - time1 - time2 - time1;",
+      "target": "int time2 = t - time1 - time3;",
+      "exact_match": false
+    }
+  ]
+}

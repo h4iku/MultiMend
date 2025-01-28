@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (typeof request.client.encrypted === 'object') { request.url = url.parse(request.url, true); }",
+      "target": "try {",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "else printf(\"WRONG_ANSWER\");",
+      "target": "else if(n==0 && length>1) printf(\"WRONG_ANSWER\");",
+      "exact_match": false
+    }
+  ]
+}

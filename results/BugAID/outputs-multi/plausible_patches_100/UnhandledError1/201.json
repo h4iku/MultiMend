@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (!crypto.createHash('md5').update(kiwi.cache.alljs));",
+      "target": "try {",
+      "exact_match": false
+    }
+  ]
+}

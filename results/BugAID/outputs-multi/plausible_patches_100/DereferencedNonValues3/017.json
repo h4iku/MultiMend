@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "powGlobals.lists.lastDownload = 0; powGlobals.lists.lastDownloadTime = Math.floor(Date.now() / 1000);",
+      "target": "if (typeof torLink === 'string') {",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (a[i][j]>a[k][j])",
+      "patch": "if (a[i][j]>=a[k][j])",
+      "target": "if (a[i][j]>=a[k][j])",
+      "exact_match": true
+    }
+  ]
+}

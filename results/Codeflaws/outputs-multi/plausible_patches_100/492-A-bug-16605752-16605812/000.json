@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"enter the total no. of coins?\\n\");",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

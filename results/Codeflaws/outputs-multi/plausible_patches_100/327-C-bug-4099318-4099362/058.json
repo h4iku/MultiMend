@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "t=t+p[i];",
+      "patch": "t=(t+p[i])%MOD;",
+      "target": "t=(t+p[i])%MOD;",
+      "exact_match": true
+    }
+  ]
+}

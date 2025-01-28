@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "#include <string.h>",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "char str[100];",
+      "patch": "char str[1024];",
+      "target": "char str[1000];",
+      "exact_match": false
+    }
+  ]
+}

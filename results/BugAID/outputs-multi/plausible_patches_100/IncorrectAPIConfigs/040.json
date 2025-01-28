@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "dactyl.log.writeln(target + ':'+ filepath +'has'+ action);",
+      "target": "force: true,",
+      "exact_match": false
+    }
+  ]
+}

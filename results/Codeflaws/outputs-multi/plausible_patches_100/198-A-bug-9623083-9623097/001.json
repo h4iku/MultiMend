@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "while (n-- && t>z){",
+      "patch": "while (n-- && t>=z){",
+      "target": "while (n-- && t>=z){",
+      "exact_match": true
+    }
+  ]
+}

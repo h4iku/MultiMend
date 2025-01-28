@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(zero==one+1){",
+      "patch": "if(zero==one||zero>one){",
+      "target": "if(zero==one || zero==one+1){",
+      "exact_match": false
+    }
+  ]
+}

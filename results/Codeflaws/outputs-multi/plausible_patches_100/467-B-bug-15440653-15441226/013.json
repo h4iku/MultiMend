@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if((!(f&p)&&a[j]&p)||(f&p&&!(a[j]&p)))",
+      "patch": "if((!(f&p)&&a[i]&p)||(f&p&&!(a[i]&p)))",
+      "target": "if((!(f&p)&&a[i]&p)||(f&p&&!(a[i]&p)))",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(a!=' '&&a!=','){",
+      "patch": "else if(a!=' '&&a!=','){",
+      "target": "if(a!=' '&&a!=','&&a!='.'&&a!='!'&&a!='?'){",
+      "exact_match": false
+    }
+  ]
+}

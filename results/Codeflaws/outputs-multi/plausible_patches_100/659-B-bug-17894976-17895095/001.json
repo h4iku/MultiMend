@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (p[i].score == p[i + 2].score) {",
+      "patch": "if (p[i].score == p[i + 2].score || p[i + 1].score == p[i + 2].score) {",
+      "target": "if (p[i].score == p[i + 2].score || p[i + 1].score == p[i + 2].score) {",
+      "exact_match": true
+    }
+  ]
+}

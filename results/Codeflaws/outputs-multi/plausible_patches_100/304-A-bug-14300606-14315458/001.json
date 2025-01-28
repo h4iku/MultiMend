@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "float c;",
+      "patch": "double c;",
+      "target": "double c;",
+      "exact_match": true
+    }
+  ]
+}

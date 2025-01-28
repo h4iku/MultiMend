@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "k = min_i(a, i, j);",
+      "patch": "",
+      "target": "k = min_i(a, i, k);",
+      "exact_match": false
+    }
+  ]
+}

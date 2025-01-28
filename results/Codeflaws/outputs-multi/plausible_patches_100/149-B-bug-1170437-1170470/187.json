@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(n[i]!='0'&&i!=strlen(n)-1&&n[i+1]!=':'&&n[i]!=':'||n[i+1]==':'&&n[i]>'n'){sp=0;}",
+      "patch": "if(n[i]!='0'&&i!=strlen(n)-1&&n[i+1]!=':'&&n[i]!=':'||n[i+1]==':'&&n[i]>'N'){sp=0;}",
+      "target": "if(n[i]!='0'&&i!=strlen(n)-1&&n[i+1]!=':'&&n[i]!=':'||n[i+1]==':'&&n[i]>'N'){sp=0;}",
+      "exact_match": true
+    }
+  ]
+}

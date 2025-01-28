@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int dp[500100];",
+      "patch": "int dp[5003000];",
+      "target": "int dp[51*10010];",
+      "exact_match": false
+    }
+  ]
+}

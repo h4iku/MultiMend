@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return parseTypeName(token);",
+      "patch": "return parseTypeExpression(token);",
+      "target": "if (token == JsDocToken.QMARK) { return newNode(Token.QMARK); } else { return parseBasicTypeExpression(token); }",
+      "exact_match": false
+    }
+  ]
+}

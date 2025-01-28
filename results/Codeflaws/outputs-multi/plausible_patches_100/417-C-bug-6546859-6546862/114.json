@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (K >= (N >> 1))",
+      "patch": "if (K + K >= N)",
+      "target": "if (K > (N - 1 >> 1))",
+      "exact_match": false
+    }
+  ]
+}

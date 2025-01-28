@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (a[islower(p) - 'a'] == 1) c++;",
+      "patch": "if (a[p - 'A'] == 1) c++;",
+      "target": "if (a[tolower(p) - 'a'] == 1) c++;",
+      "exact_match": false
+    }
+  ]
+}

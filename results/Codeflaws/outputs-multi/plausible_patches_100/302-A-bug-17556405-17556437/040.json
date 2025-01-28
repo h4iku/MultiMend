@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (pos*2>=((r-l)) && neg*2>=((r-l)/2)){",
+      "patch": "if (pos*2>(r-l) && neg*2>(r-l)){",
+      "target": "if (pos*2>=((r-l)) && neg*2>=((r-l))){",
+      "exact_match": false
+    }
+  ]
+}

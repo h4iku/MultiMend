@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "while(c>=4*a) c=c-4*a;",
+      "patch": "while(c>=4*a) { c=c-4*a; }",
+      "target": "c=c-(4*a)*floor(c/(4*a));",
+      "exact_match": false
+    }
+  ]
+}

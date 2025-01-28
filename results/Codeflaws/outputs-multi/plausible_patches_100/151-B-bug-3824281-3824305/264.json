@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "else if(a>b&&b>c&&a/10!=a%10&&b/10!=b%10&&c/10!=c%10)",
+      "patch": "else if(a>b&&b>c&&a/10>a%10&&b/10>b%10&&c/10>c%10)",
+      "target": "else if(a>b&&b>c&&a/10>a%10&&b/10>b%10&&c/10>c%10&&a%10>b/10&&b%10>c/10)",
+      "exact_match": false
+    }
+  ]
+}

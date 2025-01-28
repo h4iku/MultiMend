@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "accum.append(c);",
+      "patch": "accum.append(\"&nbsp;\");",
+      "target": "accum.append(\"&#xa0;\");",
+      "exact_match": false
+    }
+  ]
+}

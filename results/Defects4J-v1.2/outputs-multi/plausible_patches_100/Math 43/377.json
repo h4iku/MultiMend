@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (!(meanImpl instanceof Mean)) {",
+      "patch": "if (meanImpl!= mean) {",
+      "target": "if (meanImpl != mean) {",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "if (!(varianceImpl instanceof Variance)) {",
+      "patch": "if (varianceImpl!= variance) {",
+      "target": "if (varianceImpl != variance) {",
+      "exact_match": true
+    },
+    {
+      "hunk": 2,
+      "source": "if (!(geoMeanImpl instanceof GeometricMean)) {",
+      "patch": "if (meanImpl == mean) {",
+      "target": "if (geoMeanImpl != geoMean) {",
+      "exact_match": false
+    }
+  ]
+}

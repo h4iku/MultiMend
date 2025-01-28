@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "x1=x2=0;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "x2=(m-temp2)/abso(dx[i]);",
+      "patch": "x2=(m-temp2)/abso(dy[i]);",
+      "target": "x2=(m-temp2)/abso(dy[i]);",
+      "exact_match": true
+    }
+  ]
+}

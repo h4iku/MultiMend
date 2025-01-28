@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "$('#open-url\").addClass(\"dark-add-url\");",
+      "target": "}",
+      "exact_match": false
+    }
+  ]
+}

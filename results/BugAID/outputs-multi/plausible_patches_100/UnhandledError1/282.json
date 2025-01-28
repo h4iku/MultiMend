@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "response.status = 404;",
+      "target": "try {",
+      "exact_match": false
+    }
+  ]
+}

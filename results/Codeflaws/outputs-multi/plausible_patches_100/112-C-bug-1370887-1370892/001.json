@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if ((unsigned long long)t*t<x-n+1) printf(\"-1\\n\");",
+      "patch": "if (t*t<x-n+1) printf(\"-1\\n\");",
+      "target": "if ((unsigned long long)t*t+n-1<x) printf(\"-1\\n\");",
+      "exact_match": false
+    }
+  ]
+}

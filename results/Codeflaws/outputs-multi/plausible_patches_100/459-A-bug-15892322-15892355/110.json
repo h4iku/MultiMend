@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "else if(x1 - x2 == y1 - y2)",
+      "patch": "else if(mut(x1 - x2) == mut(y1 - y2) )",
+      "target": "else if(mut(x1 - x2) == mut(y1 - y2))",
+      "exact_match": true
+    }
+  ]
+}

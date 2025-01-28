@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(times<(k+1)*k/2) return 0;",
+      "patch": "",
+      "target": "if(times>(k+1)*k/2) return 0;",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for(b=2;b<=w;b+=2)",
+      "patch": "for(b=2;b<=h;b+=2)",
+      "target": "for(b=2;b<=h;b+=2)",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "return 0;",
+      "exact_match": true
+    },
+    {
+      "hunk": 2,
+      "source": "return 0;",
+      "patch": "return 0;",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

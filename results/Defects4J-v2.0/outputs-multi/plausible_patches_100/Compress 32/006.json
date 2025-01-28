@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "currEntry.setGroupId(Integer.parseInt(val));",
+      "patch": "currEntry.setGroupId(Long.parseLong(val));",
+      "target": "currEntry.setGroupId(Long.parseLong(val));",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "currEntry.setUserId(Integer.parseInt(val));",
+      "patch": "currEntry.setUserId(Integer.parseInt(val));",
+      "target": "currEntry.setUserId(Long.parseLong(val));",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "$('#downPart').text(\"0 kB\"); $('#downAll').text(\"0 kB\");",
+      "target": "if (typeof torLink === 'string') {",
+      "exact_match": false
+    }
+  ]
+}

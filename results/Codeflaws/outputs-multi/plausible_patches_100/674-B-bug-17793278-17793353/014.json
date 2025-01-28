@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for(fi=n;fi==a||fi==b||fi==c||fi==d;++fi);",
+      "patch": "for(fi=n;fi==a&&fi==b&&fi==c&&fi==d;++fi);",
+      "target": "for(fi=n;fi==a||fi==b||fi==c||fi==d;--fi);",
+      "exact_match": false
+    }
+  ]
+}

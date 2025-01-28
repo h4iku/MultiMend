@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int i, Ans;",
+      "patch": "int i, Ans = 0;",
+      "target": "int i, Ans=0;",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "for(i=0; i<26; ++i) if(B[i]>0 && A[i]==0) { Ans = -1; } Ans += A[i]<B[i]?A[i]:B[i];",
+      "target": "break;",
+      "exact_match": false
+    }
+  ]
+}

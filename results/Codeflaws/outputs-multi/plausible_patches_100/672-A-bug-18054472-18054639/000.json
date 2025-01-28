@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "d=(i-191)/22;",
+      "patch": "",
+      "target": "d=((i-191)%300)/30;",
+      "exact_match": false
+    }
+  ]
+}

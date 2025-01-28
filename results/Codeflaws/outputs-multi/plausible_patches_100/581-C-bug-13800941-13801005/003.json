@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "rating_skills2[i] == 10 - temp/10;",
+      "patch": "rating_skills2[i] = 10 - temp/10;",
+      "target": "rating_skills2[i] = 10 - temp/10;",
+      "exact_match": true
+    }
+  ]
+}

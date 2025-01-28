@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for(i=1;i<=t;i++)printf(\"%d\\n\",ara[i]);",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

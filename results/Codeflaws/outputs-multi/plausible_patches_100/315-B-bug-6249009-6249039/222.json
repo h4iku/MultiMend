@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "a[v]=x;",
+      "patch": "a[v]=x-sum;",
+      "target": "a[v]=x-sum;",
+      "exact_match": true
+    }
+  ]
+}

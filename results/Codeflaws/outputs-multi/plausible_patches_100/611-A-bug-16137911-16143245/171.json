@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "char * in;",
+      "patch": "char in[1024];",
+      "target": "char in[100];",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "printf(\"\\n\");",
+      "exact_match": false
+    }
+  ]
+}

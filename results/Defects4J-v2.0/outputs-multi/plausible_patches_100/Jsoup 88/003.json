@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return val;",
+      "patch": "return (val == null)? \"\" : val;",
+      "target": "return Attributes.checkNotNull(val);",
+      "exact_match": false
+    }
+  ]
+}

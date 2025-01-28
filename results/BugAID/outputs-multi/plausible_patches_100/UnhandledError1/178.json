@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "response.setRequestHeader('Content-Type', 'application/javascript');",
+      "target": "try {",
+      "exact_match": false
+    }
+  ]
+}

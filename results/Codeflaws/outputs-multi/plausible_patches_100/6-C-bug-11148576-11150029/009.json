@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "result -= chocolate[end--];",
+      "patch": "result -= chocolate[end-- - 1];",
+      "target": "result -= chocolate[--end];",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "max_ending_here = max_ending_here + x;",
+      "patch": "max_ending_here = Math.max(max_ending_here + x, 0);",
+      "target": "max_ending_here = Math.max(0,max_ending_here + x);",
+      "exact_match": false
+    }
+  ]
+}

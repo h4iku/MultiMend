@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "classes[i] = array[i].getClass();",
+      "patch": "if (array[i]!= null) { classes[i] = array[i].getClass(); }",
+      "target": "classes[i] = array[i] == null ? null : array[i].getClass();",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(arr[year1-1900]==1)",
+      "patch": "if((int)(year1-1900)==1)",
+      "target": "if(arr[year1-1900]==1 && j==2)",
+      "exact_match": false
+    }
+  ]
+}

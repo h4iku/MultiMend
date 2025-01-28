@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "$(\"#open-url\").removeClass(\"dark-add-url\");",
+      "target": "if (typeof torLink === 'string') {",
+      "exact_match": false
+    }
+  ]
+}

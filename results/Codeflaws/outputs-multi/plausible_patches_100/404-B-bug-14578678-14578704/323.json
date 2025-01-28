@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "#include<math.h>",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "dist -= (int)(dist/(a*4))*a*4;",
+      "patch": "dist -= (long)(dist/(a*4))*a*4;",
+      "target": "dist -= a*4*floor(dist/(4*a));",
+      "exact_match": false
+    }
+  ]
+}

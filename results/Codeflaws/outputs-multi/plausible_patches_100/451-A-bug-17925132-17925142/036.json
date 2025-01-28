@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(m%2==0) printf(\"Malvika\");",
+      "patch": "if(min%2==0) printf(\"Malvika\");",
+      "target": "if(min%2==0) printf(\"Malvika\");",
+      "exact_match": true
+    }
+  ]
+}

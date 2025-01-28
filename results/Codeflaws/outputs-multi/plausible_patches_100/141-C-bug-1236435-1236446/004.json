@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "char s[3000][10], c; char name[3000][10];",
+      "patch": "int s[3000][10], c; int name[3000][10];",
+      "target": "char s[3000][15], c;",
+      "exact_match": false
+    }
+  ]
+}

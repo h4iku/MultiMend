@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return new String(bytes, Charsets.ISO_8859_1);",
+      "patch": "return bytes == null? null : new String(bytes);",
+      "target": "return newString(bytes, Charsets.ISO_8859_1);",
+      "exact_match": false
+    }
+  ]
+}

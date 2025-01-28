@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "char old[1000][20],neww[1000][20];",
+      "patch": "char old[1000][1024],neww[1000][1024];",
+      "target": "char old[1000][21],neww[1000][21];",
+      "exact_match": false
+    }
+  ]
+}

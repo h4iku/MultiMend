@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "char a[n][2];",
+      "patch": "const char *a[n][2];",
+      "target": "int a[n][2];",
+      "exact_match": false
+    }
+  ]
+}

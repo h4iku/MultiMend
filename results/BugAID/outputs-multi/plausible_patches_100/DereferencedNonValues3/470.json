@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "} else if (torLink.toLowerCase().match(/^[a-z0-9]{20,50}/i)!= null) { torLink = torLink.replace('pow:','magnet:');",
+      "target": "}",
+      "exact_match": false
+    }
+  ]
+}

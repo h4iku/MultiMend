@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (element.equals(search))",
+      "patch": "if (element == search)",
+      "target": "if (element == search)",
+      "exact_match": true
+    }
+  ]
+}

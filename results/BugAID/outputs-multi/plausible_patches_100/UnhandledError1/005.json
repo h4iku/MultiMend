@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (request.headers['if-none-match'] === kiwi.cache.alljs_hash) { response.statusCode = 304; } else { response.statusCode = 304; }",
+      "target": "try {",
+      "exact_match": false
+    }
+  ]
+}

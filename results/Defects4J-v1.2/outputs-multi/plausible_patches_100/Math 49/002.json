@@ -1,0 +1,34 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "Iterator iter = res.entries.iterator();",
+      "patch": "Iterator iter = entries.iterator();",
+      "target": "Iterator iter = entries.iterator();",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "Iterator iter = res.entries.iterator();",
+      "patch": "Iterator iter = entries.iterator();",
+      "target": "Iterator iter = entries.iterator();",
+      "exact_match": true
+    },
+    {
+      "hunk": 2,
+      "source": "Iterator iter = res.entries.iterator();",
+      "patch": "Iterator iter = entries.iterator();",
+      "target": "Iterator iter = entries.iterator();",
+      "exact_match": true
+    },
+    {
+      "hunk": 3,
+      "source": "Iterator iter = res.entries.iterator();",
+      "patch": "Iterator iter = entries.iterator();",
+      "target": "Iterator iter = entries.iterator();",
+      "exact_match": true
+    }
+  ]
+}

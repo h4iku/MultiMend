@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"%d %d %d\",a[i] , a[j] , a[k]);",
+      "patch": "printf(\"%d %d %d\",i, j, k);",
+      "target": "printf(\"%d %d %d\",i , j , k);",
+      "exact_match": true
+    }
+  ]
+}

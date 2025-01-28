@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "$('#loading').removeClass(\"loading\");",
+      "target": "if (typeof torLink === 'string') {",
+      "exact_match": false
+    }
+  ]
+}

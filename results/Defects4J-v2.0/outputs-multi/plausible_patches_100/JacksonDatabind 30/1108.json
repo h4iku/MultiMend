@@ -1,0 +1,55 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "if (isEnabled(DeserializationFeature.USE_BIG_DECIMAL_FOR_FLOATS)) { buf = buf.forceUseOfBigDecimal(true); }",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "if (isEnabled(DeserializationFeature.USE_BIG_DECIMAL_FOR_FLOATS)) { buf = buf.forceUseOfBigDecimal(true); }",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "",
+      "patch": "",
+      "target": "protected boolean _forceBigDecimal;",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "}",
+      "patch": "}",
+      "target": "_forceBigDecimal = (ctxt == null) ? false : ctxt.isEnabled(DeserializationFeature.USE_BIG_DECIMAL_FOR_FLOATS); }     public TokenBuffer forceUseOfBigDecimal(boolean b) { _forceBigDecimal = b; return this; }",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "",
+      "patch": "writeString(p.getText());",
+      "target": "if (_forceBigDecimal) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 5,
+      "source": "",
+      "patch": "",
+      "target": "writeNumber(p.getDecimalValue()); } else {",
+      "exact_match": false
+    },
+    {
+      "hunk": 6,
+      "source": "",
+      "patch": "",
+      "target": "}",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(m%10==8) {",
+      "patch": "if((unsigned)m%10==8) {",
+      "target": "if(m%10==8&&m>0||m%10==-8&&m<0) {",
+      "exact_match": false
+    }
+  ]
+}

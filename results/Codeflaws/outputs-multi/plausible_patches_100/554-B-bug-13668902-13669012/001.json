@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if(strcmp(r[i],r[j])==0) { c[i]++; r[j][0]='_'; }",
+      "target": "return 0;",
+      "exact_match": false
+    }
+  ]
+}

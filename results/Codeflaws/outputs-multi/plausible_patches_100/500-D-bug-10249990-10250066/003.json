@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "double result=ans*6/(n*(n-1));",
+      "patch": "double result=ans*6.0/(n*(n-1));",
+      "target": "double result=(double)ans*6/(n*(n-1));",
+      "exact_match": false
+    }
+  ]
+}

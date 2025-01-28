@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (options.dependencyOptions.needsManagement() && options.closurePass) {",
+      "patch": "if (options.dependencyOptions.needsManagement()) {",
+      "target": "if (options.dependencyOptions.needsManagement()) {",
+      "exact_match": true
+    }
+  ]
+}

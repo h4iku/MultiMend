@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(w < space){",
+      "patch": "if(w <= space){",
+      "target": "if(w < space || eq(w, space)){",
+      "exact_match": false
+    }
+  ]
+}

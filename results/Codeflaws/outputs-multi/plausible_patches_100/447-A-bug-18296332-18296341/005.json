@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"%d\\n\", (i == n)?-1:i);",
+      "patch": "printf(\"%d\\n\", (i == n)?-1:i+1);",
+      "target": "printf(\"%d\\n\", (i == n)?-1:i+1);",
+      "exact_match": true
+    }
+  ]
+}

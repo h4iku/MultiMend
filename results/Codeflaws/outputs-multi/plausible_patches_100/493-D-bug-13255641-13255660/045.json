@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"White\\n1 2\");",
+      "patch": "printf(\"white\\n1 2\");",
+      "target": "printf(\"white\\n1 2\");",
+      "exact_match": true
+    }
+  ]
+}

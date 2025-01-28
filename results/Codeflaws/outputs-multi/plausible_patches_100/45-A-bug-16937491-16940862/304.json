@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "#include <string.h>",
+      "patch": "#include <string.h>",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "else if(resultat == 12)",
+      "patch": "else if(resultat == 12 || resultat == 0)",
+      "target": "else if(resultat == 12 || resultat == 0)",
+      "exact_match": true
+    }
+  ]
+}

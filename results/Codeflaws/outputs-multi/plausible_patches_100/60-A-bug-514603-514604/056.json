@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "else if(right == 1001 && left < 1000)",
+      "patch": "else if(right == 1001 && left < n)",
+      "target": "else if(right == 1001 && left < 1000 && left < n)",
+      "exact_match": false
+    }
+  ]
+}

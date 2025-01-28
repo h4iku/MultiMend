@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "float eps = 0.005 ;",
+      "patch": "float eps = 0.001 ;",
+      "target": "float eps = 0.001 ;",
+      "exact_match": true
+    }
+  ]
+}

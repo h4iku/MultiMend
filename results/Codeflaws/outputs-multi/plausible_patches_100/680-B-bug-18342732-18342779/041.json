@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(b[a-i]==b[a+i]==1)",
+      "patch": "if(b[a-i]==b[a+i]==1 && b[a-i])",
+      "target": "if(b[a-i]==b[a+i]&&b[a-i]==1)",
+      "exact_match": false
+    }
+  ]
+}

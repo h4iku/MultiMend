@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return (a='a')?'b':'a';",
+      "patch": "return (a == 'a')?'b':'a';",
+      "target": "return (a=='a')?'b':'a';",
+      "exact_match": true
+    }
+  ]
+}

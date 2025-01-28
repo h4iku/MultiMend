@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(eksi*sayi<(arti+sayi)) {",
+      "patch": "if(eksi*sayi<(arti+sayi-sayi)) {",
+      "target": "if(eksi*sayi<(arti)) {",
+      "exact_match": false
+    }
+  ]
+}

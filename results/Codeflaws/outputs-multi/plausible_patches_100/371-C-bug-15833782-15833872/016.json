@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(b_num != 0)  b = (int)ceil( 1.0*s_valid/s_num );",
+      "patch": "if(s_num!= 0)  b = (int)ceil( 1.0*s_valid/s_num );",
+      "target": "if(s_num != 0)  b = (int)ceil( 1.0*s_valid/s_num );",
+      "exact_match": true
+    }
+  ]
+}

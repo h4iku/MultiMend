@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if ( *(ptr+0) <= 0 ){ return ( 1 ); }",
+      "target": "if ( *(ptr + 0) <= 0){ return ( 1 ); }",
+      "exact_match": true
+    }
+  ]
+}

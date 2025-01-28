@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"%d %d\",abs(max-min),(int)((1+a)*(a/2.0)));",
+      "patch": "printf(\"%d %d\",abs(max-min),(int)((a-1)*(a/2.0)));",
+      "target": "printf(\"%d %lld\",abs(max-min),(long long int)(((long long int)1+((long long int)a-1))*(((long long int)a-1)/2.0)));",
+      "exact_match": false
+    }
+  ]
+}

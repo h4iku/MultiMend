@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "(buff>=h)?cont=cont+2:cont++;",
+      "patch": "(buff>h)?cont=cont+2:cont++;",
+      "target": "(buff>h)?cont=cont+2:cont++;",
+      "exact_match": true
+    }
+  ]
+}

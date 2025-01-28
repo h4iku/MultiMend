@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"%d\\n\",(n-2)*(n-2));",
+      "patch": "printf(\"%ld\\n\",(n-2)*(n-2));",
+      "target": "long long res=(long long)(n-2)*(long long)(n-2); printf(\"%lld\\n\",res);",
+      "exact_match": false
+    }
+  ]
+}

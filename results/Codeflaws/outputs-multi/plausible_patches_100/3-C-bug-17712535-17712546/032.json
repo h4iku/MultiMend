@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "puts(\"V\"); if(o>x-1) return 1; } if(n2) { printf(\"x: %d  o: %d\\n\");",
+      "patch": "dprintf(\"V\"); if(o>x-1) return 1; } if(n2) { dprintf(\"x: %d  o: %d\\n\");",
+      "target": "if(o>x-1) return 1; } if(n2) {",
+      "exact_match": false
+    }
+  ]
+}

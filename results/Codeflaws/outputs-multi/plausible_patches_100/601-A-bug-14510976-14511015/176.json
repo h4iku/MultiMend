@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(a[1][n]==0)",
+      "patch": "if(n<a[1][n])",
+      "target": "if(a[1][n]>=401)",
+      "exact_match": false
+    }
+  ]
+}

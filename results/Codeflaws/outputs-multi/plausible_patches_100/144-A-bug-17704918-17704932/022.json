@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(ara[l]>=max)",
+      "patch": "if(ara[l]>max)",
+      "target": "if(ara[l]>max)",
+      "exact_match": true
+    }
+  ]
+}

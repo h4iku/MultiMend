@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "int FILE_TYPE_FLAG = 0170000;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "return (getUnixMode() & UnixStat.LINK_FLAG) == UnixStat.LINK_FLAG;",
+      "patch": "return (getUnixMode() == UnixStat.LINK_FLAG);",
+      "target": "return (getUnixMode() & UnixStat.FILE_TYPE_FLAG) == UnixStat.LINK_FLAG;",
+      "exact_match": false
+    }
+  ]
+}

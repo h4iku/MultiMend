@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if ((h2-h1>a*8) && (h2+a*8-b*12>0) && (a<=b))",
+      "patch": "if ((h2-h1>a*8) && (h2+a*8-b*12) && (a<=b))",
+      "target": "if ((h2-h1>a*8) && (a<=b))",
+      "exact_match": false
+    }
+  ]
+}

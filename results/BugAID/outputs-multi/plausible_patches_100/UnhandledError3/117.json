@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "preprocessors.push(injector.get('preprocessor:' + name)); }",
+      "target": "if (err) { throw err; }",
+      "exact_match": false
+    }
+  ]
+}

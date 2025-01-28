@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (axis == null) { throw new IllegalArgumentException(\"Axis must be null\"); }",
+      "target": "if (axis == null) { throw new IllegalArgumentException(\"Null 'axis' argument.\"); }",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "if (axis == null) { throw new IllegalArgumentException(\"Axis must be null\"); }",
+      "target": "if (axis == null) { throw new IllegalArgumentException(\"Null 'axis' argument.\"); }",
+      "exact_match": false
+    }
+  ]
+}

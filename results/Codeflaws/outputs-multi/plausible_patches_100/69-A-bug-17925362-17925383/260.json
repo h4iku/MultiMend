@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(m[0]==m[1]&&m[0]==m[2]&&m[2]==m[1]) printf(\"YES\");",
+      "patch": "if(0==m[1]&&0==m[2]&&0==m[2]) printf(\"YES\");",
+      "target": "if(m[0]==0 && m[1]==0 && m[2]==0) printf(\"YES\");",
+      "exact_match": false
+    }
+  ]
+}

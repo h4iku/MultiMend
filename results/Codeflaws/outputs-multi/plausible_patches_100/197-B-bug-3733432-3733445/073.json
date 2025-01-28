@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(p%i==0&&q%i==0)",
+      "patch": "while(p%i==0&&q%i==0)",
+      "target": "while(p%i==0&&q%i==0)",
+      "exact_match": true
+    }
+  ]
+}

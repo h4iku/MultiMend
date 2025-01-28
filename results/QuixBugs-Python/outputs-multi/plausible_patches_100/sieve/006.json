@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if any(n % p > 0 for p in primes):",
+      "patch": "if all(n % p > 0 for p in primes):",
+      "target": "if all(n % p > 0 for p in primes):",
+      "exact_match": true
+    }
+  ]
+}

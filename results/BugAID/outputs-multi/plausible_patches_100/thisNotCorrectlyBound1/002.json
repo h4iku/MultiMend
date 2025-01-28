@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "this._executeQueryCommand(DbCommand.createDropDatabaseCommand(this), callback);",
+      "target": "var self = this;",
+      "exact_match": false
+    }
+  ]
+}

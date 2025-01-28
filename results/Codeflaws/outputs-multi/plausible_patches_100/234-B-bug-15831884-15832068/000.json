@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "for(i = 0 ; i < n-1 ; i++) if(a[i] < a[j]) k = j;",
+      "target": "freopen(\"input.txt\",\"r\",stdin); freopen(\"output.txt\",\"w\",stdout);",
+      "exact_match": false
+    }
+  ]
+}

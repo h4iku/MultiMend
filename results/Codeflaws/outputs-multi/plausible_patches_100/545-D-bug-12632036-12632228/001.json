@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(sum <= values[j]) notdis++; sum+=values[j];",
+      "patch": "if(sum <= values[j]) { notdis++; sum+=values[j]; }",
+      "target": "if(sum <= values[j]){ notdis++; sum+=values[j]; }",
+      "exact_match": true
+    }
+  ]
+}

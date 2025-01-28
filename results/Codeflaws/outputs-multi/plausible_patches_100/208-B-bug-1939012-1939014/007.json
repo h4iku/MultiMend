@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "#define MAXN 52",
+      "patch": "#define MAXN 53",
+      "target": "#define MAXN 55",
+      "exact_match": false
+    }
+  ]
+}

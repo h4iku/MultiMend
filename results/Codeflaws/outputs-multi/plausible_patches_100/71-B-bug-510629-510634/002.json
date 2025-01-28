@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for (i=1;100*(i+1)<=n*k*t;i++);",
+      "patch": "for (i=0;100*(i+1)<=n*k*t;i++);",
+      "target": "for (i=0;100*(i+1)<=n*k*t;i++);",
+      "exact_match": true
+    }
+  ]
+}

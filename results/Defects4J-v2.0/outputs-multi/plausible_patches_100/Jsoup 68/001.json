@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int bottom = stack.size() -1; if (bottom > MaxScopeSearchDepth) { bottom = MaxScopeSearchDepth; }",
+      "patch": "final int bottom = stack.size() -1;",
+      "target": "final int bottom = stack.size() -1;",
+      "exact_match": true
+    }
+  ]
+}

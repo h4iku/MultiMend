@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"%I64\", max - min + 1);",
+      "patch": "printf(\"%u\", max - min + 1);",
+      "target": "printf(\"%lld\\n\", max - min + 1);",
+      "exact_match": false
+    }
+  ]
+}

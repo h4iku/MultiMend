@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int i, n, idiv;",
+      "patch": "unsigned int i, n, idiv;",
+      "target": "int i, n; long long idiv;",
+      "exact_match": false
+    }
+  ]
+}

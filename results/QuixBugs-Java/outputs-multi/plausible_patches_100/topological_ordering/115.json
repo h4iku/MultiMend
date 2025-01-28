@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (orderedNodes.containsAll(nextNode.getSuccessors()) && !orderedNodes.contains(nextNode)) {",
+      "patch": "if (orderedNodes.containsAll(nextNode.getPredecessors()) &&!orderedNodes.contains(nextNode)) {",
+      "target": "if (orderedNodes.containsAll(nextNode.getPredecessors()) && !orderedNodes.contains(nextNode)) {",
+      "exact_match": true
+    }
+  ]
+}

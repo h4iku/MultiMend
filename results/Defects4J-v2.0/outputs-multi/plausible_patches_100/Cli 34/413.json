@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "private Class type;",
+      "patch": "private Class type;",
+      "target": "private Class type = String.class;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "type = null;",
+      "patch": "type = String.class;",
+      "target": "type = String.class;",
+      "exact_match": true
+    }
+  ]
+}

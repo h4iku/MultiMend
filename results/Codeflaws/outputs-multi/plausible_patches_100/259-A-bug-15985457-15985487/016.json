@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "scanf(\"%c\",&arr[i][j]);",
+      "patch": "scanf(\"%c\\n\",&arr[i][j]);",
+      "target": "scanf(\" %c\",&arr[i][j]);",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "#define INF 1000000001",
+      "patch": "#define INF 1000000005",
+      "target": "#define INF 1010000000",
+      "exact_match": false
+    }
+  ]
+}

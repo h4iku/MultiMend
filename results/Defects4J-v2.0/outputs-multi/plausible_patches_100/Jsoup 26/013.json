@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (dirtyDocument.body() == null) { return clean; }",
+      "target": "if (dirtyDocument.body() != null)",
+      "exact_match": false
+    }
+  ]
+}

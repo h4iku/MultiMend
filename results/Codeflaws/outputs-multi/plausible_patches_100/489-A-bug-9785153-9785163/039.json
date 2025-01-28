@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "min=~1;",
+      "patch": "min=A[i];",
+      "target": "min=2147483647;",
+      "exact_match": false
+    }
+  ]
+}

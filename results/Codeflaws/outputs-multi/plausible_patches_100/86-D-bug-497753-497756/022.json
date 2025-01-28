@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for(;ques[j].r>ques[l].l;j--);",
+      "patch": "for(;ques[j].r>ques[l].r;j--);",
+      "target": "for(;ques[j].r>ques[l].r;j--);",
+      "exact_match": true
+    }
+  ]
+}

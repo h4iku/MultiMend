@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return chromosomes.iterator();",
+      "patch": "return Collections.unmodifiableList(chromosomes).iterator();",
+      "target": "return getChromosomes().iterator();",
+      "exact_match": false
+    }
+  ]
+}

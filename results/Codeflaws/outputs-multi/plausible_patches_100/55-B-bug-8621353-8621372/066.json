@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "LL min = 0x3f3f3f3f;",
+      "patch": "LL min = 0x3f3f3f3f3f0;",
+      "target": "LL min = 0x3f3f3f3f3f3f3f3f;",
+      "exact_match": false
+    }
+  ]
+}

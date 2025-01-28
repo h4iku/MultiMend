@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(score[i]>=score[k-1]&&score[k-1]>0)c++;",
+      "patch": "if(score[i]>=score[k-1]&&score[i]>0)c++;",
+      "target": "if(score[i]>=score[k-1]&&score[i]>0)c++;",
+      "exact_match": true
+    }
+  ]
+}

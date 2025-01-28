@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "targetHistory = torLink;",
+      "target": "}",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "y[j] = max(bl + bl/p[j]*p[j] + p[j], 1ll * p[j] * p[j]) - bl;",
+      "patch": "y[j] = max(bl / p[j]*p[j] + p[j], 1ll * p[j] * p[j]) - bl;",
+      "target": "y[j] = max(bl/p[j]*p[j] + p[j], 1ll * p[j] * p[j]) - bl;",
+      "exact_match": true
+    }
+  ]
+}

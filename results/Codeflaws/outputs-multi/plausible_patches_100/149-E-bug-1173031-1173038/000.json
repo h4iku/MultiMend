@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "printf(\"s = %s p = %s\\n\", s, p);",
+      "target": "s = strdup(s); p = strdup(p);",
+      "exact_match": false
+    }
+  ]
+}

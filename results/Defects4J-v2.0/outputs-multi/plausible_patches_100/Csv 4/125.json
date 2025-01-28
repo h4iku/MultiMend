@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return new LinkedHashMap<String, Integer>(this.headerMap);",
+      "patch": "return (LinkedHashMap<String, Integer>) this.headerMap;",
+      "target": "return this.headerMap == null ? null : new LinkedHashMap<String, Integer>(this.headerMap);",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "gulp.registerTask('test', []);",
+      "target": "force: true,",
+      "exact_match": false
+    }
+  ]
+}

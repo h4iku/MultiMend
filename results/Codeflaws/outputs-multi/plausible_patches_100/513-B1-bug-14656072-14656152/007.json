@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int n , m ,sum = 0 , times = 0, a[8] = {0},b[8] = {0},c[8] = {0};",
+      "patch": "int n, m,sum = 0, times = 0, a[9] = {0},b[9] = {0},c[9] = {0};",
+      "target": "int n , m ,sum = 0 , times = 0, a[8] = {0},b[8] = {0},c[9] = {0};",
+      "exact_match": false
+    }
+  ]
+}

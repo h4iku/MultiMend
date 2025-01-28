@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (sign >= 0) {",
+      "patch": "if (sign >= 0 && yMin < yMax) {",
+      "target": "if (sign > 0) {  if (Math.abs(yMin) <= functionValueAccuracy) { setResult(min, 0); ret = min; } else if (Math.abs(yMax) <= functionValueAccuracy) { setResult(max, 0); ret = max; } else {",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "} } else if (sign < 0){  ret = solve(min, yMin, max, yMax, min, yMin);",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "ret = solve(min, yMin, max, yMax, min, yMin);",
+      "patch": "ret = solve(min, yMin, max, yMax, min, yMin);",
+      "target": "if (yMin == 0.0) { ret = min; } else { ret = max; }",
+      "exact_match": false
+    }
+  ]
+}

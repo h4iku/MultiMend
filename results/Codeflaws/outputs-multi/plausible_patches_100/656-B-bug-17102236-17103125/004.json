@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for(i=0;i<n;i++){if(d%arr[i]==brr[i]){count=count+1;}}",
+      "patch": "for(i=0;i<n;i++){if(d%arr[i]==brr[i]){count=count+1;break;}}",
+      "target": "for(i=0;i<n;i++){if(d%arr[i]==brr[i]){count=count+1;break;}}",
+      "exact_match": true
+    }
+  ]
+}

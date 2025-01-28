@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "q = n - 1;",
+      "patch": "q = n - 1 - p;",
+      "target": "q = k - 1;",
+      "exact_match": false
+    }
+  ]
+}

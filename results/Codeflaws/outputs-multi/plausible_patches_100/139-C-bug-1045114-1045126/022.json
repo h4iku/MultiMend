@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "else {",
+      "patch": "else if (!strcmp(s[0], s[2])) {",
+      "target": "else if (strcmp(cr, r)) {",
+      "exact_match": false
+    }
+  ]
+}

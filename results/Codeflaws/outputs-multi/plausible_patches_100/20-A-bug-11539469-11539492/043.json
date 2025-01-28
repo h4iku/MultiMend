@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(s[i]=='#'&&(s[i-1]>='a'&&s[i-1]<='z')){",
+      "patch": "if(s[i]=='#'&&(s[i-1]>='a'&&s[i-1]<='z')||s[i-1]=='/'){",
+      "target": "if(s[i-1]>='a'&&s[i-1]<='z'){",
+      "exact_match": false
+    }
+  ]
+}

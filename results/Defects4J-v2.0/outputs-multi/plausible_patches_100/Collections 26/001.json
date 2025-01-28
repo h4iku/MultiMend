@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "private Object readResolve() {",
+      "patch": "public Object readResolve() {",
+      "target": "protected Object readResolve() {",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "x=(n*(n-1))/2;",
+      "patch": "x=(n*(n+1))/2;",
+      "target": "x=(n*(n+1))/2;",
+      "exact_match": true
+    }
+  ]
+}

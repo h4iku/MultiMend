@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (dataset != null) {",
+      "patch": "if (dataset == null) {",
+      "target": "if (dataset == null) {",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int max(int a,int b)",
+      "patch": "long max(long a,long b)",
+      "target": "long long int max(long long int a,long long int b)",
+      "exact_match": false
+    }
+  ]
+}

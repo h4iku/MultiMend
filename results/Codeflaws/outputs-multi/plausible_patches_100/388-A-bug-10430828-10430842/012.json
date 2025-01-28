@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(h[b]<yukseklik)",
+      "patch": "if((hh[b] || h[b]<yukseklik))",
+      "target": "if(h[b]<yukseklik || hh[b])",
+      "exact_match": false
+    }
+  ]
+}

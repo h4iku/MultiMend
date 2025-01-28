@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "type = Object.class;",
+      "patch": "throw new IllegalArgumentException(\"Not implemented\");",
+      "target": "throw new IllegalArgumentException(\"Arguments cannot both be null\");",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "return (T[]) new Object[] { null };",
+      "patch": "throw new IllegalArgumentException(\"Not implemented\");",
+      "target": "throw new IllegalArgumentException(\"Array and element cannot both be null\");",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int steps = ceil(distance)/(2*r);",
+      "patch": "int steps = ceil((double)(distance)/(2*r));",
+      "target": "int steps = ceil(distance/(2*r));",
+      "exact_match": false
+    }
+  ]
+}

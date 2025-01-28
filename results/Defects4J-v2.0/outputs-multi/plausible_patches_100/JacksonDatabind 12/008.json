@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return (_valueTypeDeserializer == null)",
+      "patch": "return (_valueTypeDeserializer!= null)",
+      "target": "return (_valueDeserializer == null) && (_keyDeserializer == null) && (_valueTypeDeserializer == null)",
+      "exact_match": false
+    }
+  ]
+}

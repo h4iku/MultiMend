@@ -1,0 +1,146 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (amount == 0) { return; }",
+      "target": "if (amount != 0) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "}",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "",
+      "patch": "if ( years == 0) return;",
+      "target": "if (years != 0) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "",
+      "patch": "",
+      "target": "}",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "",
+      "patch": "",
+      "target": "if (weekyears != 0) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 5,
+      "source": "",
+      "patch": "",
+      "target": "}",
+      "exact_match": false
+    },
+    {
+      "hunk": 6,
+      "source": "",
+      "patch": "if (months == 0) { return; }",
+      "target": "if (months != 0) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 7,
+      "source": "",
+      "patch": "",
+      "target": "}",
+      "exact_match": false
+    },
+    {
+      "hunk": 8,
+      "source": "",
+      "patch": "if (getChronology() == null || weeks == 0) return;",
+      "target": "if (weeks != 0) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 9,
+      "source": "",
+      "patch": "",
+      "target": "}",
+      "exact_match": false
+    },
+    {
+      "hunk": 10,
+      "source": "",
+      "patch": "if (days == 0) { return; }",
+      "target": "if (days != 0) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 11,
+      "source": "",
+      "patch": "",
+      "target": "}",
+      "exact_match": false
+    },
+    {
+      "hunk": 12,
+      "source": "",
+      "patch": "",
+      "target": "if (hours != 0) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 13,
+      "source": "",
+      "patch": "",
+      "target": "}",
+      "exact_match": false
+    },
+    {
+      "hunk": 14,
+      "source": "",
+      "patch": "",
+      "target": "if (minutes != 0) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 15,
+      "source": "",
+      "patch": "",
+      "target": "}",
+      "exact_match": false
+    },
+    {
+      "hunk": 16,
+      "source": "",
+      "patch": "",
+      "target": "if (seconds != 0) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 17,
+      "source": "",
+      "patch": "",
+      "target": "}",
+      "exact_match": false
+    },
+    {
+      "hunk": 18,
+      "source": "",
+      "patch": "",
+      "target": "if (millis != 0) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 19,
+      "source": "",
+      "patch": "",
+      "target": "}",
+      "exact_match": false
+    }
+  ]
+}

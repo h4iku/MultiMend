@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (any(list_comp(n, primes))) {",
+      "patch": "if (all(list_comp(n, primes))) {",
+      "target": "if (all(list_comp(n, primes))) {",
+      "exact_match": true
+    }
+  ]
+}

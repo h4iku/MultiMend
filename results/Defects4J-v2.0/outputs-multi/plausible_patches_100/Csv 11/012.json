@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "final boolean emptyHeader = header.trim().isEmpty();",
+      "patch": "final boolean emptyHeader = header == null || header.trim().isEmpty();",
+      "target": "final boolean emptyHeader = header == null || header.trim().isEmpty();",
+      "exact_match": true
+    }
+  ]
+}

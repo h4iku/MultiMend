@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(i%p)for(j=x;j<=y;j++)printf(\"%d %d\\n%d %d\\n\",j,j+p,j+n/2,j+p+n/2);",
+      "patch": "if(i%2) for(j=x;j<=y;j++) printf(\"%d %d\\n%d %d\\n\",j,j+p,j+n/2,j+p+n/2);",
+      "target": "if(i%2)for(j=x;j<=y;j++)printf(\"%d %d\\n%d %d\\n\",j,j+p,j+n/2,j+p+n/2);",
+      "exact_match": true
+    }
+  ]
+}

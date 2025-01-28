@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "xk[m][1] = a[1];",
+      "patch": "xk[m][1] = a[n-1];",
+      "target": "xk[m][1] = a[n-1];",
+      "exact_match": true
+    }
+  ]
+}

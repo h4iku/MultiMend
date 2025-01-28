@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if ((q-p) > 2) sum++;",
+      "patch": "if ((q-p) > 1) sum++;",
+      "target": "if ((q-p) >= 2) sum++;",
+      "exact_match": false
+    }
+  ]
+}

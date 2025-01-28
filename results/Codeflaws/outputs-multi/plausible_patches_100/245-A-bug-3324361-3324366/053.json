@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(countb>=(num[2])*5) printf(\"ALIVE\");",
+      "patch": "if(countb>=(num[2])*5) printf(\"LIVE\");",
+      "target": "if(countb>=(num[2])*5) printf(\"LIVE\");",
+      "exact_match": true
+    }
+  ]
+}

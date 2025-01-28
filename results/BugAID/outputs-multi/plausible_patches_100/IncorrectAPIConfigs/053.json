@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "window.addEventListener(\"unload\", function() { window.removeEventListener(\"unload\", arguments.callee, true); }, false);",
+      "target": "force: true,",
+      "exact_match": false
+    }
+  ]
+}

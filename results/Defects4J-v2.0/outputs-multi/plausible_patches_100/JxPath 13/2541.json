@@ -1,0 +1,76 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "protected static String getPrefix(NodePointer pointer, String namespaceURI) { NodePointer currentPointer = pointer; while (currentPointer != null) { NodeIterator ni = currentPointer.namespaceIterator(); for (int position = 1; ni != null && ni.setPosition(position); position++) { NodePointer nsPointer = ni.getNodePointer(); String uri = nsPointer.getNamespaceURI(); if (uri.equals(namespaceURI)) { String prefix = nsPointer.getName().getName(); if (!\"\".equals(prefix)) { return prefix; } } } currentPointer = pointer.getParent(); } return null; }",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "String uri = getExternallyRegisteredNamespaceURI(prefix); return uri == null && pointer != null ? pointer.getNamespaceURI(prefix) : uri; }         protected synchronized String getExternallyRegisteredNamespaceURI( String prefix) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "if (uri == null && pointer != null) { uri = pointer.getNamespaceURI(prefix); } if (uri == null && parent != null) { return parent.getNamespaceURI(prefix); } return uri;",
+      "patch": "if (uri == null && pointer != null) { uri = pointer.getNamespaceURI(prefix); } if (uri == null && parent != null) { return parent.getNamespaceURI(prefix); } return uri;",
+      "target": "return uri == null && parent != null ? parent .getExternallyRegisteredNamespaceURI(prefix) : uri;",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "",
+      "patch": "",
+      "target": "String prefix = getExternallyRegisteredPrefix(namespaceURI); return prefix == null && pointer != null ? getPrefix(pointer, namespaceURI) : prefix; }        protected synchronized String getExternallyRegisteredPrefix(String namespaceURI) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "NodeIterator ni = pointer.namespaceIterator(); if (ni != null) { for (int position = 1; ni.setPosition(position); position++) { NodePointer nsPointer = ni.getNodePointer(); String uri = nsPointer.getNamespaceURI(); String prefix = nsPointer.getName().getName(); if (!\"\".equals(prefix)) { reverseMap.put(uri, prefix); } } }",
+      "patch": "NodeIterator ni = pointer.namespaceIterator(); if (ni != null) { for (int position = 1; ni.setPosition(position); position++) { NodePointer nsPointer = ni.getNodePointer(); String uri = nsPointer.getNamespaceURI(); String prefix = nsPointer.getName().getName(); if (!\"\".equals(prefix)) { reverseMap.put(uri, prefix); } } }",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 5,
+      "source": "if (prefix == null && parent != null) { return parent.getPrefix(namespaceURI); } return prefix;",
+      "patch": "if (prefix == null && parent != null) { return parent.getPrefix(namespaceURI); } return prefix;",
+      "target": "return prefix == null && parent != null ? parent .getExternallyRegisteredPrefix(namespaceURI) : prefix;",
+      "exact_match": false
+    },
+    {
+      "hunk": 6,
+      "source": "",
+      "patch": "",
+      "target": "import org.apache.commons.jxpath.ri.NamespaceResolver;",
+      "exact_match": false
+    },
+    {
+      "hunk": 7,
+      "source": "",
+      "patch": "",
+      "target": "private NamespaceResolver localNamespaceResolver;",
+      "exact_match": false
+    },
+    {
+      "hunk": 8,
+      "source": "",
+      "patch": "",
+      "target": "public synchronized NamespaceResolver getNamespaceResolver() { if (localNamespaceResolver == null) { localNamespaceResolver = new NamespaceResolver(super.getNamespaceResolver()); localNamespaceResolver.setNamespaceContextPointer(this); } return localNamespaceResolver; }",
+      "exact_match": false
+    },
+    {
+      "hunk": 9,
+      "source": "String ns = getNamespaceURI(prefix);",
+      "patch": "String ns = context.getNamespaceURI(prefix);",
+      "target": "String ns = null; NamespaceResolver nsr = getNamespaceResolver(); if (nsr != null) { ns = nsr.getNamespaceURI(prefix); }",
+      "exact_match": false
+    }
+  ]
+}

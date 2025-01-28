@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (typeof opt.default!='undefined') {",
+      "patch": "if (typeof opt.default!== 'undefined') {",
+      "target": "if (typeof opt.default !== 'undefined') {",
+      "exact_match": true
+    }
+  ]
+}

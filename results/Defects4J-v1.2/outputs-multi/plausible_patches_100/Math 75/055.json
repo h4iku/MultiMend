@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return getCumPct((Comparable<?>) v);",
+      "patch": "return getPct((Comparable<?>) v);",
+      "target": "return getPct((Comparable<?>) v);",
+      "exact_match": true
+    }
+  ]
+}

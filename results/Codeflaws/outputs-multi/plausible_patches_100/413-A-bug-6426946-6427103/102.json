@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if(flag==1) printf(\"Incorrect\"); else printf(\"Incorrect\");  return 0;",
+      "target": "flag=1;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "flag=1;",
+      "patch": "flag=1;",
+      "target": "",
+      "exact_match": false
+    }
+  ]
+}

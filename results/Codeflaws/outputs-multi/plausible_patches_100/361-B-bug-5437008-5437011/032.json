@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(N==1||K==N)",
+      "patch": "if(N==0||K==N)",
+      "target": "if(K==N)",
+      "exact_match": false
+    }
+  ]
+}

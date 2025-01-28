@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "struct otr x[p],z[q];",
+      "patch": "struct otr x[q],z[p];",
+      "target": "struct otr x[q],z[p];",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (flags.process_closure_primitives) { options.closurePass = true; }",
+      "patch": "options.closurePass = flags.process_closure_primitives;",
+      "target": "options.closurePass = flags.process_closure_primitives;",
+      "exact_match": true
+    }
+  ]
+}

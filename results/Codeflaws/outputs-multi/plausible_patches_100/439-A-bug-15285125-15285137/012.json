@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if((d-s)%5==0)",
+      "patch": "if((d-s)%5>=0)",
+      "target": "if((d-s)>=0)",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "src: [ 'app/public/css/app.css' ]",
+      "target": "force: true,",
+      "exact_match": false
+    }
+  ]
+}

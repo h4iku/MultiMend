@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int n,a[15][15] = {{0},{0,1,1,1,1,1,1,1,1,1}},i,j,sayi;",
+      "patch": "int n,a[16][16] = {{0},{0,1,1,1,1,1,1,1,1,1,1,1,1}},i,j,sayi;",
+      "target": "int n,a[15][15] = {{0},{0,1,1,1,1,1,1,1,1,1,1,1}},i,j,sayi;",
+      "exact_match": false
+    }
+  ]
+}

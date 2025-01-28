@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(choice='R')",
+      "patch": "if(choice == 'R')",
+      "target": "if(choice=='R')",
+      "exact_match": true
+    }
+  ]
+}

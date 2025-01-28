@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "while(str[len==' '])",
+      "patch": "while(str[len]==' ')",
+      "target": "while(str[len] == ' ')",
+      "exact_match": true
+    }
+  ]
+}

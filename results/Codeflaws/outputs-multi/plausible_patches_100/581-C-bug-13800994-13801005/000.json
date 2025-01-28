@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"%d %d \",rating,rating_skills2[i]);",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "else if(five>= 9){",
+      "patch": "else if(five>= 9 && zero!= 0){",
+      "target": "else if(five>= 9 && zero != 0){",
+      "exact_match": true
+    }
+  ]
+}

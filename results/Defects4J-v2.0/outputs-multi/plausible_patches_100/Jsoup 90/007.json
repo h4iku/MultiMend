@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if ((o & 0xC0)!= 0x80) { return false; }",
+      "target": "if (end >= input.length) return false;",
+      "exact_match": false
+    }
+  ]
+}

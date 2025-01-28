@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(x<0)x+=1000000007;",
+      "patch": "if(x<0)x+=1000000007000;",
+      "target": "if(x<0)x+=2*1000000007;",
+      "exact_match": false
+    }
+  ]
+}

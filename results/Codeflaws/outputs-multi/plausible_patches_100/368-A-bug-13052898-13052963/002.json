@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "s=s+ara[j];",
+      "patch": "s=s+ara[j+1];",
+      "target": "s=s+ara[j+1];",
+      "exact_match": true
+    }
+  ]
+}

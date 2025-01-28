@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "NAILS[minor++]=right;",
+      "patch": "minor++; NAILS[minor]=right;",
+      "target": "minor++; NAILS[minor]=right;",
+      "exact_match": true
+    }
+  ]
+}

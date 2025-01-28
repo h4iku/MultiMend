@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "mul(b[i], a);",
+      "patch": "mul(b[i], b[i-1]);",
+      "target": "mul(b[i], b[i-1]);",
+      "exact_match": true
+    }
+  ]
+}

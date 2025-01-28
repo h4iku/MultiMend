@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "description.appendText(wanted.toString());",
+      "patch": "description.appendText(String.valueOf(wanted));",
+      "target": "description.appendText(wanted == null ? \"null\" : wanted.toString());",
+      "exact_match": false
+    }
+  ]
+}

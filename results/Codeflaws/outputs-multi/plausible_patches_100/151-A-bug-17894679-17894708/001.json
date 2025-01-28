@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "while(l>rodada)",
+      "patch": "while(l>=rodada)",
+      "target": "while(l>=rodada)",
+      "exact_match": true
+    }
+  ]
+}

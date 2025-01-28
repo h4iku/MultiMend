@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (!j) puts(\"ILLEGAL_ERASE_ARGUMENT\");",
+      "patch": "if (!j ||!t) puts(\"ILLEGAL_ERASE_ARGUMENT\");",
+      "target": "if (!j || t==0) puts(\"ILLEGAL_ERASE_ARGUMENT\");",
+      "exact_match": false
+    }
+  ]
+}

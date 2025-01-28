@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(t == i && s) { if(s > w) {printf(\"asdasd%d\\n\",s); for(i=0;i<s;i++) printf(\"%d \",Q[i]); exit(0);} else return; }",
+      "patch": "if(t == i && s) { if(s > w) {printf(\"%d\\n\",s); for(i=0;i<s;i++) printf(\"%d \",Q[i]); exit(0);} else return; }",
+      "target": "if(t == i && s) { if(s > w) {printf(\"%d\\n\",s); for(i=0;i<s;i++) printf(\"%d \",Q[i]); exit(0);} else return; }",
+      "exact_match": true
+    }
+  ]
+}

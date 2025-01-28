@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (typeof powGlobals.current.playingPart!== 'undefined') return;",
+      "target": "if (!target.parts) return;",
+      "exact_match": false
+    }
+  ]
+}

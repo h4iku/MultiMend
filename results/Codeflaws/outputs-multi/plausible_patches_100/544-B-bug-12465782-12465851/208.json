@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(i%n==1)m=1;",
+      "patch": "if((i%n==1) && (m=1))",
+      "target": "if(i%n==1||i==1)m=1;",
+      "exact_match": false
+    }
+  ]
+}

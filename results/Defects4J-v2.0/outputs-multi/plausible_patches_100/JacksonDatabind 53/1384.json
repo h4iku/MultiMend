@@ -1,0 +1,83 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "public Object asKey(Class<?> rawBase) {   return new AsKey(rawBase, _types, _hashCode); }",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "}",
+      "patch": "}",
+      "target": "final static class AsKey { private final Class<?> _raw; private final JavaType[] _params; private final int _hash;  public AsKey(Class<?> raw, JavaType[] params, int hash) { _raw = raw ; _params = params; _hash = hash; }  @Override public int hashCode() { return _hash; }  @Override public boolean equals(Object o) { if (o == this) return true; if (o == null) return false; if (o.getClass() != getClass()) return false; AsKey other = (AsKey) o;  if ((_hash == other._hash) && (_raw == other._raw)) { final JavaType[] otherParams = other._params; final int len = _params.length;  if (len == otherParams.length) { for (int i = 0; i < len; ++i) { if (!_params[i].equals(otherParams[i])) { return false; } } return true; } } return false; }  @Override public String toString() { return _raw.getName()+\"<>\"; } } }",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "protected final LRUMap<Class<?>, JavaType> _typeCache = new LRUMap<Class<?>, JavaType>(16, 100);",
+      "patch": "protected final LRUMap<Class<?>, JavaType> _typeCache = new LRUMap<Class<?>, JavaType>(16, 100);",
+      "target": "protected final LRUMap<Object,JavaType> _typeCache = new LRUMap<Object,JavaType>(16, 100);",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "",
+      "patch": "",
+      "target": "TypeBindings tb = _bindingsForSubtype(baseType, typeParamCount, subclass);",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "newType = baseType.refine(subclass, TypeBindings.emptyBindings(), null, new JavaType[] { baseType });",
+      "patch": "newType = null;",
+      "target": "newType = baseType.refine(subclass, tb, null, new JavaType[] { baseType });",
+      "exact_match": false
+    },
+    {
+      "hunk": 5,
+      "source": "newType = baseType.refine(subclass, TypeBindings.emptyBindings(), baseType, NO_TYPES);",
+      "patch": "newType = baseType.refine(subclass, TypeBindings.emptyBindings(), baseType, NO_TYPES);",
+      "target": "newType = baseType.refine(subclass, tb, baseType, NO_TYPES);",
+      "exact_match": false
+    },
+    {
+      "hunk": 6,
+      "source": "TypeBindings tb = null; if (baseType.containedTypeCount() == typeParamCount) { if (typeParamCount == 1) { tb = TypeBindings.create(subclass, baseType.containedType(0)); } else if (typeParamCount == 2) { tb = TypeBindings.create(subclass, baseType.containedType(0), baseType.containedType(1)); } } newType = _fromClass(null, subclass, (tb == null) ? TypeBindings.emptyBindings() : tb);",
+      "patch": "TypeBindings tb = null; if (baseType.containedTypeCount() == typeParamCount) { if (typeParamCount == 1) { tb = TypeBindings.create(subclass, baseType.containedType(0)); } else if (typeParamCount == 2) { tb = TypeBindings.create(subclass, baseType.containedType(0), baseType.containedType(1)); } } newType = _fromClass(null, subclass, (tb == null) ? TypeBindings.emptyBindings() : tb);",
+      "target": "newType = _fromClass(null, subclass, tb);",
+      "exact_match": false
+    },
+    {
+      "hunk": 7,
+      "source": "",
+      "patch": "",
+      "target": "private TypeBindings _bindingsForSubtype(JavaType baseType, int typeParamCount, Class<?> subclass) {   int baseCount = baseType.containedTypeCount(); if (baseCount == typeParamCount) { if (typeParamCount == 1) { return TypeBindings.create(subclass, baseType.containedType(0)); } if (typeParamCount == 2) { return TypeBindings.create(subclass, baseType.containedType(0), baseType.containedType(1)); } List<JavaType> types = new ArrayList<JavaType>(baseCount); for (int i = 0; i < baseCount; ++i) { types.add(baseType.containedType(i)); } return TypeBindings.create(subclass, types); }  return TypeBindings.emptyBindings(); }",
+      "exact_match": false
+    },
+    {
+      "hunk": 8,
+      "source": "boolean cachable = (bindings == null) || bindings.isEmpty(); if (cachable) { result = _typeCache.get(rawType);",
+      "patch": "boolean cachable = (bindings == null) || bindings.isEmpty(); if (cachable) { result = _typeCache.get(rawType);",
+      "target": "final Object key; if ((bindings == null) || bindings.isEmpty()) { key = rawType; result = _typeCache.get(key); } else { key = bindings.asKey(rawType); } result = _typeCache.get(key);",
+      "exact_match": false
+    },
+    {
+      "hunk": 9,
+      "source": "}",
+      "patch": "}",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 10,
+      "source": "if (cachable) { _typeCache.putIfAbsent(rawType, result); }",
+      "patch": "if (cachable) { _typeCache.putIfAbsent(rawType, result); }",
+      "target": "_typeCache.putIfAbsent(key, result);",
+      "exact_match": false
+    }
+  ]
+}

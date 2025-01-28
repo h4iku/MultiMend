@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "while((ch = getchar()) != EOF)",
+      "patch": "while((ch = getchar())!= '\\n')",
+      "target": "while((ch = getchar()) != EOF && ch != '\\n')",
+      "exact_match": false
+    }
+  ]
+}

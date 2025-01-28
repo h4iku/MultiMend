@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "error(DiagnosticType.error(\"JSC_DIVIDE_BY_0_ERROR\", \"Divide by 0\"), right);",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "error(DiagnosticType.error(\"JSC_DIVIDE_BY_0_ERROR\", \"Divide by 0\"), right);",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "for(i=1;i<=3;i++) if(arr[i]==1) printf(\"%d\",i);",
+      "target": "freopen(\"input.txt\",\"r\",stdin); freopen(\"output.txt\",\"w\",stdout);",
+      "exact_match": false
+    }
+  ]
+}

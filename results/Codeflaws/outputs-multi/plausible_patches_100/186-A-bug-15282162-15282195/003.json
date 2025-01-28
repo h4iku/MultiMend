@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(arr[1][i]==arr[0][j])",
+      "patch": "if(arr[0][i]==arr[1][j])",
+      "target": "if(arr[1][i]==arr[0][j]&&arr[0][j]!=arr[1][j])",
+      "exact_match": false
+    }
+  ]
+}

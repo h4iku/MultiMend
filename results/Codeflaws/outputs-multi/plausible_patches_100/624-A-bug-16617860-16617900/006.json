@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "t=(L-d)/(v1+v2);",
+      "patch": "t=(L-d)/((double)v1+v2);",
+      "target": "t=1.0*(L-d)/(v1+v2);",
+      "exact_match": false
+    }
+  ]
+}

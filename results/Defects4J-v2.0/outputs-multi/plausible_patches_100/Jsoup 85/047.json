@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "this.key = key.trim();",
+      "patch": "this.setKey(key.trim());",
+      "target": "key = key.trim();",
+      "exact_match": false
+    }
+  ]
+}

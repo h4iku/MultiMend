@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "sall-=(sk/k)*k;",
+      "patch": "sall-=(sk/(double)k)*k;",
+      "target": "sall-=sk;",
+      "exact_match": false
+    }
+  ]
+}

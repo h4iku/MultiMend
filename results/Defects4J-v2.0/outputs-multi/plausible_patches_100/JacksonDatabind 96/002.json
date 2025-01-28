@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "paramName = candidate.findImplicitParamName(0);",
+      "patch": "paramName = candidate.paramName(0);",
+      "target": "paramName = candidate.paramName(0);",
+      "exact_match": true
+    }
+  ]
+}

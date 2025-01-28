@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if(a*i>c&&b*i>c) { break; }",
+      "target": "if(i>c)break;",
+      "exact_match": false
+    }
+  ]
+}

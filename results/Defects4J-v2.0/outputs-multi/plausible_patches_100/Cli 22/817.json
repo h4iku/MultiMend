@@ -1,0 +1,76 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "private Option currentOption;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "processNonOptionToken(token);",
+      "patch": "processNonOptionToken(token);",
+      "target": "processNonOptionToken(token, stopAtNonOption);",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "",
+      "patch": "",
+      "target": "currentOption = options.getOption(opt);",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "else if (stopAtNonOption) { processNonOptionToken(token); }",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    },
+    {
+      "hunk": 4,
+      "source": "tokens.add(token);",
+      "patch": "processOptionToken(token, stopAtNonOption);",
+      "target": "processNonOptionToken(token, stopAtNonOption);",
+      "exact_match": false
+    },
+    {
+      "hunk": 5,
+      "source": "private void processNonOptionToken(String value) {",
+      "patch": "private void processNonOptionToken(String value) {",
+      "target": "private void processNonOptionToken(String value, boolean stopAtNonOption) { if (stopAtNonOption && (currentOption == null || !currentOption.hasArg())) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 6,
+      "source": "",
+      "patch": "",
+      "target": "}",
+      "exact_match": false
+    },
+    {
+      "hunk": 7,
+      "source": "",
+      "patch": "",
+      "target": "if (options.hasOption(token)) { currentOption = options.getOption(token); }",
+      "exact_match": false
+    },
+    {
+      "hunk": 8,
+      "source": "Option currentOption;",
+      "patch": "Option currentOption;",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 9,
+      "source": "processNonOptionToken(token.substring(i));",
+      "patch": "processNonOptionToken(token.substring(i));",
+      "target": "processNonOptionToken(token.substring(i), true);",
+      "exact_match": false
+    }
+  ]
+}

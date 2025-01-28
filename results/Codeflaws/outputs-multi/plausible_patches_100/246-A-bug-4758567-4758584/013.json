@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "while (n--)",
+      "patch": "while (--n >= 1)",
+      "target": "while (n-- > 1)",
+      "exact_match": false
+    }
+  ]
+}

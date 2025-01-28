@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(i==12)",
+      "patch": "if(i==12 || i==12)",
+      "target": "if(i==12&&sum<x)",
+      "exact_match": false
+    }
+  ]
+}

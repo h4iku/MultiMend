@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "t=(r>g&&r>b)?(30+3*(r-1)):((g>r&&g>b)?(31+3*(g-1)):(32+3*(b-1)));",
+      "patch": "t=(r>g&&r>b)?(30+3*(r-1)):((g>b&&g>b)?(31+3*(g-1)):(32+3*(b-1)));",
+      "target": "t=(r>g&&r>b)?(30+3*(r-1)):((g>=r&&g>b)?(31+3*(g-1)):(32+3*(b-1)));",
+      "exact_match": false
+    }
+  ]
+}

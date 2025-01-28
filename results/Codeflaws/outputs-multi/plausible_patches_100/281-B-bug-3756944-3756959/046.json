@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "k=i*X/Y;",
+      "patch": "k=(float)i*X/Y;",
+      "target": "k=(LL)i*X/Y;",
+      "exact_match": false
+    }
+  ]
+}

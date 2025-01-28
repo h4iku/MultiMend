@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "targetPos = Math.floor(target.pieces.last - target.pieces.first) * playerPos;",
+      "target": "if (!target.parts) return;",
+      "exact_match": false
+    }
+  ]
+}

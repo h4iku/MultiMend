@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "while(a[i]==b[j])",
+      "patch": "while(a[i]==b[j] && j<lenb)",
+      "target": "while(a[i]==b[j] && i<lena && j<lenb)",
+      "exact_match": false
+    }
+  ]
+}

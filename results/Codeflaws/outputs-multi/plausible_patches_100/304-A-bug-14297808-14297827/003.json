@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "float f; double c;",
+      "patch": "double f; double c;",
+      "target": "double c,f;",
+      "exact_match": false
+    }
+  ]
+}

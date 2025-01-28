@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(c!=c/i)",
+      "patch": "if(i!=c/i)",
+      "target": "if(i!=(c/i))",
+      "exact_match": true
+    }
+  ]
+}

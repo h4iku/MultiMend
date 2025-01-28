@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return v>=min(x,y) && v<=max(x,y);",
+      "patch": "return (v > min(x,y)) && (v < max(x,y));",
+      "target": "return v>min(x,y) && v<max(x,y);",
+      "exact_match": false
+    }
+  ]
+}

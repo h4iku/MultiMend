@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "two += min2+stu;",
+      "patch": "two += min2+stu-min2;",
+      "target": "two = min2+stu;",
+      "exact_match": false
+    }
+  ]
+}

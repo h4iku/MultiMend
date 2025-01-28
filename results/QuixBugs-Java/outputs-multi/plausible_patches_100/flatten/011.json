@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "result.add(flatten(x)); } } return result; } else { return flatten(arr);",
+      "patch": "result.add(x); } } return result; } else { return flatten(arr);",
+      "target": "result.add((x)); } } return result; } else { return arr;",
+      "exact_match": false
+    }
+  ]
+}

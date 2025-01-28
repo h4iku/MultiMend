@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 1,
+      "source": "if(Character.isWhitespace(c)) { if(!wasWhite) { wasWhite= true; regex.append(\"\\\\s*+\"); } continue; } wasWhite= false;",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

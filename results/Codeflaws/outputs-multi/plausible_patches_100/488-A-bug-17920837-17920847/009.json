@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "while(count<=10)",
+      "patch": "while(count<=20)",
+      "target": "while(count<=100)",
+      "exact_match": false
+    }
+  ]
+}

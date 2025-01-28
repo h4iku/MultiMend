@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"If you want to call a taxi, you should call: \");",
+      "patch": "printf(\"If you want to call a taxi, you should call:\");",
+      "target": "printf(\"If you want to call a taxi, you should call:\");",
+      "exact_match": true
+    }
+  ]
+}

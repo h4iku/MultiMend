@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (player.state() == 'playing') player.setDownloaded(1);",
+      "target": "if (!target.parts) return;",
+      "exact_match": false
+    }
+  ]
+}

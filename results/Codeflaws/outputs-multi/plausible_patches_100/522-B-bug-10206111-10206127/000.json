@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"max = %d, secondary = %d\\n\",ind_h_max_main,ind_h_max_secondary);",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

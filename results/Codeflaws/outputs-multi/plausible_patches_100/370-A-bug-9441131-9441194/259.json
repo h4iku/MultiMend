@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "bishop=MAX(abs(r1-r2),abs(c1-c2));",
+      "patch": "bishop=2;",
+      "target": "bishop=2;",
+      "exact_match": true
+    }
+  ]
+}

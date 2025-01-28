@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "var player = $(\".wcp-progress-seen\").width();",
+      "target": "if (!target.parts) return;",
+      "exact_match": false
+    }
+  ]
+}

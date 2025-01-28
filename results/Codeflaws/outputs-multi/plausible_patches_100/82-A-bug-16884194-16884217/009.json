@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "scanf(\"%i64d\",&n);",
+      "patch": "scanf(\"%lu64d\",&n);",
+      "target": "scanf(\"%lld\",&n);",
+      "exact_match": false
+    }
+  ]
+}

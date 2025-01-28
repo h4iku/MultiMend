@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"%lf\",l*p/p+q);",
+      "patch": "printf(\"%lf\",l*p/(double)(p+q));",
+      "target": "printf(\"%lf\",l*p/(p+q));",
+      "exact_match": false
+    }
+  ]
+}

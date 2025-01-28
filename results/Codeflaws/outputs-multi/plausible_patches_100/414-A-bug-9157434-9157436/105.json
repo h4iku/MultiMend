@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "d = k - n / 2;",
+      "target": "d = k - n / 2;",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "d = k - n / 2;",
+      "patch": "d = k - n / 2;",
+      "target": "",
+      "exact_match": false
+    }
+  ]
+}

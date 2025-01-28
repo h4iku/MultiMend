@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "void quick_sort(int *a, int *b, int n) {",
+      "patch": "void quick_sort(long *a, long *b, long n) {",
+      "target": "void quick_sort(long long *a, long long *b, long long n) {",
+      "exact_match": false
+    }
+  ]
+}

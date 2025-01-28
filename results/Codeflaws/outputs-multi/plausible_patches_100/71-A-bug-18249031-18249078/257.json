@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "#include <stdlib.h>",
+      "patch": "#include <stdlib.h>",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "if (strlen(string) < 10) {",
+      "patch": "if (strlen(string) <= 10) {",
+      "target": "if (strlen(string) <= 10) {",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "minarr[0]=minarr[1]=0;",
+      "patch": "minarr[0]=0; minarr[1]=1;",
+      "target": "minarr[0]=0; minarr[1]=1;",
+      "exact_match": true
+    }
+  ]
+}

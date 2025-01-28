@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "$('#open-url').hide(0);",
+      "target": "}",
+      "exact_match": false
+    }
+  ]
+}

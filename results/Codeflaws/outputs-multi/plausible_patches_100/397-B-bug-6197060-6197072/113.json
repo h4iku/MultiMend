@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "m * r >= n ? printf(\"YES\\n\") : printf(\"NO\\n\");",
+      "patch": "m * r >= n? printf(\"Yes\\n\") : printf(\"No\\n\");",
+      "target": "m * r >= n ? printf(\"Yes\\n\") : printf(\"No\\n\");",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "ans += (y - 1900 + 399) / 400;",
+      "patch": "ans += (y - 1900 + 399) / 500;",
+      "target": "ans += (y - 1900 + 299) / 400;",
+      "exact_match": false
+    }
+  ]
+}

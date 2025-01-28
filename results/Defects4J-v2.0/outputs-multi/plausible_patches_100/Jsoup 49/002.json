@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "} reindexChildren(index);",
+      "patch": "reindexChildren(index); }",
+      "target": "reindexChildren(index); }",
+      "exact_match": true
+    }
+  ]
+}

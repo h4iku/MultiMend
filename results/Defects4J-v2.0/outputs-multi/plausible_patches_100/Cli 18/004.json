@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 2,
+      "source": "",
+      "patch": "currentOption = options.getOption(token); tokens.add(token);",
+      "target": "tokens.add(token);",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return nodeType == Node.ELEMENT_NODE;",
+      "patch": "return true;",
+      "target": "return nodeType == Node.ELEMENT_NODE || nodeType == Node.DOCUMENT_NODE;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "return node instanceof Element;",
+      "patch": "return true;",
+      "target": "return (node instanceof Element) || (node instanceof Document);",
+      "exact_match": false
+    }
+  ]
+}

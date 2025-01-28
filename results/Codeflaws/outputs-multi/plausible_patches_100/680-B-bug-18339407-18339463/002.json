@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "else if(l>0) c += t[l];",
+      "patch": "else if(l>=0) c += t[l];",
+      "target": "else if(l>=0) c += t[l];",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"\\nTimer= %d\",timer);",
+      "patch": "printf(\"%d\",timer);",
+      "target": "printf(\"%d\",timer);",
+      "exact_match": true
+    }
+  ]
+}

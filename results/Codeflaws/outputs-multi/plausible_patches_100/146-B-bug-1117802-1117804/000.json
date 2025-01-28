@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(a==b)",
+      "patch": "",
+      "target": "if(mask(a)==b)",
+      "exact_match": false
+    }
+  ]
+}

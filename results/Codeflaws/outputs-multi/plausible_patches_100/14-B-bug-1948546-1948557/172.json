@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "else if(x>=max)printf(\"%d\",max-x);",
+      "patch": "else if(x>=max)printf(\"%d\",x-max);",
+      "target": "else if(x>=max)printf(\"%d\",x-max);",
+      "exact_match": true
+    }
+  ]
+}

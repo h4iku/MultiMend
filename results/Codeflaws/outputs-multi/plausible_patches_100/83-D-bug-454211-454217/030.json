@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "#define N 31807",
+      "patch": "#define N 3181816",
+      "target": "#define N 44791",
+      "exact_match": false
+    }
+  ]
+}

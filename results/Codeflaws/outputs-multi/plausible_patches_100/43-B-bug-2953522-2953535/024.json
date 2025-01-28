@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(hash[i]>0 && i!=' ')",
+      "patch": "if(hash[i]<0 && i!=' ')",
+      "target": "if(hash[i]<0 && i!=' ')",
+      "exact_match": true
+    }
+  ]
+}

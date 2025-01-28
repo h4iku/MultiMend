@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "while(power>=l && power<r){",
+      "patch": "while((int)power>=l && (int)power<r){",
+      "target": "while(power>=l && power<=r){",
+      "exact_match": false
+    }
+  ]
+}

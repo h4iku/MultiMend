@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "else if(n==90)printf(\"ninety \");",
+      "patch": "else if(n==90)printf(\"ninety\");",
+      "target": "else if(n==90)printf(\"ninety\");",
+      "exact_match": true
+    }
+  ]
+}

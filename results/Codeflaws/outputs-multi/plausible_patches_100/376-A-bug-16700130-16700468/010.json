@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for (i=pivot+1; i<strlen(lever); i++)",
+      "patch": "for (i=pivot+1; i<sizeof(lever); i++)",
+      "target": "for (i=pivot+1; i<max; i++)",
+      "exact_match": false
+    }
+  ]
+}

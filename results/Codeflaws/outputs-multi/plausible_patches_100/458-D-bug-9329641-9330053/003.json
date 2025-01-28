@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "double f[1<<18],a;",
+      "patch": "double f[1<<18],a,b;",
+      "target": "long double f[1<<18],a;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "scanf(\"%d%d%d\",&n,&m,&k); for(;i<=m;++i) f[i]=f[i-1]+log(i);",
+      "patch": "scanf(\"%d%d%d\",&n,&m,&k); for(;i<=m;++i) f[i]=f[i-1]+log(i);",
+      "target": "for(scanf(\"%d%d%d\",&n,&m,&k);i<=m;f[++i]=f[i-1]+log(i));",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "for(i=0;i<=n;++i){ r=n*(i+j)-i*j; a+=k>=r?exp(2*f[n]-f[i]-f[n-i]-f[j]-f[n-j]+f[m-r]-f[k-r]-f[m]+f[k]):0; } a=a>1e99?1e99:a; printf(\"%.9f\\n\",(double)a);",
+      "patch": "for(i=0;i<=n;++i){ r=n*(i+j)-i*j; a+=k>=r?exp(2*f[n]-f[i]-f[n-i]-f[j]-f[n-j]+f[m-r]-f[k-r]-f[m]+f[k]):0; } a=a>1e99?1e99:a; printf(\"%.9f\\n\",(double)a);",
+      "target": "for(i=n;i+1;--i) a+=k>=(r=n*(i+j)-i*j)?exp(2*f[n]-f[i]-f[n-i]-f[j]-f[n-j]+f[m-r]-f[k-r]-f[m]+f[k]):0; printf(\"%.9f\\n\",a>1e99?1e99:(double)a);",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "else if(u>d){ diff=u-d; x=diff;",
+      "patch": "else if(u>d){ diff=u-d;",
+      "target": "else if(u>d){ diff=u-d;",
+      "exact_match": true
+    }
+  ]
+}

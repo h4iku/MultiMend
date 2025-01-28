@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int y = a[n-1]-a[0];",
+      "patch": "int y = a[0]-a[n-1];",
+      "target": "int y = a[0]-a[n-1];",
+      "exact_match": true
+    }
+  ]
+}

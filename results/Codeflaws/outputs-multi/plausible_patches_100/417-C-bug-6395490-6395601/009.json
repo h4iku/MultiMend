@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if((k>ratio) || (n==2))",
+      "patch": "if((k>=ratio) || (n==2))",
+      "target": "if((k>=ratio) || (n==2))",
+      "exact_match": true
+    }
+  ]
+}

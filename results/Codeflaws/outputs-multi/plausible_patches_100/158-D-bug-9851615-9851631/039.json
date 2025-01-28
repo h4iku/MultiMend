@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for(j = 0; j < n; j++)\tif(H[j] > max)\tmax = H[j];",
+      "patch": "for(j = 0; j < i; j++)\tif(H[j] > max)\tmax = H[j];",
+      "target": "for(j = 0; j < n; j++)\tif(H[j] > max && H[j])\tmax = H[j];",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (movesA < movesB) winner = 'A';",
+      "patch": "if (movesA <= movesB) winner = 'A';",
+      "target": "if (movesA <= movesB) winner = 'A';",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if((x*y)>1) {",
+      "patch": "if((x*y)>0) {",
+      "target": "if((x*y)>0) {",
+      "exact_match": true
+    }
+  ]
+}

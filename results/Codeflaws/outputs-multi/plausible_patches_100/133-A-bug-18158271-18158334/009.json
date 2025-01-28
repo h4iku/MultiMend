@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (x==72|| x==81 || x==57 || x==43)",
+      "patch": "if (x==72 || x==81 || x==57)",
+      "target": "if (x==72|| x==81 || x==57 )",
+      "exact_match": true
+    }
+  ]
+}

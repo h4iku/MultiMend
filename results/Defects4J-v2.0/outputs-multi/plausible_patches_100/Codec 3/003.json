@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "} else if (contains(value, index + 1, 4, \"IER\")) {",
+      "patch": "} else if (contains(value, index + 1, 3, \"IER\")) {",
+      "target": "} else if (contains(value, index + 1, 3, \"IER\")) {",
+      "exact_match": true
+    }
+  ]
+}

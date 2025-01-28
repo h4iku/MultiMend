@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if((a[i]>='A'&&a[i]<='Z')||(a[i]>='a'&&a[i]<='z')||a[i]=='.'||a[i]==','||a[i]=='?'||a[i]=='!')",
+      "patch": "if((a[i]>='A'&&a[i]<='Z')||(a[i]>='a'&&a[i]<='z')||(a[i]>='.'||a[i]==','||a[i]=='?'||a[i]=='!'))",
+      "target": "if((a[i]>='0'&&a[i]<='9')||(a[i]>='A'&&a[i]<='Z')||(a[i]>='a'&&a[i]<='z')||a[i]=='.'||a[i]==','||a[i]=='?'||a[i]=='!')",
+      "exact_match": false
+    }
+  ]
+}

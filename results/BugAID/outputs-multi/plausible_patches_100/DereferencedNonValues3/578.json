@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "torLink = \"magnet:?xt=urn:btih:[a-z0-9]{20,50}/i;",
+      "target": "}",
+      "exact_match": false
+    }
+  ]
+}

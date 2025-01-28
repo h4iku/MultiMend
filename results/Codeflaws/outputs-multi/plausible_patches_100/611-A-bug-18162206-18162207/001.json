@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "else if(strcmp(s,\"month\")==0){if(a==30)ans==11;",
+      "patch": "else if(strcmp(s,\"month\")==0){if(a==30)ans=11;",
+      "target": "else if(strcmp(s,\"month\")==0){if(a==30)ans=11;",
+      "exact_match": true
+    }
+  ]
+}

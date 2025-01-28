@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int a, b, i, x, ans, t[10] = {6, 2, 5, 5 ,4, 5 ,6, 3, 8, 6};",
+      "patch": "int a, b, i, x, ans, t[10] = {6, 2, 5, 5,4, 5,6, 3, 7, 6};",
+      "target": "int a, b, i, x, ans, t[10] = {6, 2, 5, 5 ,4, 5 ,6, 3, 7, 6};",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "typeOfThis = (ObjectType) safeResolve(typeOfThis, t, scope);",
+      "patch": "",
+      "target": "JSType maybeTypeOfThis = safeResolve(typeOfThis, t, scope); if (maybeTypeOfThis instanceof ObjectType) { typeOfThis = (ObjectType) maybeTypeOfThis; }",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "e.getMessage()));",
+      "patch": "e.getMessage()));",
+      "target": "ClassUtil.exceptionMessage(e)));",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "e.getMessage()));",
+      "patch": "e.getMessage()));",
+      "target": "ClassUtil.exceptionMessage(e)));",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "} else if ((excMsg = cause.getMessage()) == null) {",
+      "patch": "} else if ((excMsg = cause.getMessage()) == null) {",
+      "target": "} else if ((excMsg = ClassUtil.exceptionMessage(cause)) == null) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "",
+      "patch": "",
+      "target": "import com.fasterxml.jackson.databind.util.ClassUtil;",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "src.getMessage()));",
+      "patch": "src.getMessage()));",
+      "target": "ClassUtil.exceptionMessage(src)));",
+      "exact_match": false
+    },
+    {
+      "hunk": 5,
+      "source": "String msg = src.getMessage();",
+      "patch": "String msg = src.getMessage();",
+      "target": "String msg = ClassUtil.exceptionMessage(src);",
+      "exact_match": false
+    },
+    {
+      "hunk": 6,
+      "source": "reportMappingProblem(iae, iae.getMessage());",
+      "patch": "reportMappingProblem(iae, iae.getMessage());",
+      "target": "reportMappingProblem(iae, ClassUtil.exceptionMessage(iae));",
+      "exact_match": false
+    },
+    {
+      "hunk": 7,
+      "source": "reportMappingProblem(iae, iae.getMessage());",
+      "patch": "reportMappingProblem(iae, iae.getMessage());",
+      "target": "reportMappingProblem(iae, ClassUtil.exceptionMessage(iae));",
+      "exact_match": false
+    },
+    {
+      "hunk": 8,
+      "source": "e0.getMessage(), baseType);",
+      "patch": "e0.getMessage(), baseType);",
+      "target": "ClassUtil.exceptionMessage(e0), baseType);",
+      "exact_match": false
+    },
+    {
+      "hunk": 9,
+      "source": "e.getMessage(),",
+      "patch": "e.getMessage(),",
+      "target": "ClassUtil.exceptionMessage(e),",
+      "exact_match": false
+    },
+    {
+      "hunk": 10,
+      "source": "e.getMessage(),",
+      "patch": "e.getMessage(),",
+      "target": "ClassUtil.exceptionMessage(e),",
+      "exact_match": false
+    },
+    {
+      "hunk": 11,
+      "source": "throw JsonMappingException.from(ctxt, iae.getMessage(), iae);",
+      "patch": "throw JsonMappingException.from(ctxt, iae.getMessage(), iae);",
+      "target": "throw JsonMappingException.from(ctxt, ClassUtil.exceptionMessage(iae), iae);",
+      "exact_match": false
+    },
+    {
+      "hunk": 12,
+      "source": "String origMsg = e.getMessage();",
+      "patch": "String origMsg = e.getMessage();",
+      "target": "String origMsg = ClassUtil.exceptionMessage(e);",
+      "exact_match": false
+    },
+    {
+      "hunk": 13,
+      "source": "throw new JsonMappingException(null, t.getMessage(), t);",
+      "patch": "throw new JsonMappingException(null, t.getMessage(), t);",
+      "target": "throw new JsonMappingException(null, ClassUtil.exceptionMessage(t), t);",
+      "exact_match": false
+    },
+    {
+      "hunk": 14,
+      "source": "String origMsg = e.getMessage();",
+      "patch": "String origMsg = e.getMessage();",
+      "target": "String origMsg = ClassUtil.exceptionMessage(e);",
+      "exact_match": false
+    },
+    {
+      "hunk": 15,
+      "source": "throw JsonMappingException.from(p, th.getMessage(), th);",
+      "patch": "throw JsonMappingException.from(p, th.getMessage(), th);",
+      "target": "throw JsonMappingException.from(p, ClassUtil.exceptionMessage(th), th);",
+      "exact_match": false
+    },
+    {
+      "hunk": 16,
+      "source": "iae.getMessage());",
+      "patch": "iae.getMessage());",
+      "target": "ClassUtil.exceptionMessage(iae));",
+      "exact_match": false
+    },
+    {
+      "hunk": 17,
+      "source": "re.getMessage());",
+      "patch": "re.getClass().getName());",
+      "target": "ClassUtil.exceptionMessage(re));",
+      "exact_match": false
+    },
+    {
+      "hunk": 18,
+      "source": "e.getMessage());",
+      "patch": "e.getMessage());",
+      "target": "ClassUtil.exceptionMessage(e));",
+      "exact_match": false
+    },
+    {
+      "hunk": 19,
+      "source": "\"Instantiation of \"+getValueTypeDesc()+\" value failed: \"+t.getMessage(), t);",
+      "patch": "\"Instantiation of \"+getValueTypeDesc()+\" value failed: \"+t.getMessage(), t);",
+      "target": "\"Instantiation of \"+getValueTypeDesc()+\" value failed: \"+ClassUtil.exceptionMessage(t), t);",
+      "exact_match": false
+    },
+    {
+      "hunk": 20,
+      "source": "+t.getMessage(), t);",
+      "patch": "+t.getMessage(), t);",
+      "target": "+ClassUtil.exceptionMessage(t), t);",
+      "exact_match": false
+    },
+    {
+      "hunk": 21,
+      "source": "filter.getClass().getName(), t.getClass().getName(), t.getMessage());",
+      "patch": "filter.getClass().getName(), t.getClass().getName(), t.getMessage());",
+      "target": "filter.getClass().getName(), t.getClass().getName(), ClassUtil.exceptionMessage(t));",
+      "exact_match": false
+    },
+    {
+      "hunk": 22,
+      "source": "String msg = e.getMessage();",
+      "patch": "String msg = e.getMessage();",
+      "target": "String msg = ClassUtil.exceptionMessage(e);",
+      "exact_match": false
+    },
+    {
+      "hunk": 23,
+      "source": "return prov.reportBadDefinition(declaredType, e.getMessage()); } return prov.reportBadPropertyDefinition(_beanDesc, propDef, e.getMessage());",
+      "patch": "return prov.reportBadDefinition(declaredType, e.getMessage()); } return prov.reportBadPropertyDefinition(_beanDesc, propDef, e.getMessage());",
+      "target": "return prov.reportBadDefinition(declaredType, ClassUtil.exceptionMessage(e)); } return prov.reportBadPropertyDefinition(_beanDesc, propDef, ClassUtil.exceptionMessage(e));",
+      "exact_match": false
+    },
+    {
+      "hunk": 24,
+      "source": "",
+      "patch": "",
+      "target": "import com.fasterxml.jackson.core.JsonProcessingException;",
+      "exact_match": false
+    },
+    {
+      "hunk": 25,
+      "source": "",
+      "patch": "",
+      "target": "public static String exceptionMessage(Throwable t) { if (t instanceof JsonProcessingException) { return ((JsonProcessingException) t).getOriginalMessage(); } return t.getMessage(); }",
+      "exact_match": false
+    }
+  ]
+}

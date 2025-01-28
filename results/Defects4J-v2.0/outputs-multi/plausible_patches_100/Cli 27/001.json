@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (selected == null || selected.equals(option.getOpt())) { selected = option.getOpt();",
+      "patch": "if (selected == null || selected.equals(option.getKey())) { selected = option.getKey();",
+      "target": "if (selected == null || selected.equals(option.getKey())) { selected = option.getKey();",
+      "exact_match": true
+    }
+  ]
+}

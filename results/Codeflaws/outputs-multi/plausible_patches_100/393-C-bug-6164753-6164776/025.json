@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return xx + yy < nn;",
+      "patch": "return xx + yy <= nn;",
+      "target": "return xx + yy <= nn;",
+      "exact_match": true
+    }
+  ]
+}

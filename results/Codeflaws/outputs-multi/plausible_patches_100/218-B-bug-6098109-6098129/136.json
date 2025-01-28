@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "temp=((b[i]*(b[i]+1))/2)-(((b[i]+n1)*(b[i]-n1+1))/2);",
+      "patch": "temp=((b[i]*(b[i]+1))/2)-(((b[i]-n1)*(b[i]-n1+1))/2);",
+      "target": "temp=((b[i]*(b[i]+1))/2)-(((b[i]-n1)*(b[i]-n1+1))/2);",
+      "exact_match": true
+    }
+  ]
+}

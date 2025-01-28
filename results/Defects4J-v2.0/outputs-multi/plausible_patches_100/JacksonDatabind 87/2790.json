@@ -1,0 +1,83 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "protected final static String DATE_FORMAT_STR_ISO8601_NO_TZ = \"yyyy-MM-dd'T'HH:mm:ss.SSS\";",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "DATE_FORMAT_STR_ISO8601_NO_TZ,",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "",
+      "patch": "",
+      "target": "protected final static DateFormat DATE_FORMAT_ISO8601_NO_TZ;",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "",
+      "patch": "",
+      "target": "DATE_FORMAT_ISO8601_NO_TZ = new SimpleDateFormat(DATE_FORMAT_STR_ISO8601_NO_TZ, DEFAULT_LOCALE); DATE_FORMAT_ISO8601_NO_TZ.setTimeZone(DEFAULT_TIMEZONE);",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "",
+      "patch": "",
+      "target": "protected transient DateFormat _formatISO8601_noTz;",
+      "exact_match": false
+    },
+    {
+      "hunk": 5,
+      "source": "StringBuilder sb = new StringBuilder(dateStr);",
+      "patch": "StringBuilder sb = new StringBuilder(dateStr);",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 6,
+      "source": "",
+      "patch": "",
+      "target": "StringBuilder sb = new StringBuilder(dateStr);",
+      "exact_match": false
+    },
+    {
+      "hunk": 7,
+      "source": "",
+      "patch": "",
+      "target": "dateStr = sb.toString();",
+      "exact_match": false
+    },
+    {
+      "hunk": 8,
+      "source": "sb.append('Z'); dateStr = sb.toString(); df = _formatISO8601_z; formatStr = DATE_FORMAT_STR_ISO8601_Z;",
+      "patch": "sb.append('Z'); dateStr = sb.toString(); df = _formatISO8601_z; formatStr = DATE_FORMAT_STR_ISO8601_Z;",
+      "target": "df = _formatISO8601_noTz; formatStr = DATE_FORMAT_STR_ISO8601_NO_TZ;",
+      "exact_match": false
+    },
+    {
+      "hunk": 9,
+      "source": "df = _formatISO8601_z = _cloneFormat(DATE_FORMAT_ISO8601_Z, formatStr, DEFAULT_TIMEZONE, _locale, _lenient);",
+      "patch": "df = _formatISO8601_z = _cloneFormat(DATE_FORMAT_ISO8601_Z, formatStr, _timezone, _locale, _lenient);",
+      "target": "df = _formatISO8601_noTz = _cloneFormat(DATE_FORMAT_ISO8601_NO_TZ, formatStr, _timezone, _locale, _lenient);",
+      "exact_match": false
+    },
+    {
+      "hunk": 10,
+      "source": "",
+      "patch": "",
+      "target": "_formatISO8601_noTz = null;",
+      "exact_match": false
+    }
+  ]
+}

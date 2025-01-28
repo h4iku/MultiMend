@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (x <= 4 || y <= 4 || x >= w-3 || y >= h-3) {",
+      "patch": "if (x <= 5 || y <= 5 || x >= w-4 || y >= h-4) {",
+      "target": "if (x <= 5 || y <= 5 || x >= w-4 || y >= h-4) {",
+      "exact_match": true
+    }
+  ]
+}

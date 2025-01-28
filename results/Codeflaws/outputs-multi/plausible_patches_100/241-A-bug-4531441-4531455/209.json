@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "f += s[i]; res += k;",
+      "patch": "f += bb[i]; res += k;",
+      "target": "f += bb[i]; res += k;",
+      "exact_match": true
+    }
+  ]
+}

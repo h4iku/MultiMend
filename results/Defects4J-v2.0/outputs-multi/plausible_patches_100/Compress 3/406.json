@@ -1,0 +1,34 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "private boolean haveUnclosedEntry = false;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "System.exit(0);",
+      "target": "if(haveUnclosedEntry) { throw new IOException(\"This archives contains unclosed entries.\"); }",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "",
+      "patch": "",
+      "target": "haveUnclosedEntry = true;",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "",
+      "patch": "",
+      "target": "haveUnclosedEntry = false;",
+      "exact_match": false
+    }
+  ]
+}

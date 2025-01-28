@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "imin = -1, jmax = 0, jmin = n - 1;",
+      "patch": "imin = -1, jmax = 0, jmin = m - 1;",
+      "target": "imin = -1, jmax = 0, jmin = m - 1;",
+      "exact_match": true
+    }
+  ]
+}

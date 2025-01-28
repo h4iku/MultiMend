@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int mayor=2000;",
+      "patch": "int mayor=20000;",
+      "target": "int mayor=20000;",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(min-s>0.000000001){",
+      "patch": "if(min-s>=0.00000000){",
+      "target": "if(min>=s){",
+      "exact_match": false
+    }
+  ]
+}

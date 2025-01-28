@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "h = a[i]; *cnt = find(h, len+1, cnt);",
+      "patch": "*cnt = find(a[i], len+1, cnt);",
+      "target": "*cnt = find(a[i], len+1, cnt);",
+      "exact_match": true
+    }
+  ]
+}

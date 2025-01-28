@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return this == o;",
+      "patch": "return element == o;",
+      "target": "return tag.equals(element.tag);",
+      "exact_match": false
+    }
+  ]
+}

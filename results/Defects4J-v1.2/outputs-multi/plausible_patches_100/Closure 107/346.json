@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "options.messageBundle = null;",
+      "target": "options.setWarningLevel(JsMessageVisitor.MSG_CONVENTIONS, CheckLevel.OFF);",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "long s = getDataItem(this.minMiddleIndex).getPeriod().getStart() .getTime(); long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd() .getTime();",
+      "patch": "long s = getDataItem(minMiddleIndex).getPeriod().getStart().getTime(); long e = getDataItem(maxMiddleIndex).getPeriod().getEnd().getTime();",
+      "target": "long s = getDataItem(this.maxMiddleIndex).getPeriod().getStart() .getTime(); long e = getDataItem(this.maxMiddleIndex).getPeriod().getEnd() .getTime();",
+      "exact_match": false
+    }
+  ]
+}

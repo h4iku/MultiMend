@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (perm.get(j) < perm.get(i)) {",
+      "patch": "if (perm.get(i) < perm.get(j)) {",
+      "target": "if (perm.get(j) > perm.get(i)) {",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "$(\"#player_wrapper\").find(\".wcp-subtitle-text\").text(\"\");",
+      "target": "}",
+      "exact_match": false
+    }
+  ]
+}

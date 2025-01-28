@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 2,
+      "source": "this.lookupMap.put(seq[0], seq[1]);",
+      "patch": "this.lookupMap.put(seq[0].toString(), seq[1]);",
+      "target": "this.lookupMap.put(seq[0].toString(), seq[1]);",
+      "exact_match": true
+    }
+  ]
+}

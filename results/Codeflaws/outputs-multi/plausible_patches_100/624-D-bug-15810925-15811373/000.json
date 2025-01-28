@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "for(i=Ri;i--;) if(min>(Z=tmp+(R[i]-r)*(U)a-(Ri-i)*(U)b))min=Z; if(ans>min)ans=min;",
+      "target": "if(!Li){ans=0;break;}",
+      "exact_match": false
+    }
+  ]
+}

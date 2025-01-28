@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (min=1e9) min=5;",
+      "patch": "if (min==1e9) min=5;",
+      "target": "if (min==1e9) min=5;",
+      "exact_match": true
+    }
+  ]
+}

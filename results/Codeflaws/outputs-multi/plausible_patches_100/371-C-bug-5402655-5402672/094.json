@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "ll lf = 0, rg = r+cb+cs+cc, ans = 0;",
+      "patch": "ll lf = 0, rg = str+cb+cs+cc, ans = 0;",
+      "target": "ll lf = 0, rg = 100*r+cb+cs+cc, ans = 0;",
+      "exact_match": false
+    }
+  ]
+}

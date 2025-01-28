@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "inside_letter = true;",
+      "target": "inside_letter = true;",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "inside_letter = true;",
+      "target": "inside_letter = true;",
+      "exact_match": true
+    }
+  ]
+}

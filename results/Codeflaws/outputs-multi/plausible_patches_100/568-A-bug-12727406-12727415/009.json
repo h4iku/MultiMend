@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "unsigned int pi = 0, rub = 0;",
+      "patch": "unsigned long pi = 0, rub = 0;",
+      "target": "long long pi = 0, rub = 0;",
+      "exact_match": false
+    }
+  ]
+}

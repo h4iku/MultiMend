@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "Context rhsContext = Context.OTHER;",
+      "patch": "Context rhsContext = getContextForNoInOperator(context);",
+      "target": "Context rhsContext = getContextForNoInOperator(context);",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "while (dh != 0 && dv != 0) {",
+      "patch": "while ((dh!= 0 || dv!= 0)) {",
+      "target": "while (dh != 0 || dv != 0) {",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "k=(n>m)?n:m;",
+      "patch": "k=(n>m)?(int)m:m;",
+      "target": "k=m;",
+      "exact_match": false
+    }
+  ]
+}

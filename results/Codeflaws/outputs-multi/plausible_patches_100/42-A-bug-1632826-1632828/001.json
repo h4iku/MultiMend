@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "x = minof(x, b[i] / a[i]);",
+      "patch": "x = minof(x, (double) b[i] / a[i]);",
+      "target": "x = minof(x, (double) b[i] / a[i]);",
+      "exact_match": true
+    }
+  ]
+}

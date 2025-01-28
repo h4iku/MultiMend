@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "}printf(\"%d\",a[0]);for(i=1;i<n;i++)printf(\" %d\",a[i]);printf(\"\\n\");continue;",
+      "patch": "}fprintf(stderr,\"Incorrect sequence\\n\");",
+      "target": "}",
+      "exact_match": false
+    }
+  ]
+}

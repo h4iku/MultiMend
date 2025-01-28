@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "long long int y,k,n,i,x,count=0;",
+      "patch": "int y,k,n,i,x,count=0;",
+      "target": "int y,k,n,i,x,count=0;",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "x=n-y;",
+      "patch": "x=n-y;",
+      "target": "",
+      "exact_match": false
+    }
+  ]
+}

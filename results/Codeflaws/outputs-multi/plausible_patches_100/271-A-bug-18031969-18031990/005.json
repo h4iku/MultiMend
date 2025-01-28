@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for(;year<9000;++year)",
+      "patch": "for(;year<90000;++year)",
+      "target": "for(;year<9999;++year)",
+      "exact_match": false
+    }
+  ]
+}

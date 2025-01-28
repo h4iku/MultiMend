@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int ara[30];",
+      "patch": "int ara[60];",
+      "target": "int ara[300];",
+      "exact_match": false
+    }
+  ]
+}

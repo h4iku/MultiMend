@@ -1,0 +1,48 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (row == 0) { return; }",
+      "target": "if (meanValue == null) { return; }",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "double valueDelta = dataset.getStdDevValue(row, column).doubleValue();",
+      "patch": "double valueDelta = dataset.getStdDevValue(row, column).doubleValue();",
+      "target": "Number n = dataset.getStdDevValue(row, column); if (n != null) { double valueDelta = n.doubleValue();",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "",
+      "patch": "",
+      "target": "}",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "",
+      "patch": "if (row == 0) { return; }",
+      "target": "if (meanValue == null) { return; }",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "double valueDelta = dataset.getStdDevValue(row, column).doubleValue();",
+      "patch": "double valueDelta = dataset.getStdDevValue(row, column).doubleValue();",
+      "target": "Number n = dataset.getStdDevValue(row, column); if (n != null) { double valueDelta = n.doubleValue();",
+      "exact_match": false
+    },
+    {
+      "hunk": 5,
+      "source": "",
+      "patch": "",
+      "target": "}",
+      "exact_match": false
+    }
+  ]
+}

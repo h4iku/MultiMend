@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (isBinary) { file.content = null; file.contentPath = null; return done(error); }",
+      "target": "if (err) { throw err; }",
+      "exact_match": false
+    }
+  ]
+}

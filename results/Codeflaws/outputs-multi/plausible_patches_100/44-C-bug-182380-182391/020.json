@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "else printf(\"%d 0\\n\", j);",
+      "patch": "else printf(\"%d 0\\n\", j+1);",
+      "target": "else printf(\"%d 0\\n\", j+1);",
+      "exact_match": true
+    }
+  ]
+}

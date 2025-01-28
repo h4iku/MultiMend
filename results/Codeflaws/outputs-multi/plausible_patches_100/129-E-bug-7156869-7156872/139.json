@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "long long val = binom(n - 1, 2 * k) * binom(m - 1, 2 * k);",
+      "patch": "long long val = binom(n - 1, 2 * k); val *= binom(m - 1, 2 * k);",
+      "target": "long long val = binom(n - 1, 2 * k); val *= binom(m - 1, 2 * k);",
+      "exact_match": true
+    }
+  ]
+}

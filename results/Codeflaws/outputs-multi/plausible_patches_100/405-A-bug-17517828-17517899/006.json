@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (arr[min] > arr[j]) min = i;",
+      "patch": "if (arr[min] > arr[j]) { min = j; }",
+      "target": "if (arr[min] > arr[j]) min = j;",
+      "exact_match": true
+    }
+  ]
+}

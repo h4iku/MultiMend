@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (arguments.length === 1 && typeof error ==='string') { content = error; error = null;",
+      "target": "if (err) { throw err; }",
+      "exact_match": false
+    }
+  ]
+}

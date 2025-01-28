@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(index >= n-m && k > 0)",
+      "patch": "if(index > n-m && k > 0)",
+      "target": "if(index > n-m && k > 0)",
+      "exact_match": true
+    }
+  ]
+}

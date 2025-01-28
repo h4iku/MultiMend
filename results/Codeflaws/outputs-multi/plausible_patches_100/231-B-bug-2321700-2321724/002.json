@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "#define MAX 100",
+      "patch": "#define MAX 1000",
+      "target": "#define MAX 102",
+      "exact_match": false
+    }
+  ]
+}

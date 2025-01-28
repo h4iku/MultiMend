@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "long long nways( int N ) {",
+      "patch": "long long nways( long N ) {",
+      "target": "long long nways( long long N ) {",
+      "exact_match": false
+    }
+  ]
+}

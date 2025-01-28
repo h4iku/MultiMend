@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(m>=(n-1) && m<=(n+2)*2)",
+      "patch": "if(m>=(n-1) && m<=(n+1)*2)",
+      "target": "if(m>=(n-1) && m<=(n+1)*2)",
+      "exact_match": true
+    }
+  ]
+}

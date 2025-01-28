@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "n=n*(n-1LL)*(n-2LL)*(n-3LL)*(n-4LL)*n*(n-1LL)*(n-2LL)*(n-3LL)*(n-4LL)/120LL;",
+      "patch": "n=n*(n-1LL)*(n-2LL)*(n-3LL)*((n-4LL)*n*(n-1LL)*(n-2LL)*(n-3LL)*(n-4LL)/120LL);",
+      "target": "n=n*(n-1LL)*(n-2LL)*(n-3LL)*(n-4LL)/120LL*n*(n-1LL)*(n-2LL)*(n-3LL)*(n-4LL);",
+      "exact_match": false
+    }
+  ]
+}

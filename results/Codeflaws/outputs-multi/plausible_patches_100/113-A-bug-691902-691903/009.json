@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (strcmp(input + strlen(input) - strlen(s2), s2) == 0) return MASCULINE;",
+      "patch": "if (strcmp(input + strlen(input) - strlen(s2), s2) == 0) return -1;",
+      "target": "if (strcmp(input + strlen(input) - strlen(s2), s2) == 0) return FEMININE;",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "m = (n + 1) / 2;",
+      "patch": "m = (n + 1) / 3;",
+      "target": "m = n / 2;",
+      "exact_match": false
+    }
+  ]
+}

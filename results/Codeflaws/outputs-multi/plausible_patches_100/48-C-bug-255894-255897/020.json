@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "alpha =mpd(10,100000,s2,-1);",
+      "patch": "alpha =mpd(10,1000000,s2,-1);",
+      "target": "alpha =mpd(10,1000000,s2,-1);",
+      "exact_match": true
+    }
+  ]
+}

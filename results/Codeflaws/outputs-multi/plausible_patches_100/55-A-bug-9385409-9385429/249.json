@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int n, temp;",
+      "patch": "int n, temp;",
+      "target": "int n;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "if (n & (n-1)) { temp = printf(\"NO\"); printf(\"%d\", temp);",
+      "patch": "if (n & (n-1)? printf(\"NO\"): printf(\"YES\")); if (n & (n-1)) {",
+      "target": "if (n & n-1) { printf(\"NO\");",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "temp = printf(\"YES\"); printf(\"%d\", temp);",
+      "patch": "",
+      "target": "printf(\"YES\");",
+      "exact_match": false
+    }
+  ]
+}

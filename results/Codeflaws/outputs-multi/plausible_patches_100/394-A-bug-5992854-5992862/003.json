@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "c--;",
+      "patch": "++c;",
+      "target": "c++;",
+      "exact_match": false
+    }
+  ]
+}

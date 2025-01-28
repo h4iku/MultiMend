@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(arr[i].strength <= s)",
+      "patch": "if(arr[i].strength < s)",
+      "target": "if(arr[i].strength < s)",
+      "exact_match": true
+    }
+  ]
+}

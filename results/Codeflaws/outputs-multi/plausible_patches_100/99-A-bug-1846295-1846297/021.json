@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"GOTO Vasilisa\");",
+      "patch": "printf(\"GOTO Vasilisa.\\n\");",
+      "target": "printf(\"GOTO Vasilisa.\");",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "else if((bl<=2*gr+2&&bl>gr)||(br<=2*gl+2==2&&br>gl))    printf(\"YES\");",
+      "patch": "else if((bl<=2*gr+2&&bl>gr)||(br<=2*gl+2&&br>gl))    printf(\"YES\");",
+      "target": "else if((bl<=2*gr+2&&bl>gr)||(br<=2*gl+2&&br>gl))   printf(\"YES\");",
+      "exact_match": true
+    }
+  ]
+}

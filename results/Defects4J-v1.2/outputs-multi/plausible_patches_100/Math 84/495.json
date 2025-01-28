@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "final RealConvergenceChecker checker = getConvergenceChecker();",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "} if (comparator.compare(reflected, best) <= 0) {",
+      "target": "return; }",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "",
+      "patch": "",
+      "target": "final int iter = getIterations(); boolean converged = true; for (int i = 0; i < simplex.length; ++i) { converged &= checker.converged(iter, original[i], simplex[i]); } if (converged) {",
+      "exact_match": false
+    }
+  ]
+}

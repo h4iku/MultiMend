@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "String best = null;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "bucket.setZone(DateTimeZone.forID(id)); return position + id.length(); }",
+      "patch": "bucket.setZone(DateTimeZone.forID(str)); return position + str.length(); }",
+      "target": "if (best == null || id.length() > best.length()) { best = id; } } } if (best != null) { bucket.setZone(DateTimeZone.forID(best)); return position + best.length();",
+      "exact_match": false
+    }
+  ]
+}

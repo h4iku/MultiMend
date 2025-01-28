@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int pos=temp/a;",
+      "patch": "long pos=temp/a;",
+      "target": "long long pos=temp/a;",
+      "exact_match": false
+    }
+  ]
+}

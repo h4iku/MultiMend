@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (trailer == 0 || trailer == ' '){",
+      "patch": "if (trailer == 0 || trailer == ' '){",
+      "target": "while (start < end - 1 && (trailer == 0 || trailer == ' ')) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "if (buffer[start] == '0') { return 0L; }",
+      "target": "trailer = buffer[end - 1];",
+      "exact_match": false
+    }
+  ]
+}

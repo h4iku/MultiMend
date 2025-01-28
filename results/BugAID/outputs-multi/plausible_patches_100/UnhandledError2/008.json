@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "outerNext();",
+      "patch": "outerNext(err);",
+      "target": "outerNext(err);",
+      "exact_match": true
+    }
+  ]
+}

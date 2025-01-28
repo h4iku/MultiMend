@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (l instanceof InitialContext || l instanceof SelfContext) {",
+      "patch": "if (l instanceof SelfContext) {",
+      "target": "if (l instanceof InitialContext) { ((EvalContext) l).reset(); }  if (l instanceof SelfContext) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "if (r instanceof InitialContext || r instanceof SelfContext) {",
+      "patch": "if (r instanceof InitialContext || r instanceof SelfContext) {",
+      "target": "if (r instanceof InitialContext) { ((EvalContext) r).reset(); }  if (r instanceof SelfContext) {",
+      "exact_match": false
+    }
+  ]
+}

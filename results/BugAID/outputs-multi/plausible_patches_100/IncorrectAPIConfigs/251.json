@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "grunt.loadNpmTasks('test');",
+      "target": "force: true,",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if(flag == 0) { if(index!= 0) { ans = n-index; printf(\"%d\\n\",ans); } else printf(\"0\\n\"); } return 0;",
+      "target": "break;",
+      "exact_match": false
+    }
+  ]
+}

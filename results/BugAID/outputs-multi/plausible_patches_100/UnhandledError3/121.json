@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "} catch (e) { log.error('Can not load \"%s\", e.message);",
+      "target": "if (err) { throw err; }",
+      "exact_match": false
+    }
+  ]
+}

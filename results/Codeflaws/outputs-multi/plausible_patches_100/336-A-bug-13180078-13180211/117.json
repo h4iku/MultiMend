@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(x<0&&y<0) {x1=x+y; y1=0; x2=0; y=x+y;}",
+      "patch": "if(x<0&&y<0) {x1=x+y; y1=0; x2=0; y2=x+y;}",
+      "target": "if(x<0&&y<0) {x1=x+y; y1=0; x2=0; y2=x+y;}",
+      "exact_match": true
+    }
+  ]
+}

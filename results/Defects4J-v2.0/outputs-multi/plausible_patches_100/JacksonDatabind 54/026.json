@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (declaredType.isReferenceType()) {",
+      "patch": "if (declaredType.isReferenceType() || declaredType!= null) {",
+      "target": "if (actualType.isReferenceType()) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "if (declaredType.isContainerType()",
+      "patch": "if (declaredType.isContainerType()",
+      "target": "if (actualType.isContainerType()",
+      "exact_match": false
+    }
+  ]
+}

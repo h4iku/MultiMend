@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "max += days%2;",
+      "patch": "max += days%7;",
+      "target": "max += (days%7)%2;",
+      "exact_match": false
+    }
+  ]
+}

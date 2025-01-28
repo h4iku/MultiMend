@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "g=f;",
+      "patch": "g=n;",
+      "target": "g=n;",
+      "exact_match": true
+    }
+  ]
+}

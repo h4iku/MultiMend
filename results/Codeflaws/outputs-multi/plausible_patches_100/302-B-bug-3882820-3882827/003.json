@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "long long int s[20000],a,b;",
+      "patch": "long int s[20000],a,b;",
+      "target": "long long int s[100500],a,b;",
+      "exact_match": false
+    }
+  ]
+}

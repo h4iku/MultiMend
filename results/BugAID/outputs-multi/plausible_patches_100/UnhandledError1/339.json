@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "} else { response.setHeader('Content-type', 'application/javascript'); response.setHeader('ETag', kiwi.cache.alljs_hash);",
+      "target": "} } catch (e) { response.statusCode = 500;",
+      "exact_match": false
+    }
+  ]
+}

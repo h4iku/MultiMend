@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (t.getScopeDepth() <= 2) {",
+      "patch": "if (t.getScopeDepth() <= 1) {",
+      "target": "if (t.getScopeDepth() <= 1) {",
+      "exact_match": true
+    }
+  ]
+}

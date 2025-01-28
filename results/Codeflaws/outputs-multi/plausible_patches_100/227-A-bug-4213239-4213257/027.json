@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "else if(y1==0 && y2==0)",
+      "patch": "else if(y1==y2 && y2==y1)",
+      "target": "else if(y1 == y2)",
+      "exact_match": false
+    }
+  ]
+}

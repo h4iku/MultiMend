@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"Henry Harrison\");",
+      "patch": "printf(\"Harrison\");",
+      "target": "printf(\"Harrison\");",
+      "exact_match": true
+    }
+  ]
+}

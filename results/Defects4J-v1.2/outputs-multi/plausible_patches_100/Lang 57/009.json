@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return cAvailableLocaleSet.contains(locale);",
+      "patch": "return availableLocaleSet().contains(locale);",
+      "target": "return availableLocaleList().contains(locale);",
+      "exact_match": false
+    }
+  ]
+}

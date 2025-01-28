@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "private static final double DEFAULT_EPSILON = 10e-9;",
+      "patch": "private static final double DEFAULT_EPSILON = 0e-9;",
+      "target": "private static final double DEFAULT_EPSILON = 10e-15;",
+      "exact_match": false
+    }
+  ]
+}

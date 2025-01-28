@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "printf(\"%d \",c3); for(i=0;i<c3;i++) printf(\"%d \",a3[i]);",
+      "target": "if(c1%2==0) a3[c3++]=a1[--c1];",
+      "exact_match": false
+    }
+  ]
+}

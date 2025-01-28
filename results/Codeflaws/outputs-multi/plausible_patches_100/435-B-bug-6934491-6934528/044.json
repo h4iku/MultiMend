@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for(i=0; i<K && Str[i]!='\\0'; ++i)",
+      "patch": "for(i=0; i<20 && Str[i]!='\\0'; ++i)",
+      "target": "for(i=0; i<i+K && Str[i]!='\\0'; ++i)",
+      "exact_match": false
+    }
+  ]
+}

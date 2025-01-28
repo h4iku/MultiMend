@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "_rootNameLookup = src._rootNameLookup;",
+      "patch": "_rootNameLookup = new XmlRootNameLookup();",
+      "target": "_rootNameLookup = new XmlRootNameLookup();",
+      "exact_match": true
+    }
+  ]
+}

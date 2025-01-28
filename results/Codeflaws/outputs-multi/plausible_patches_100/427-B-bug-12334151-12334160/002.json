@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "long long int i, n, t, c, m, pm, flag = 0, f = 0, r = 0;",
+      "patch": "int i, n, t, c, m, pm, flag = 0, f = 0, r = 0;",
+      "target": "int i, n, t, c, m, pm, flag = 0, f = 0, r = 0;",
+      "exact_match": true
+    }
+  ]
+}

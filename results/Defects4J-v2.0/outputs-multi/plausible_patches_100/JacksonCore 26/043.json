@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "_currInputProcessed += (_origBufferLen - _currInputRowStart);",
+      "target": "_currBufferStart = start;",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "an=bin(0,n*m);",
+      "patch": "an=bin(0,n*m+1);",
+      "target": "an=bin(0,n*m+1);",
+      "exact_match": true
+    }
+  ]
+}

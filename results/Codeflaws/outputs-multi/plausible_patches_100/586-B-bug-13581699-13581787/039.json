@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "for (i = 0; i < n; i++) { int s; s = a[0][i] + b[i] + a[1][i]; if (s < min) { min = s; } else if (s < pmin) { pmin = s; } }",
+      "target": "pmin = min;",
+      "exact_match": false
+    }
+  ]
+}

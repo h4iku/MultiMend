@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "$('.progress.progress-bar').show();",
+      "target": "}",
+      "exact_match": false
+    }
+  ]
+}

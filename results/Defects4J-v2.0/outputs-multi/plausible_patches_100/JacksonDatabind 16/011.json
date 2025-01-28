@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return (previous != null) && previous.equals(ann);",
+      "patch": "if (previous!= null) { return previous.equals(ann); } return true;",
+      "target": "return (previous == null) || !previous.equals(ann);",
+      "exact_match": false
+    }
+  ]
+}

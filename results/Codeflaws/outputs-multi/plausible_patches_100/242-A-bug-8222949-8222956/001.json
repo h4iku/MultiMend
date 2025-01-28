@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int ZA[100], ZB[100];",
+      "patch": "int ZA[100]; int ZB[100];",
+      "target": "int ZA[10000], ZB[10000];",
+      "exact_match": false
+    }
+  ]
+}

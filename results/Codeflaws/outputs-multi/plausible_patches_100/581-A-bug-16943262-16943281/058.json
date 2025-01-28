@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "b1=(a-b)/2;",
+      "patch": "b1=(b-a)/2;",
+      "target": "b1=(b-a)/2;",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (tokenLen >= 4) { rule = selectNumberRule(Calendar.YEAR, tokenLen);",
+      "patch": "if (tokenLen!= 2) { rule = selectNumberRule(Calendar.YEAR, tokenLen);",
+      "target": "if (tokenLen == 2) { rule = TwoDigitYearField.INSTANCE;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "rule = TwoDigitYearField.INSTANCE;",
+      "patch": "rule = TwoDigitYearField.INSTANCE;",
+      "target": "rule = selectNumberRule(Calendar.YEAR, tokenLen < 4 ? 4 : tokenLen);",
+      "exact_match": false
+    }
+  ]
+}

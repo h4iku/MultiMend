@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if ((n*a)>w || (n*b)<w){",
+      "patch": "else if ((n*a)>w || (n*b)<w){",
+      "target": "else if ((n*a)>w || (n*b)<w){",
+      "exact_match": true
+    }
+  ]
+}

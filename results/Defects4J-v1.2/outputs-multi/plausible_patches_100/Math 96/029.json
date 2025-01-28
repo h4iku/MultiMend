@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "ret = (Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getReal())) && (Double.doubleToRawLongBits(imaginary) == Double.doubleToRawLongBits(rhs.getImaginary()));",
+      "patch": "ret = (Math.abs(real) == Math.abs(rhs.getReal()) && Math.abs(imaginary) == Math.abs(rhs.getImaginary()));",
+      "target": "ret = (real == rhs.real) && (imaginary == rhs.imaginary);",
+      "exact_match": false
+    }
+  ]
+}

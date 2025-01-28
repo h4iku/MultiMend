@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (buffer == null || buffer.length - pos < decodeSize) { resizeBuffer(); }",
+      "target": "if (buffer == null || buffer.length - pos < decodeSize) { resizeBuffer(); }",
+      "exact_match": true
+    }
+  ]
+}

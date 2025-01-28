@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(k==((n*n)/2)){",
+      "patch": "if(k==((n*n+1)/2)){",
+      "target": "if(k==((n*n+1)/2)){",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "if(middle<=0) return 0;",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

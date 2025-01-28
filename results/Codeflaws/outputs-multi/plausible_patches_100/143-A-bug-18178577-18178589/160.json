@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(a!=b && a!=c && a!=b && b!=c && b!=d && c!=d){",
+      "patch": "if(a!=b && a!=c && a!=b && b!=c && b!=d && c!=d && d!=a){",
+      "target": "if(a!=b && a!=c && a!=d && b!=c && b!=d && c!=d){",
+      "exact_match": false
+    }
+  ]
+}

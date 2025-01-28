@@ -1,0 +1,83 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "double[] oldObj  = new double[rows]; double[] qtf     = new double[rows];",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "for (int i=0;i<rows;i++) { qtf[i]=residuals[i]; }",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "qTy(residuals);",
+      "patch": "qTy(residuals);",
+      "target": "qTy(qtf);",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "sum += jacobian[i][pj] * residuals[i];",
+      "patch": "sum += jacobian[i][pj] * residuals[i];",
+      "target": "sum += jacobian[i][pj] * qtf[i];",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "",
+      "patch": "",
+      "target": "updateResidualsAndCost(); current = new VectorialPointValuePair(point, objective);",
+      "exact_match": false
+    },
+    {
+      "hunk": 5,
+      "source": "determineLMParameter(oldRes, delta, diag, work1, work2, work3);",
+      "patch": "determineLMParameter(oldRes, delta, diag, work1, work2, work3);",
+      "target": "tmpVec    = objective; objective = oldObj; oldObj    = tmpVec;   determineLMParameter(qtf, delta, diag, work1, work2, work3);",
+      "exact_match": false
+    },
+    {
+      "hunk": 6,
+      "source": "current = new VectorialPointValuePair(point, objective);",
+      "patch": "current = new VectorialPointValuePair(point, objective, false);",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 7,
+      "source": "",
+      "patch": "",
+      "target": "current = new VectorialPointValuePair(point, objective);",
+      "exact_match": false
+    },
+    {
+      "hunk": 8,
+      "source": "",
+      "patch": "",
+      "target": "if (checker != null) {  if (checker.converged(getIterations(), previous, current)) { return current; } }",
+      "exact_match": false
+    },
+    {
+      "hunk": 9,
+      "source": "",
+      "patch": "",
+      "target": "tmpVec    = objective; objective = oldObj; oldObj    = tmpVec;",
+      "exact_match": false
+    },
+    {
+      "hunk": 10,
+      "source": "} else { if (checker.converged(getIterations(), previous, current)) { return current; }",
+      "patch": "} else { if (checker.converged(getIterations(), previous, current)) { return current; }",
+      "target": "",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (a % 2 == x) b = i;",
+      "patch": "if ((a % 2 == x) == 0) b = i;",
+      "target": "if (a % 2 != x) b = i;",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "while(k>0)",
+      "patch": "while((unsigned long long int)k>0)",
+      "target": "while(k!=0)",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int t = (int)floor(i*d / a);",
+      "patch": "long t = (long)floor(i*d / a);",
+      "target": "long long t = floor(i*d / a);",
+      "exact_match": false
+    }
+  ]
+}

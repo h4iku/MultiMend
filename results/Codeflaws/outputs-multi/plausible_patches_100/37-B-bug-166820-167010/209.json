@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if(hp < 0) break;",
+      "target": "if(hp<=0) break;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "if(hp<=0) break;",
+      "patch": "if(hp<=0) break;",
+      "target": "",
+      "exact_match": false
+    }
+  ]
+}

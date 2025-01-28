@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if(string1[i]>='A'&&string1[i]<='Z') { string1[i]=string1[i]+32; }",
+      "target": "string2[j]='\\0';",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "&& 0 <= charno && charno < sourceExcerpt.length()) {",
+      "patch": "&& 0 <= sourceExcerpt.length()) {",
+      "target": "&& 0 <= charno && charno <= sourceExcerpt.length()) {",
+      "exact_match": false
+    }
+  ]
+}

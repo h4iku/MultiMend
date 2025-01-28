@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "else { player.setDownloaded(true); clearInterval(torrent.timers.setDownload); }",
+      "target": "if (!target.parts) return;",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "#define BUF 2",
+      "patch": "#define BUF 5",
+      "target": "#define BUF 16384",
+      "exact_match": false
+    }
+  ]
+}

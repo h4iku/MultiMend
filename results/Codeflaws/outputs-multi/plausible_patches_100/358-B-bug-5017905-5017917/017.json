@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "buffer[pos]='\\n'; buffer[pos]='\\n';",
+      "target": "L++;",
+      "exact_match": false
+    }
+  ]
+}

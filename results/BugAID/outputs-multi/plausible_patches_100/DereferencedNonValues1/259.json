@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "_currentItem = player.currentItem;",
+      "target": "if (!target.parts) return;",
+      "exact_match": false
+    }
+  ]
+}

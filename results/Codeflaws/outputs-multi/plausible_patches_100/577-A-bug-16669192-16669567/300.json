@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int arr[200000];",
+      "patch": "int arr[200000];",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "if(b%i==0 && (b/i)==(b/(b/i) && (b/i)<=a)){",
+      "patch": "if((b%i==0 && (b/i)==(b/(b/i)) && (b/i)<=a)){",
+      "target": "if(b%i==0 && ( (b/i) * (b/i) ) == b && (b/i)<=a){",
+      "exact_match": false
+    }
+  ]
+}

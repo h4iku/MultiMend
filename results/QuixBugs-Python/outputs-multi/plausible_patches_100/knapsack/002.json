@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if weight < j:",
+      "patch": "if weight <= j:",
+      "target": "if weight <= j:",
+      "exact_match": true
+    }
+  ]
+}

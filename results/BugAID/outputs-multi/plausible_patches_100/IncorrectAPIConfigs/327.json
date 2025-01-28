@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "document.body.appendChild(document.body.documentElement);",
+      "target": "force: true,",
+      "exact_match": false
+    }
+  ]
+}

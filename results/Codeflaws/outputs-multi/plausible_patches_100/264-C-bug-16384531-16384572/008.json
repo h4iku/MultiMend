@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"%lld\",work());",
+      "patch": "printf(\"%ld\\n\",work());",
+      "target": "printf(\"%lld\\n\",work());",
+      "exact_match": false
+    }
+  ]
+}

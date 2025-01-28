@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\" %d*%d\",d[j],12/d[j]);",
+      "patch": "",
+      "target": "printf(\" %dx%d\",d[j],12/d[j]);",
+      "exact_match": false
+    }
+  ]
+}

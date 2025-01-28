@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"1 0 %d\\n\",negative[ni-1]);",
+      "patch": "printf(\"2 0 %d\\n\",negative[ni-1]);",
+      "target": "printf(\"2 0 %d\\n\",negative[ni-1]);",
+      "exact_match": true
+    }
+  ]
+}

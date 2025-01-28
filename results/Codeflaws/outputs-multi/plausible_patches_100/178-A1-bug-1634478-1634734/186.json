@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "else for(m = n ; m != (m & -m) ; m &= -m);",
+      "patch": "else for(m = n ; m!= (m & -m) ; ++m);",
+      "target": "else for(m = n ; m != (m & -m) ; m ^= (m & -m));",
+      "exact_match": false
+    }
+  ]
+}

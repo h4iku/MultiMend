@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "_kiwi.global.panels = this.panels;",
+      "patch": "config.panels = this.panels;",
+      "target": "_kiwi.global.panels = _.bind(this.panels, this);",
+      "exact_match": false
+    }
+  ]
+}

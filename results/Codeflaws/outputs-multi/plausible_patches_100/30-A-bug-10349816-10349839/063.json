@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (x>d) {printf(\"No solution\");printf(\"%d\",x);}",
+      "patch": "if (x>d) printf(\"No solution\");",
+      "target": "if (x>d) {printf(\"No solution\");}",
+      "exact_match": true
+    }
+  ]
+}

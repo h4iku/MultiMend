@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "else if(d>5)",
+      "patch": "else if(d>4-d)",
+      "target": "else if(d>=5)",
+      "exact_match": false
+    }
+  ]
+}

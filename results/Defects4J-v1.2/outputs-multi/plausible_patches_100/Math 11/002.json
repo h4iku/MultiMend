@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return FastMath.pow(2 * FastMath.PI, -dim / 2) *",
+      "patch": "return FastMath.pow(2 * FastMath.PI, -dim / 2.0) *",
+      "target": "return FastMath.pow(2 * FastMath.PI, -0.5 * dim) *",
+      "exact_match": false
+    }
+  ]
+}

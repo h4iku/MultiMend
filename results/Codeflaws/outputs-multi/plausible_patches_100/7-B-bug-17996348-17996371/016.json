@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (!erased)",
+      "patch": "if (!erased || mem[i] == x)",
+      "target": "if (!erased || x == 0)",
+      "exact_match": false
+    }
+  ]
+}

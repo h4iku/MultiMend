@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "else printf(\"%lf\", fval(cx, cy));",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

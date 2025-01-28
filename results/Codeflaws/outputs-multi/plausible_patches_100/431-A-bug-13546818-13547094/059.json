@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "cnt=cnt+arr1[(int)(arr[(i-1)%3+1]-48)];",
+      "patch": "cnt=cnt+arr1[(int)(arr[(i-1)+1]-48)];",
+      "target": "cnt=cnt+arr1[(int)(arr[i]-48)];",
+      "exact_match": false
+    }
+  ]
+}

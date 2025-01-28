@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(row_sum>col_sum) count++;",
+      "patch": "if(row_sum<col_sum) count++;",
+      "target": "if(row_sum<col_sum) count++;",
+      "exact_match": true
+    }
+  ]
+}

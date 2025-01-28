@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "return file.content;",
+      "target": "if (err) { throw err; }",
+      "exact_match": false
+    }
+  ]
+}

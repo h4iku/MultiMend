@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(arr[start-1] > arr[end]) { printf(\"no\\n\"); return(0); }",
+      "patch": "if(arr[start-2] > arr[end]) { printf(\"no\\n\"); return(0); }",
+      "target": "if(arr[start-1] > arr[end] && start != 0) { printf(\"no\\n\"); return(0); }",
+      "exact_match": false
+    }
+  ]
+}

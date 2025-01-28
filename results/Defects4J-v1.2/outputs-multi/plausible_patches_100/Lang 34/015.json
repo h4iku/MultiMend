@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return REGISTRY.get() != null ? REGISTRY.get() : Collections.<Object, Object>emptyMap();",
+      "patch": "return REGISTRY!= null? REGISTRY.get() : Collections.<Object, Object>emptyMap();",
+      "target": "return REGISTRY.get();",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "return m.containsKey(value);",
+      "patch": "return m!= null && m.containsKey(value);",
+      "target": "return m != null && m.containsKey(value);",
+      "exact_match": true
+    }
+  ]
+}

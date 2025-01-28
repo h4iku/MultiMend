@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int A[5], B[5];",
+      "patch": "int A[50], B[50];",
+      "target": "int A[51], B[51];",
+      "exact_match": false
+    }
+  ]
+}

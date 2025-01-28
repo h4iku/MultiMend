@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if((a+b+c+d+e)%5==0)",
+      "patch": "if((a+b+c+d+e)%5==0 && (a+b+c+d+e))",
+      "target": "if((a+b+c+d+e)%5==0&&(a+b+c+d+e)>=5)",
+      "exact_match": false
+    }
+  ]
+}

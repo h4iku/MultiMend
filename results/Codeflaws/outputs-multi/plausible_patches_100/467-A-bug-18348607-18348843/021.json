@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if((p+2)==q)",
+      "patch": "if((p+2)<=q)",
+      "target": "if((q-p)>=2)",
+      "exact_match": false
+    }
+  ]
+}

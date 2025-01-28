@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return foundDigit && !hasExp;",
+      "patch": "return foundDigit &&!hasExp &&!hasDecPoint;",
+      "target": "return foundDigit && !hasExp && !hasDecPoint;",
+      "exact_match": true
+    }
+  ]
+}

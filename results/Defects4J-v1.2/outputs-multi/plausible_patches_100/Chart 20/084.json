@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "super(paint, stroke, paint, stroke, alpha);",
+      "patch": "super(paint, stroke, outlinePaint, outlineStroke, alpha);",
+      "target": "super(paint, stroke, outlinePaint, outlineStroke, alpha);",
+      "exact_match": true
+    }
+  ]
+}

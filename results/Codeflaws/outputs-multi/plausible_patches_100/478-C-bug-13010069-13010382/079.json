@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "t+=2*floor(r/3);",
+      "patch": "t+=r-ceil(r/3);",
+      "target": "t+=r-ceil(r/3);",
+      "exact_match": true
+    }
+  ]
+}

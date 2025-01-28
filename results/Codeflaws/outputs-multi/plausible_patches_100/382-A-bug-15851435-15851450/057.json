@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "#define N 13+1",
+      "patch": "#define N 313+1",
+      "target": "#define N 26+1",
+      "exact_match": false
+    }
+  ]
+}

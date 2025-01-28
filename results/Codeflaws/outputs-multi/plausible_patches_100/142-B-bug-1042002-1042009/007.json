@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return 2*(2*(m / 4) + (m % 4 > 2)? 2 : (m % 4));",
+      "patch": "return 2*(2*(m / 4) + ((m % 4 > 2)? 2 : (m % 4)));",
+      "target": "return 2*(2*(m / 4) + ((m % 4 > 2)? 2 : (m % 4)));",
+      "exact_match": true
+    }
+  ]
+}

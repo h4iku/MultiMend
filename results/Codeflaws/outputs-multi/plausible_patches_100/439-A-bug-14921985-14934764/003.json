@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(sum<d){",
+      "patch": "if(sum<d-4){",
+      "target": "if(sum<d-4){",
+      "exact_match": true
+    }
+  ]
+}

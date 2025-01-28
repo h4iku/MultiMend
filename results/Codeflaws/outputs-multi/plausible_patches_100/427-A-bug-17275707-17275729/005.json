@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "treat=a[Loop];",
+      "patch": "treat+=a[Loop];",
+      "target": "treat+=a[Loop];",
+      "exact_match": true
+    }
+  ]
+}

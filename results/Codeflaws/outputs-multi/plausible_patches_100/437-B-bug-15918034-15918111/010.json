@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(sum&j || j+i*2 <= limit) {",
+      "patch": "if(sum&i || j+i*2 <= limit) {",
+      "target": "if(sum&i || j+i*2 <= limit) {",
+      "exact_match": true
+    }
+  ]
+}

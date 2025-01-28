@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "} if (start == end) { throw new IllegalArgumentException( exceptionMessage(buffer, offset, length, start, trailer));",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

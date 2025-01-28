@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (sum<n){",
+      "patch": "if (sum<=n){",
+      "target": "if (sum<=n){",
+      "exact_match": true
+    }
+  ]
+}

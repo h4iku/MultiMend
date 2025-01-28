@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "while(gets(a)!=EOF)",
+      "patch": "if(gets(a)!=EOF)",
+      "target": "while(gets(a))",
+      "exact_match": false
+    }
+  ]
+}

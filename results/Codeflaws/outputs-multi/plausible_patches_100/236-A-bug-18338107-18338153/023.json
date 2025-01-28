@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(ara[i]==1 || ara[i]==2){",
+      "patch": "if(ara[i]==0 || ara[i]==0){",
+      "target": "if(ara[i]!=0){",
+      "exact_match": false
+    }
+  ]
+}

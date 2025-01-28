@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (lTData[i][i] < absolutePositivityThreshold) { throw new NotPositiveDefiniteMatrixException(); }",
+      "patch": "if (lTData[i][i] < absolutePositivityThreshold) throw new NotPositiveDefiniteMatrixException();",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "if (lTData[i][i] < absolutePositivityThreshold) throw new NotPositiveDefiniteMatrixException();",
+      "target": "if (ltI[i] < absolutePositivityThreshold) { throw new NotPositiveDefiniteMatrixException(); }",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(ok=1)printf(\"%d\",he);",
+      "patch": "if(ok==1)printf(\"%d\",he);",
+      "target": "if(ok==1)printf(\"%d\",he);",
+      "exact_match": true
+    }
+  ]
+}

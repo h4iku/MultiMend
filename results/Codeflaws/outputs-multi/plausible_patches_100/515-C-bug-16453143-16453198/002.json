@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "case '7':h[7]++;",
+      "patch": "case '7':h[7]++; break;",
+      "target": "case '7':h[7]++;break;",
+      "exact_match": true
+    }
+  ]
+}

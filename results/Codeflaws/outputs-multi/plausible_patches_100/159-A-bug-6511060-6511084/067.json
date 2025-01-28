@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(frnd[j].t-tme<=d && frnd[j].t>0)",
+      "patch": "if(frnd[j].t-tme<=d && frnd[j].t>tme)",
+      "target": "if(frnd[j].t-tme<=d && frnd[j].t>0 && frnd[j].t-tme>0)",
+      "exact_match": false
+    }
+  ]
+}

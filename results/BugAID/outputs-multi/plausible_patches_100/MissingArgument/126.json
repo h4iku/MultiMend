@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "callback();",
+      "patch": "callback.call(arguments);",
+      "target": "callback(null);",
+      "exact_match": false
+    }
+  ]
+}

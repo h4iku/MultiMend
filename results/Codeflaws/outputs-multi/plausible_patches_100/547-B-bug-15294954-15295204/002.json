@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "while(isempty(mystack))",
+      "patch": "while(!isempty(mystack))",
+      "target": "while(!isempty(mystack))",
+      "exact_match": true
+    }
+  ]
+}

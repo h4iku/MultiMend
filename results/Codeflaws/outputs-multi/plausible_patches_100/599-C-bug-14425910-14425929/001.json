@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "long long int a[100010],max[10010],min[10010];",
+      "patch": "long int a[100010],max[10010],min[10010];",
+      "target": "long long int a[1000100],max[100100],min[100100];",
+      "exact_match": false
+    }
+  ]
+}

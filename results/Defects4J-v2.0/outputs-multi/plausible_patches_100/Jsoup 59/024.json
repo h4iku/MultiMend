@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (pendingAttributeName.length() == 0) return;",
+      "target": "if (pendingAttributeName.length() > 0) {",
+      "exact_match": false
+    }
+  ]
+}

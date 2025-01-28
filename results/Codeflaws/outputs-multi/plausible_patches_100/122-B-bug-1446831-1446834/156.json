@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(f>=s)printf(\"4\");",
+      "patch": "else if(f>=s)printf(\"4\");",
+      "target": "else if(f>=s)printf(\"4\");",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if( (mask&1<<7) && (mask&1<<1) ) continue;",
+      "patch": "",
+      "target": "if( (mask&1<<7) && !(mask&1<<1) ) continue;",
+      "exact_match": false
+    }
+  ]
+}

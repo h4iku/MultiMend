@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "static float toJavaVersionInt(String version) {",
+      "patch": "static int toJavaVersionInt(String version) {",
+      "target": "static int toJavaVersionInt(String version) {",
+      "exact_match": true
+    }
+  ]
+}

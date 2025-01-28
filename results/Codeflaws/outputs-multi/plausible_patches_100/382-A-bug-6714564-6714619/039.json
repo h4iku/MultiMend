@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for(i=0;i>(p+(q/2));i++) printf(\"%c\",t[i]);",
+      "patch": "for(i=0;i<(p+(q/2));i++) printf(\"%c\",t[i]);",
+      "target": "for(i=0;i<(p+(q/2));i++) printf(\"%c\",t[i]);",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "else puts(\"Impossible\");",
+      "target": "else printf(\"Impossible\");",
+      "exact_match": false
+    }
+  ]
+}

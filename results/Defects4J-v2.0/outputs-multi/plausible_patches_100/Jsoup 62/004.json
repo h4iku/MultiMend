@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "String name = t.asEndTag().normalName();",
+      "patch": "String name = t.asEndTag().name();",
+      "target": "String name = t.asEndTag().name();",
+      "exact_match": true
+    }
+  ]
+}

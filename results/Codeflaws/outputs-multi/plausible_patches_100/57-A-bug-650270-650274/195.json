@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "c = minimum(a, b) + 400;",
+      "patch": "c = minimum(a, b) + 4 * n;",
+      "target": "c = minimum(a, b) + 4 * n;",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "ara[str[i]] = 1;",
+      "patch": "ara[str[i]-97]=1;",
+      "target": "ara[str[i]-97] = 1;",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "value = _elementDeserializer.getNullValue();",
+      "patch": "value = null;",
+      "target": "value = null;",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "String value = (t == JsonToken.VALUE_NULL) ? null : deser.deserialize(jp, ctxt);",
+      "patch": "String value = (t == JsonToken.VALUE_NULL) ? null : deser.deserialize(jp, ctxt);",
+      "target": "String value = (t == JsonToken.VALUE_NULL) ? deser.getNullValue() : deser.deserialize(jp, ctxt);",
+      "exact_match": false
+    }
+  ]
+}

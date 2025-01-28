@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return constructType(type, constructType(contextClass));",
+      "patch": "return constructType(type, constructType(type));",
+      "target": "TypeBindings bindings = (contextClass == null) ? TypeBindings.emptyBindings() : constructType(contextClass).getBindings(); return _fromAny(null, type, bindings);",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "return _fromAny(null, type, contextType.getBindings());",
+      "patch": "return _fromAny(null, type, contextType.getBindings());",
+      "target": "TypeBindings bindings = (contextType == null) ? TypeBindings.emptyBindings() : contextType.getBindings(); return _fromAny(null, type, bindings);",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "a--;",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "else",
+      "patch": "else",
+      "target": "else if(arr[str[i]-'a']==1)",
+      "exact_match": false
+    }
+  ]
+}

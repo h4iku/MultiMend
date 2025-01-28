@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(sum==n){printf(\"Yes\"); break;}",
+      "patch": "if(sum==n){printf(\"YES\"); break;}",
+      "target": "if(sum==n){printf(\"YES\"); break;}",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "else puts(\"Impossible\");",
+      "target": "else printf(\"Impossible\");",
+      "exact_match": false
+    }
+  ]
+}

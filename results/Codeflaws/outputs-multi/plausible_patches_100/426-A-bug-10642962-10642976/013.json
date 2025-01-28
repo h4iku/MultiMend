@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(total-max>=threshold)",
+      "patch": "if(total-max<=threshold)",
+      "target": "if(total-max<=threshold)",
+      "exact_match": true
+    }
+  ]
+}

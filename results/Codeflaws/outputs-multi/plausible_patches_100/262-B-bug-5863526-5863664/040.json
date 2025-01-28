@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "sum+=(-1)*first;",
+      "patch": "sum+=(-2)*first;",
+      "target": "sum+=(-1)*(first*2);",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "gulp.loadNpmTasks('gulp-contrib-clean');",
+      "target": "force: true,",
+      "exact_match": false
+    }
+  ]
+}

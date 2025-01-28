@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "} else {",
+      "patch": "} else if (!actualTypeArgument.equals(typeParameter)) {",
+      "target": "} else if (typeParameter != actualTypeArgument) {",
+      "exact_match": false
+    }
+  ]
+}

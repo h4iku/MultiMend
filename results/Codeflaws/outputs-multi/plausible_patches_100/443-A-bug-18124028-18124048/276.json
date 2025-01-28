@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "char a[300],b[300];",
+      "patch": "char a[300],b[300];",
+      "target": "char a[1005],b[1005];",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "return 0;",
+      "target": "return 0;",
+      "exact_match": true
+    }
+  ]
+}

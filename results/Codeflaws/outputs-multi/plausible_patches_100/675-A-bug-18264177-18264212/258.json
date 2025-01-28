@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if((c!=0&&d>=0&&c>0&&d%c==0)||(c!=0&&d<=0&&c<0||d%c==0)||(c==0&&a==b))",
+      "patch": "if((c!=0&&d>=0&&c>0&&d%c==0)||(c!=0&&d<=0&&c<0&&d%c==0)||(c==0&&a==b))",
+      "target": "if((c>0&&d>=0&&d%c==0)||(c<0&&d<=0&&d%c==0)||(c==0&&a==b))",
+      "exact_match": false
+    }
+  ]
+}

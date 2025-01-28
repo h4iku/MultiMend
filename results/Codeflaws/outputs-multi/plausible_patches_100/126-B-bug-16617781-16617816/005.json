@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "S[Pi[L]] = '\\0';",
+      "patch": "S[Pi[i]] = '\\0';",
+      "target": "S[j] = '\\0';",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (markers == null) { return false; }",
+      "target": "if (markers == null) { return false; }",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "if (markers == null) { return false; }",
+      "target": "} if (markers == null) { return false;",
+      "exact_match": true
+    },
+    {
+      "hunk": 2,
+      "source": "",
+      "patch": "if (markers == null) { return false; }",
+      "target": "if (markers == null) { return false; }",
+      "exact_match": true
+    },
+    {
+      "hunk": 3,
+      "source": "",
+      "patch": "if (markers == null) { return false; }",
+      "target": "} if (markers == null) { return false;",
+      "exact_match": true
+    }
+  ]
+}

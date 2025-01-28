@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int array[102][102];",
+      "patch": "int array[1024][1024];",
+      "target": "int array[102][102]={0};",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "#define fequ(a, b) (fabs(a - b) < 0.000000001)",
+      "patch": "#define fequ(a, b) (fabs(a - b) < 0.000000002)",
+      "target": "#define fequ(a, b) (fabs(a - b) < 0.0000001)",
+      "exact_match": false
+    }
+  ]
+}

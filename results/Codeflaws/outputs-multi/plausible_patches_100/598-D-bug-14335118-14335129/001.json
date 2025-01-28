@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "ch = num - quotient*10;",
+      "patch": "int ch = num - quotient*10;",
+      "target": "int ch = num - quotient*10;",
+      "exact_match": true
+    }
+  ]
+}

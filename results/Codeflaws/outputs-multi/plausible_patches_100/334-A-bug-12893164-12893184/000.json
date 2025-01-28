@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "for(k = 1; k <= n; k++) for(j=i; j < i + n / 2; j++) { printf(\"%d %d \",j,sq-j); } printf(\"\\n\");",
+      "target": "return 0;",
+      "exact_match": false
+    }
+  ]
+}

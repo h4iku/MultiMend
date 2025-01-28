@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (1<=m&&m<=n&&n<16){",
+      "patch": "if (1<=m&&m<=n&&n<32){",
+      "target": "if (1<=m&&m<=n&&n<=16){",
+      "exact_match": false
+    }
+  ]
+}

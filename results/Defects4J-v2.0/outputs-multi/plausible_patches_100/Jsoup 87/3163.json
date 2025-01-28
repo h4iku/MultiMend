@@ -1,0 +1,412 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "public String normalName() { return tag.normalName(); }",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "if (next.nodeName().equals(elName)) {",
+      "patch": "if (next.nodeName().equals(elName)) {",
+      "target": "if (next.normalName().equals(elName)) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "if (next.nodeName().equals(elName))",
+      "patch": "if (next.nodeName().equals(elName))",
+      "target": "if (next.normalName().equals(elName))",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "if (inSorted(next.nodeName(), elNames))",
+      "patch": "if (inSorted(next.nodeName(), elNames))",
+      "target": "if (inSorted(next.normalName(), elNames))",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "if (next.nodeName().equals(elName)) {",
+      "patch": "if (next.nodeName().equals(elName)) {",
+      "target": "if (next.normalName().equals(elName)) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 5,
+      "source": "if (StringUtil.in(next.nodeName(), nodeNames) || next.nodeName().equals(\"html\"))",
+      "patch": "if (StringUtil.in(next.nodeName(), nodeNames) || next.nodeName().equals(\"html\"))",
+      "target": "if (StringUtil.in(next.normalName(), nodeNames) || next.normalName().equals(\"html\"))",
+      "exact_match": false
+    },
+    {
+      "hunk": 6,
+      "source": "String name = node.nodeName();",
+      "patch": "String name = node.nodeName();",
+      "target": "String name = node.normalName();",
+      "exact_match": false
+    },
+    {
+      "hunk": 7,
+      "source": "final String elName = stack.get(pos).nodeName();",
+      "patch": "final String elName = stack.get(pos).nodeName();",
+      "target": "final String elName = stack.get(pos).normalName();",
+      "exact_match": false
+    },
+    {
+      "hunk": 8,
+      "source": "String elName = el.nodeName();",
+      "patch": "String elName = el.nodeName();",
+      "target": "String elName = el.normalName();",
+      "exact_match": false
+    },
+    {
+      "hunk": 9,
+      "source": "while ((excludeTag != null && !currentElement().nodeName().equals(excludeTag)) && inSorted(currentElement().nodeName(), TagSearchEndTags))",
+      "patch": "while ((excludeTag != null && !currentElement().nodeName().equals(excludeTag)) && inSorted(currentElement().nodeName(), TagSearchEndTags))",
+      "target": "while ((excludeTag != null && !currentElement().normalName().equals(excludeTag)) && inSorted(currentElement().normalName(), TagSearchEndTags))",
+      "exact_match": false
+    },
+    {
+      "hunk": 10,
+      "source": "String name = el.nodeName();",
+      "patch": "String name = el.nodeName();",
+      "target": "String name = el.normalName();",
+      "exact_match": false
+    },
+    {
+      "hunk": 11,
+      "source": "return a.nodeName().equals(b.nodeName()) &&",
+      "patch": "return a.nodeName().equals(b.nodeName()) &&",
+      "target": "return a.normalName().equals(b.normalName()) &&",
+      "exact_match": false
+    },
+    {
+      "hunk": 12,
+      "source": "Element newEl = insertStartTag(entry.nodeName());",
+      "patch": "Element newEl = insertStartTag(entry.nodeName());",
+      "target": "Element newEl = insertStartTag(entry.normalName());",
+      "exact_match": false
+    },
+    {
+      "hunk": 13,
+      "source": "else if (next.nodeName().equals(nodeName))",
+      "patch": "else if (next.nodeName().toLowerCase().equals(nodeName))",
+      "target": "else if (next.normalName().equals(nodeName))",
+      "exact_match": false
+    },
+    {
+      "hunk": 14,
+      "source": "if (el.nodeName().equals(\"li\")) {",
+      "patch": "if (el.nodeName().equals(\"li\")) {",
+      "target": "if (el.normalName().equals(\"li\")) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 15,
+      "source": "if (tb.isSpecial(el) && !StringUtil.inSorted(el.nodeName(), Constants.InBodyStartLiBreakers))",
+      "patch": "if (tb.isSpecial(el) && !StringUtil.inSorted(el.nodeName(), Constants.InBodyStartLiBreakers))",
+      "target": "if (tb.isSpecial(el) && !StringUtil.inSorted(el.normalName(), Constants.InBodyStartLiBreakers))",
+      "exact_match": false
+    },
+    {
+      "hunk": 16,
+      "source": "if (stack.size() == 1 || (stack.size() > 2 && !stack.get(1).nodeName().equals(\"body\"))) {",
+      "patch": "if (stack.size() == 1 || (stack.size() > 2 && !stack.get(1).nodeName().equals(\"body\"))) {",
+      "target": "if (stack.size() == 1 || (stack.size() > 2 && !stack.get(1).normalName().equals(\"body\"))) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 17,
+      "source": "if (stack.size() == 1 || (stack.size() > 2 && !stack.get(1).nodeName().equals(\"body\"))) {",
+      "patch": "if (stack.size() == 1 || (stack.size() > 2 && !stack.get(1).nodeName().equals(\"body\"))) {",
+      "target": "if (stack.size() == 1 || (stack.size() > 2 && !stack.get(1).normalName().equals(\"body\"))) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 18,
+      "source": "if (StringUtil.inSorted(tb.currentElement().nodeName(), Constants.Headings)) {",
+      "patch": "if (StringUtil.inSorted(tb.currentElement().nodeName(), Constants.Headings)) {",
+      "target": "if (StringUtil.inSorted(tb.currentElement().normalName(), Constants.Headings)) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 19,
+      "source": "if (StringUtil.inSorted(el.nodeName(), Constants.DdDt)) { tb.processEndTag(el.nodeName());",
+      "patch": "if (StringUtil.inSorted(el.nodeName(), Constants.DdDt)) { tb.processEndTag(el.nodeName());",
+      "target": "if (StringUtil.inSorted(el.normalName(), Constants.DdDt)) { tb.processEndTag(el.normalName());",
+      "exact_match": false
+    },
+    {
+      "hunk": 20,
+      "source": "if (tb.isSpecial(el) && !StringUtil.inSorted(el.nodeName(), Constants.InBodyStartLiBreakers))",
+      "patch": "if (tb.isSpecial(el) && !StringUtil.inSorted(el.nodeName(), Constants.InBodyStartLiBreakers))",
+      "target": "if (tb.isSpecial(el) && !StringUtil.inSorted(el.normalName(), Constants.InBodyStartLiBreakers))",
+      "exact_match": false
+    },
+    {
+      "hunk": 21,
+      "source": "if (tb.currentElement().nodeName().equals(\"option\"))",
+      "patch": "if (tb.currentElement().nodeName().equals(\"option\"))",
+      "target": "if (tb.currentElement().normalName().equals(\"option\"))",
+      "exact_match": false
+    },
+    {
+      "hunk": 22,
+      "source": "if (!tb.currentElement().nodeName().equals(\"ruby\")) {",
+      "patch": "if (!tb.currentElement().nodeName().equals(\"ruby\")) {",
+      "target": "if (!tb.currentElement().normalName().equals(\"ruby\")) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 23,
+      "source": "} else if (!tb.inScope(formatEl.nodeName())) {",
+      "patch": "} else if (!tb.inScope(formatEl.nodeName())) {",
+      "target": "} else if (!tb.inScope(formatEl.normalName())) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 24,
+      "source": "tb.popStackToClose(formatEl.nodeName());",
+      "patch": "tb.popStackToClose(formatEl.nodeName());",
+      "target": "tb.popStackToClose(formatEl.normalName());",
+      "exact_match": false
+    },
+    {
+      "hunk": 25,
+      "source": "if (StringUtil.inSorted(commonAncestor.nodeName(), Constants.InBodyEndTableFosters)) {",
+      "patch": "if (StringUtil.inSorted(commonAncestor.nodeName(), Constants.InBodyEndTableFosters)) {",
+      "target": "if (StringUtil.inSorted(commonAncestor.normalName(), Constants.InBodyEndTableFosters)) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 26,
+      "source": "if (!tb.currentElement().nodeName().equals(name))",
+      "patch": "if (!tb.currentElement().nodeName().equals(name))",
+      "target": "if (!tb.currentElement().normalName().equals(name))",
+      "exact_match": false
+    },
+    {
+      "hunk": 27,
+      "source": "if (!tb.currentElement().nodeName().equals(name))",
+      "patch": "if (!tb.currentElement().nodeName().equals(name))",
+      "target": "if (!tb.currentElement().normalName().equals(name))",
+      "exact_match": false
+    },
+    {
+      "hunk": 28,
+      "source": "if (!tb.currentElement().nodeName().equals(name))",
+      "patch": "if (!tb.currentElement().nodeName().equals(name))",
+      "target": "if (!tb.currentElement().normalName().equals(name))",
+      "exact_match": false
+    },
+    {
+      "hunk": 29,
+      "source": "if (!tb.currentElement().nodeName().equals(name))",
+      "patch": "if (!tb.currentElement().nodeName().equals(name))",
+      "target": "if (!tb.currentElement().normalName().equals(name))",
+      "exact_match": false
+    },
+    {
+      "hunk": 30,
+      "source": "if (!tb.currentElement().nodeName().equals(name))",
+      "patch": "if (!tb.currentElement().nodeName().equals(name))",
+      "target": "if (!tb.currentElement().normalName().equals(name))",
+      "exact_match": false
+    },
+    {
+      "hunk": 31,
+      "source": "if (!tb.currentElement().nodeName().equals(name))",
+      "patch": "if (!tb.currentElement().nodeName().equals(name))",
+      "target": "if (!tb.currentElement().normalName().equals(name))",
+      "exact_match": false
+    },
+    {
+      "hunk": 32,
+      "source": "if (!tb.currentElement().nodeName().equals(name))",
+      "patch": "if (!tb.currentElement().nodeName().equals(name))",
+      "target": "if (!tb.currentElement().normalName().equals(name))",
+      "exact_match": false
+    },
+    {
+      "hunk": 33,
+      "source": "String name = tb.settings.normalizeTag(t.asEndTag().name());",
+      "patch": "String name = tb.settings.normalizeTag(t.asEndTag().name());",
+      "target": "String name = t.asEndTag().normalName;",
+      "exact_match": false
+    },
+    {
+      "hunk": 34,
+      "source": "if (node.nodeName().equals(name)) {",
+      "patch": "if (node.nodeName().equals(name)) {",
+      "target": "if (node.normalName().equals(name)) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 35,
+      "source": "if (!name.equals(tb.currentElement().nodeName()))",
+      "patch": "if (!name.equals(tb.currentElement().nodeName()))",
+      "target": "if (!name.equals(tb.currentElement().normalName()))",
+      "exact_match": false
+    },
+    {
+      "hunk": 36,
+      "source": "if (tb.currentElement().nodeName().equals(\"html\"))",
+      "patch": "if (tb.currentElement().nodeName().equals(\"html\"))",
+      "target": "if (tb.currentElement().normalName().equals(\"html\"))",
+      "exact_match": false
+    },
+    {
+      "hunk": 37,
+      "source": "if (StringUtil.in(tb.currentElement().nodeName(), \"table\", \"tbody\", \"tfoot\", \"thead\", \"tr\")) {",
+      "patch": "if (StringUtil.in(tb.currentElement().nodeName(), \"table\", \"tbody\", \"tfoot\", \"thead\", \"tr\")) {",
+      "target": "if (StringUtil.in(tb.currentElement().normalName(), \"table\", \"tbody\", \"tfoot\", \"thead\", \"tr\")) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 38,
+      "source": "if (StringUtil.in(tb.currentElement().nodeName(), \"table\", \"tbody\", \"tfoot\", \"thead\", \"tr\")) {",
+      "patch": "if (StringUtil.in(tb.currentElement().nodeName(), \"table\", \"tbody\", \"tfoot\", \"thead\", \"tr\")) {",
+      "target": "if (StringUtil.in(tb.currentElement().normalName(), \"table\", \"tbody\", \"tfoot\", \"thead\", \"tr\")) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 39,
+      "source": "if (!tb.currentElement().nodeName().equals(\"caption\"))",
+      "patch": "if (!tb.currentElement().nodeName().equals(\"caption\"))",
+      "target": "if (!tb.currentElement().normalName().equals(\"caption\"))",
+      "exact_match": false
+    },
+    {
+      "hunk": 40,
+      "source": "if (tb.currentElement().nodeName().equals(\"html\")) {",
+      "patch": "if (tb.currentElement().nodeName().equals(\"html\")) {",
+      "target": "if (tb.currentElement().normalName().equals(\"html\")) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 41,
+      "source": "if (tb.currentElement().nodeName().equals(\"html\"))",
+      "patch": "if (tb.currentElement().nodeName().equals(\"html\"))",
+      "target": "if (tb.currentElement().normalName().equals(\"html\"))",
+      "exact_match": false
+    },
+    {
+      "hunk": 42,
+      "source": "tb.processEndTag(tb.currentElement().nodeName());",
+      "patch": "tb.processEndTag(tb.currentElement().nodeName());",
+      "target": "tb.processEndTag(tb.currentElement().normalName());",
+      "exact_match": false
+    },
+    {
+      "hunk": 43,
+      "source": "if (!tb.currentElement().nodeName().equals(name))",
+      "patch": "if (!tb.currentElement().nodeName().equals(name))",
+      "target": "if (!tb.currentElement().normalName().equals(name))",
+      "exact_match": false
+    },
+    {
+      "hunk": 44,
+      "source": "if (tb.currentElement().nodeName().equals(\"option\"))",
+      "patch": "if (tb.currentElement().nodeName().equals(\"option\"))",
+      "target": "if (tb.currentElement().normalName().equals(\"option\"))",
+      "exact_match": false
+    },
+    {
+      "hunk": 45,
+      "source": "if (tb.currentElement().nodeName().equals(\"option\"))",
+      "patch": "if (tb.currentElement().nodeName().equals(\"option\"))",
+      "target": "if (tb.currentElement().normalName().equals(\"option\"))",
+      "exact_match": false
+    },
+    {
+      "hunk": 46,
+      "source": "else if (tb.currentElement().nodeName().equals(\"optgroup\"))",
+      "patch": "else if (tb.currentElement().nodeName().equals(\"optgroup\"))",
+      "target": "else if (tb.currentElement().normalName().equals(\"optgroup\"))",
+      "exact_match": false
+    },
+    {
+      "hunk": 47,
+      "source": "if (tb.currentElement().nodeName().equals(\"option\") && tb.aboveOnStack(tb.currentElement()) != null && tb.aboveOnStack(tb.currentElement()).nodeName().equals(\"optgroup\"))",
+      "patch": "if (tb.currentElement().nodeName().equals(\"option\") && tb.aboveOnStack(tb.currentElement()) != null && tb.aboveOnStack(tb.currentElement()).nodeName().equals(\"optgroup\"))",
+      "target": "if (tb.currentElement().normalName().equals(\"option\") && tb.aboveOnStack(tb.currentElement()) != null && tb.aboveOnStack(tb.currentElement()).normalName().equals(\"optgroup\"))",
+      "exact_match": false
+    },
+    {
+      "hunk": 48,
+      "source": "if (tb.currentElement().nodeName().equals(\"optgroup\"))",
+      "patch": "if (tb.currentElement().nodeName().equals(\"optgroup\"))",
+      "target": "if (tb.currentElement().normalName().equals(\"optgroup\"))",
+      "exact_match": false
+    },
+    {
+      "hunk": 49,
+      "source": "if (tb.currentElement().nodeName().equals(\"option\"))",
+      "patch": "if (tb.currentElement().nodeName().equals(\"option\"))",
+      "target": "if (tb.currentElement().normalName().equals(\"option\"))",
+      "exact_match": false
+    },
+    {
+      "hunk": 50,
+      "source": "if (!tb.currentElement().nodeName().equals(\"html\"))",
+      "patch": "if (!tb.currentElement().nodeName().equals(\"html\"))",
+      "target": "if (!tb.currentElement().normalName().equals(\"html\"))",
+      "exact_match": false
+    },
+    {
+      "hunk": 51,
+      "source": "if (tb.currentElement().nodeName().equals(\"html\")) {",
+      "patch": "if (tb.currentElement().nodeName().equals(\"html\")) {",
+      "target": "if (tb.currentElement().normalName().equals(\"html\")) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 52,
+      "source": "if (!tb.isFragmentParsing() && !tb.currentElement().nodeName().equals(\"frameset\")) {",
+      "patch": "if (!tb.isFragmentParsing() && !tb.currentElement().nodeName().equals(\"frameset\")) {",
+      "target": "if (!tb.isFragmentParsing() && !tb.currentElement().normalName().equals(\"frameset\")) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 53,
+      "source": "if (!tb.currentElement().nodeName().equals(\"html\")) {",
+      "patch": "if (!tb.currentElement().nodeName().equals(\"html\")) {",
+      "target": "if (!tb.currentElement().normalName().equals(\"html\")) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 54,
+      "source": "",
+      "patch": "",
+      "target": "import org.jsoup.internal.Normalizer;",
+      "exact_match": false
+    },
+    {
+      "hunk": 55,
+      "source": "",
+      "patch": "",
+      "target": "private String normalName;",
+      "exact_match": false
+    },
+    {
+      "hunk": 56,
+      "source": "",
+      "patch": "",
+      "target": "normalName = Normalizer.lowerCase(tagName);",
+      "exact_match": false
+    },
+    {
+      "hunk": 57,
+      "source": "",
+      "patch": "",
+      "target": "public String normalName() { return normalName; }",
+      "exact_match": false
+    }
+  ]
+}

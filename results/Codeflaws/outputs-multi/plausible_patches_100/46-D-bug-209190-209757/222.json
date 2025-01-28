@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "tot++;",
+      "patch": "tot=i;",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "ll[tot]=o+w; rr[tot]=o+w+op-1;",
+      "patch": "ll[tot]=o+w; rr[tot]=o+w+op-1;",
+      "target": "ll[i]=o+w; rr[i]=o+w+op-1;",
+      "exact_match": false
+    }
+  ]
+}

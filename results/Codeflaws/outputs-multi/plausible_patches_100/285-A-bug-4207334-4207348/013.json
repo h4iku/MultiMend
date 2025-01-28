@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if((n-i+1)<=k)",
+      "patch": "if((n-i+1)<=k+1)",
+      "target": "if((n-i)<=k)",
+      "exact_match": false
+    }
+  ]
+}

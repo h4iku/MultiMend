@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (j + l > 0 && j + l < 8 && k + m > 0 && k + m < 8) {",
+      "patch": "if (j + l > 0 && j + l < 8 && k + m >= 0 && k + m < 8) {",
+      "target": "if (j + l >= 0 && j + l < 8 && k + m >= 0 && k + m < 8) {",
+      "exact_match": false
+    }
+  ]
+}

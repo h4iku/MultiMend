@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(strcmp(c[i],b)>0)",
+      "patch": "if(strcmp(c[i],b)<0)",
+      "target": "if(strcmp(b,c[i])>0)",
+      "exact_match": false
+    }
+  ]
+}

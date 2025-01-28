@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "d[dn++] = c % b; c /= b;",
+      "target": "if (c == 0) d[dn++] = 0;",
+      "exact_match": false
+    }
+  ]
+}

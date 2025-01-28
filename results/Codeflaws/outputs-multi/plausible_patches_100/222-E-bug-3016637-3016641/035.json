@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "mat matexp(int p){",
+      "patch": "mat matexp(long p){",
+      "target": "mat matexp(unsigned long long int p){",
+      "exact_match": false
+    }
+  ]
+}

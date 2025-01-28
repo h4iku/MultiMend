@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "return 1;",
+      "target": "return 0;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "return 0;",
+      "patch": "return 1;",
+      "target": "",
+      "exact_match": false
+    }
+  ]
+}

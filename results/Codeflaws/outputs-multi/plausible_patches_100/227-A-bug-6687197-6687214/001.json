@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int a=(bx-ax)*(cy-by)-(cx-bx)*(by-ay);",
+      "patch": "long a=(bx-ax)*(cy-by)-(cx-bx)*(by-ay);",
+      "target": "long long int a=(bx-ax)*(cy-by)-(cx-bx)*(by-ay);",
+      "exact_match": false
+    }
+  ]
+}

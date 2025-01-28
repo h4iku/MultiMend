@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 1,
+      "source": "int defaultYear = chrono.year().get(instantLocal);",
+      "patch": "int defaultYear = chrono.year().get(instantMillis);",
+      "target": "",
+      "exact_match": false
+    }
+  ]
+}

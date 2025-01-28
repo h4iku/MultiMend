@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "*l = '\\0';",
+      "target": "*l = 0;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "printf (\"%s\\n\", lx != ly || lx == 1 && p != q || !p && q ? \"NO\" : \"YES\");",
+      "patch": "printf (\"%s\\n\", lx!= ly || lx == 1 && p!= q || p!= q? \"NO\" : \"YES\");",
+      "target": "printf (\"%s\\n\", lx == ly && p == q ? \"YES\" : \"NO\");",
+      "exact_match": false
+    }
+  ]
+}

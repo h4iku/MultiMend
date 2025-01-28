@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "#define dim 20001",
+      "patch": "#define dim 200011",
+      "target": "#define dim 30001",
+      "exact_match": false
+    }
+  ]
+}

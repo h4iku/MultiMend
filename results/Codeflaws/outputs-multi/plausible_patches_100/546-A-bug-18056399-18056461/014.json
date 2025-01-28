@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(x>w)",
+      "patch": "if(x>n)",
+      "target": "if(x>n)",
+      "exact_match": true
+    }
+  ]
+}

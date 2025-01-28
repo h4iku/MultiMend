@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "length_by_path[i, k] + length_by_path[j, k]",
+      "patch": "length_by_path[k, j] + length_by_path[i, k]",
+      "target": "length_by_path[i, k] + length_by_path[k, j]",
+      "exact_match": false
+    }
+  ]
+}

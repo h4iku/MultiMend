@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "printf(\"%s\",arr[(x+t-1)%12]);",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "printf(\"%s\",arr[(x+t)%12-1]);",
+      "patch": "printf(\"%s\",arr[(x+t-1)%12]);",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "import java.util.HashSet;",
+      "patch": "import java.util.HashSet;",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "import java.util.LinkedHashSet;",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "private final Set options = new HashSet();",
+      "patch": "private final Set options = new HashSet(1000);",
+      "target": "private final Set options = new LinkedHashSet();",
+      "exact_match": false
+    }
+  ]
+}

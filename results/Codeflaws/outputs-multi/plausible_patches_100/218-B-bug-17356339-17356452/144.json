@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(seat[i]>=n){",
+      "patch": "if(seat[i]>=people){",
+      "target": "if(seat[i]>=people){",
+      "exact_match": true
+    }
+  ]
+}

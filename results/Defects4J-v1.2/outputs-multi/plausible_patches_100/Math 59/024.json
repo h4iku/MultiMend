@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return (a <= b) ? b : (Float.isNaN(a + b) ? Float.NaN : b);",
+      "patch": "return (a <= b)? b : (Float.isNaN(a + b)? Float.NaN : a);",
+      "target": "return (a <= b) ? b : (Float.isNaN(a + b) ? Float.NaN : a);",
+      "exact_match": true
+    }
+  ]
+}

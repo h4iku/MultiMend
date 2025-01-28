@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "sb.append('>');",
+      "target": "sb.append('>');",
+      "exact_match": true
+    }
+  ]
+}

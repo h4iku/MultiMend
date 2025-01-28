@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if(b_r%2==0) k=b_r+1; if(b_l%2==0) l=b_l+1;",
+      "target": "k=b_r; l=b_l;",
+      "exact_match": false
+    }
+  ]
+}

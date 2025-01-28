@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "(L=R)?printf(\"Tie\"):printf(\"Radewoosh\");",
+      "patch": "L=(L==R)?printf(\"Tie\"):printf(\"Radewoosh\");",
+      "target": "(L==R)?printf(\"Tie\"):printf(\"Radewoosh\");",
+      "exact_match": false
+    }
+  ]
+}

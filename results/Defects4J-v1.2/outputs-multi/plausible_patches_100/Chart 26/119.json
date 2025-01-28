@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (!label.equals(\"\")) { return state; }",
+      "target": "if (owner != null) {",
+      "exact_match": false
+    }
+  ]
+}

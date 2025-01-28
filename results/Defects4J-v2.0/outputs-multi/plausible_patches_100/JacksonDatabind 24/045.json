@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "TimeZone tz = (df == null) ? _timeZone : df.getTimeZone();",
+      "patch": "TimeZone tz = _timeZone; if (df == null) { tz = _timeZone; }",
+      "target": "",
+      "exact_match": false
+    }
+  ]
+}

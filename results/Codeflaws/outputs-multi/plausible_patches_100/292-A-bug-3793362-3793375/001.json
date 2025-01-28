@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "p=p+t[i]-t[i+1]+c[i];",
+      "patch": "p=p+t[i]-t[i+1]+c[i+1];",
+      "target": "p=p+t[i]-t[i+1]+c[i+1];",
+      "exact_match": true
+    }
+  ]
+}

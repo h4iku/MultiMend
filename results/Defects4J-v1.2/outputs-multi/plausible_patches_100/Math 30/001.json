@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "final int n1n2prod = n1 * n2;",
+      "patch": "final double n1n2prod = n1 * n2;",
+      "target": "final double n1n2prod = n1 * n2;",
+      "exact_match": true
+    }
+  ]
+}

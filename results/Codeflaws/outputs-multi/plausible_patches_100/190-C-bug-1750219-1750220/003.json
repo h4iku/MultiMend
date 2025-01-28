@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"Error occured\");",
+      "patch": "printf(\"Error occurred\\n\");",
+      "target": "printf(\"Error occurred\");",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (bal==12) printf(\"December\");",
+      "patch": "if (bal==12 || bal==0) printf(\"December\");",
+      "target": "if (bal==12|| bal==0) printf(\"December\");",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "memset(arr, 0, sizeof(arr));",
+      "target": "for (i = 0; i < 26; i++) arr[i] = 0;",
+      "exact_match": false
+    }
+  ]
+}

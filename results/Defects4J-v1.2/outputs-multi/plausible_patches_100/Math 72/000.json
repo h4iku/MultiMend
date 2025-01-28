@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "setResult(yMin, 0);",
+      "patch": "",
+      "target": "setResult(min, 0);",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "setResult(yMax, 0);",
+      "patch": "",
+      "target": "setResult(max, 0);",
+      "exact_match": false
+    }
+  ]
+}

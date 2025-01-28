@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for (Integer count : arr) {",
+      "patch": "for (Integer count : counts) {",
+      "target": "for (Integer count : counts) {",
+      "exact_match": true
+    }
+  ]
+}

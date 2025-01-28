@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "char a,ars[30]={\"qwertyuiopasdfghjkl;zxcvbnm,./\"},arr[50];",
+      "patch": "char a,ars[30]={\"qwertyuiopasdfghjkl;zxcvbnm,./\"},arr[100];",
+      "target": "char a,ars[30]={\"qwertyuiopasdfghjkl;zxcvbnm,./\"},arr[103];",
+      "exact_match": false
+    }
+  ]
+}

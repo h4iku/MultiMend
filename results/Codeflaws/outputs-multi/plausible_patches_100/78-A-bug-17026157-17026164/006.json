@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "else{ printf(\"NOo\");",
+      "patch": "if(counter==2){ printf(\"YES\"); return 0; } else { printf(\"NO\");",
+      "target": "else{ printf(\"NO\");",
+      "exact_match": false
+    }
+  ]
+}

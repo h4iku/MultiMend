@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "\"Cleceland\",",
+      "patch": "\"Cleveland\",",
+      "target": "\"Cleveland\",",
+      "exact_match": true
+    }
+  ]
+}

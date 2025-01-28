@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (i<na-1) i++;",
+      "target": "i++;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "if (j<nb-1) j++;",
+      "target": "j++;",
+      "exact_match": false
+    }
+  ]
+}

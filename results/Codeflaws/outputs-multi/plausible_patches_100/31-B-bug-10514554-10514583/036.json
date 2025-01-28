@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(state==1)",
+      "patch": "if(state==1 && bit!=0)",
+      "target": "if(state==1&&bit!=0)",
+      "exact_match": true
+    }
+  ]
+}

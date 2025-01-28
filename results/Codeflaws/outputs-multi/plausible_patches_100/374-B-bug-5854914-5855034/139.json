@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "p=p+(p)*(z-1);",
+      "patch": "p=p+(p)*(z/2);",
+      "target": "p=p+(p)*((z/2)+(z%2));",
+      "exact_match": false
+    }
+  ]
+}

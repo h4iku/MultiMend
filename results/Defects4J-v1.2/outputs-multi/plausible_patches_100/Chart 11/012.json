@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "PathIterator iterator2 = p1.getPathIterator(null);",
+      "patch": "PathIterator iterator2 = p2.getPathIterator(null);",
+      "target": "PathIterator iterator2 = p2.getPathIterator(null);",
+      "exact_match": true
+    }
+  ]
+}

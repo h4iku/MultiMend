@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (encoded_test === \"TEST\") {",
+      "patch": "if (!encoded_test || encoded_test === \"TEST\") {",
+      "target": "if (encoded_test == \"TEST\") {",
+      "exact_match": false
+    }
+  ]
+}

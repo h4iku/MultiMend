@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (Amax<=arr[i])",
+      "patch": "if (Amax<(int)arr[i])",
+      "target": "if (Amax<arr[i])",
+      "exact_match": false
+    }
+  ]
+}

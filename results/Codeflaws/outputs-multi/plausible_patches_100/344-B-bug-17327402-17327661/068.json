@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"%d %d %d\",a-i,i,max-i);",
+      "patch": "printf(\"%d %d %d\",b-i,i,max-i);",
+      "target": "printf(\"%d %d %d\",b-i,i,max-i);",
+      "exact_match": true
+    }
+  ]
+}

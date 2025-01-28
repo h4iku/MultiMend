@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "final String classAttr = attributes.get(\"class\");",
+      "patch": "final String classAttr = attr(\"class\");",
+      "target": "final String classAttr = attributes.getIgnoreCase(\"class\");",
+      "exact_match": false
+    }
+  ]
+}

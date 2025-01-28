@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(de>=max[p])",
+      "patch": "if(de>=min[p])",
+      "target": "if(de>=max[p]-min[p])",
+      "exact_match": false
+    }
+  ]
+}

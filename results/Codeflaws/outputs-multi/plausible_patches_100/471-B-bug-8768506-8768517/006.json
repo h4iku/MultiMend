@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (cnt++ || i == 2) {",
+      "patch": "if (cnt++ || i == 1) {",
+      "target": "if (cnt++ || i) {",
+      "exact_match": false
+    }
+  ]
+}

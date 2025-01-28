@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "ans = 2*h/r;",
+      "patch": "ans = 2*(int)(h/r);",
+      "target": "ans = 2*(h/r);",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "printf(\"Happy Alex\"); return 0;",
+      "target": "n--;",
+      "exact_match": false
+    }
+  ]
+}

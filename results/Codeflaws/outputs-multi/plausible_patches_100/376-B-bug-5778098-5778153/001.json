@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "head[b]=a;",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "if(head[i]||arr[i]>0)",
+      "patch": "if(head[i]||arr[i]>0)",
+      "target": "if(arr[i]>0)",
+      "exact_match": false
+    }
+  ]
+}

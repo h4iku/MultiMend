@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "for (i = 0; i < n; i++) { arr[i].home_score += x[arr[i].away_color]; }",
+      "target": "return 0;",
+      "exact_match": false
+    }
+  ]
+}

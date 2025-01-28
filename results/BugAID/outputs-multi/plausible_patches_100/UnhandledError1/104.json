@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "kiwi.cache.alljs = kiwi.cache.alljs_hash;",
+      "target": "try {",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(p>=m+n)return;",
+      "patch": "if(p>m+n)return 0;",
+      "target": "if(p>m+n)return;",
+      "exact_match": false
+    }
+  ]
+}

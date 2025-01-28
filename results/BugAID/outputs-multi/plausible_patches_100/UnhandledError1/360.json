@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "if (request.headers['if-none-match'] === k iwi.cache.alljs_hash) { response.statusCode = 304; }",
+      "target": "} } catch (e) { response.statusCode = 500;",
+      "exact_match": false
+    }
+  ]
+}

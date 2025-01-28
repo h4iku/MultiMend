@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "while(st<=en && p<=n && sta==0)",
+      "patch": "while(st==0 && st<=en && p<=n && sta==0)",
+      "target": "while(st<en && p<=n && sta==0)",
+      "exact_match": false
+    }
+  ]
+}

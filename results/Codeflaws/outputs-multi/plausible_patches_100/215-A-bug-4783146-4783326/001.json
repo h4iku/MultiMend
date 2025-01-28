@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "else if (B[i] / A[i] == ratio)",
+      "patch": "else if (B[i] / A[j] == ratio)",
+      "target": "else if (B[i] / A[j] == ratio)",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if( arr[i]==(arr[j]+arr[k])&& (i!=j)&&(i!=k)){",
+      "patch": "if( arr[i]==(arr[j]+arr[k])&& (i!=j)&&(i!=k)&&(j!=k)){",
+      "target": "if( arr[i]==(arr[j]+arr[k])&& (i!=j)&&(i!=k)&&(k!=j)){",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(sum==0 && h>0)",
+      "patch": "if(sum<=0 && h>=0)",
+      "target": "if((sum==0 && h>0) || sum-h+1<=0)",
+      "exact_match": false
+    }
+  ]
+}

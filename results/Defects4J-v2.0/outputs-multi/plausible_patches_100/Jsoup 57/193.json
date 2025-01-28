@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "attributes.remove(attrKey);",
+      "patch": "attributes.remove(attrKey); return;",
+      "target": "it.remove();",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"%d\\n\",(long long)(m*k)<min?(long long)(m*k):min);",
+      "patch": "printf(\"%d\\n\",(unsigned long)(m*k)<min?(unsigned long)(m*k):min);",
+      "target": "printf(\"%d\\n\",(((long long)m)*k)<min?(((long long)m)*k):min);",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"%I64u\\n\",(n-w)*(U)n);",
+      "patch": "",
+      "target": "printf(\"%I64u\\n\",(n>w?n-w:0)*(U)n);",
+      "exact_match": false
+    }
+  ]
+}

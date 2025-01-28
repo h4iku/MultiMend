@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "} else if (minRatioPositions.size() > 1) {",
+      "target": "if (tableau.getNumArtificialVariables() > 0) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "} else if (minRatioPositions.size() > 1) {",
+      "target": "}           if (getIterations() < getMaxIterations() / 2) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "",
+      "patch": "} else if (minRatioPositions.size() > 1) {",
+      "target": "}",
+      "exact_match": false
+    }
+  ]
+}

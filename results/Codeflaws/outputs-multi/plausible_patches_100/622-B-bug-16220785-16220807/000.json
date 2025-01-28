@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"Time: \");",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "printf(\"Time+: \");",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return true;",
+      "patch": "return Boolean.valueOf(depth == 0);",
+      "target": "return depth==0;",
+      "exact_match": false
+    }
+  ]
+}

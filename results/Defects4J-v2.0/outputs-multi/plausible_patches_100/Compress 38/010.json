@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (getName().endsWith(\"/\")) {",
+      "patch": "if (\"/\".equals(getName())) {",
+      "target": "if (!isPaxHeader() && !isGlobalPaxHeader() && getName().endsWith(\"/\")) {",
+      "exact_match": false
+    }
+  ]
+}

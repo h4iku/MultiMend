@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "jwi.cache.alljs_hash = hash.digest('base64');",
+      "target": "try {",
+      "exact_match": false
+    }
+  ]
+}

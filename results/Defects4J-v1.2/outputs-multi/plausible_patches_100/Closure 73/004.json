@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (c > 0x1f && c <= 0x7f) {",
+      "patch": "if (c > 0x1f && c < 0x7f) {",
+      "target": "if (c > 0x1f && c < 0x7f) {",
+      "exact_match": true
+    }
+  ]
+}

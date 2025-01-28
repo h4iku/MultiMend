@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "else count_draw=1;",
+      "patch": "else count_draw++;",
+      "target": "else count_draw++;",
+      "exact_match": true
+    }
+  ]
+}

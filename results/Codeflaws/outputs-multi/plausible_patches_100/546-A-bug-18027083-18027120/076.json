@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (d < 0) d = 0;",
+      "target": "if(p>n)",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "if (d < 0) d = 0;",
+      "target": "else d=0;",
+      "exact_match": false
+    }
+  ]
+}

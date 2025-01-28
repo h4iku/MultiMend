@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"%d\",sum);",
+      "patch": "printf(\"%ld\",sum);",
+      "target": "printf(\"%lld\",sum);",
+      "exact_match": false
+    }
+  ]
+}

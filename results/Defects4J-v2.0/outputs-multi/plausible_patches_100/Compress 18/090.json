@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (name.endsWith(\"/\")) { name = name.substring(0, name.length() - 1); }",
+      "target": "while (name.endsWith(\"/\")) {   name = name.substring(0, name.length() - 1); }",
+      "exact_match": false
+    }
+  ]
+}

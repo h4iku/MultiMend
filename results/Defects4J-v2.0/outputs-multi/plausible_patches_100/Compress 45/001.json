@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "} formatBigIntegerBinary(value, buf, offset, length, negative);",
+      "patch": "} else { formatBigIntegerBinary(value, buf, offset, length, negative); }",
+      "target": "} else { formatBigIntegerBinary(value, buf, offset, length, negative); }",
+      "exact_match": true
+    }
+  ]
+}

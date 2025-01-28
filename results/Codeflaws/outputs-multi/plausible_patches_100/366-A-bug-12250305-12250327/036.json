@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "minb=min(sanjay.c1,sanjay.b2);",
+      "patch": "minb=min(sanjay.c2,sanjay.b2);",
+      "target": "minb=min(sanjay.c2,sanjay.b2);",
+      "exact_match": true
+    }
+  ]
+}

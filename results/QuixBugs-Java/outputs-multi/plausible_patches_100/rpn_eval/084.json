@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "c = bin_op.apply(a,b);",
+      "patch": "c = bin_op.apply(b,a);",
+      "target": "c = bin_op.apply(b,a);",
+      "exact_match": true
+    }
+  ]
+}

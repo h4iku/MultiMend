@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "max += Math.max(max, Math.abs(a));",
+      "patch": "max = Math.max(max, Math.abs(a));",
+      "target": "max = Math.max(max, Math.abs(a));",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "public double getLInfNorm() { double max = 0; Iterator iter = entries.iterator(); while (iter.hasNext()) { iter.advance(); max += iter.value(); } return max; }",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

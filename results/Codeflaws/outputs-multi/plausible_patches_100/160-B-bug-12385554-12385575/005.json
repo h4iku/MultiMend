@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(flag == 4) printf(\"NO\\n\");",
+      "patch": "if(flag == 3) printf(\"NO\\n\");",
+      "target": "if(flag == 3) printf(\"NO\\n\");",
+      "exact_match": true
+    }
+  ]
+}

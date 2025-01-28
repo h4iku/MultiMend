@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(ch%(n+1)!=0)",
+      "patch": "if(ch%(n+1)!=1)",
+      "target": "if((ch-1)%(n+1)!=0)",
+      "exact_match": false
+    }
+  ]
+}

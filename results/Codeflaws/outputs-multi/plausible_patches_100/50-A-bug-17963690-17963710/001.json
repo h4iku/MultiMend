@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int a[18][18];",
+      "patch": "int a[20][20];",
+      "target": "int a[20][20];",
+      "exact_match": true
+    }
+  ]
+}

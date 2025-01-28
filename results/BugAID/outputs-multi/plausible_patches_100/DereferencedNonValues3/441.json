@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "powGlobals.lists.media = []; powGlobals.lists.indexes = [];powGlobals.lists.files = [];",
+      "target": "}",
+      "exact_match": false
+    }
+  ]
+}

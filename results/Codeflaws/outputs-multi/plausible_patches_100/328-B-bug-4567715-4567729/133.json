@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if(ans<mini) mini=ans;",
+      "target": "if(mini==999999999) mini=0;",
+      "exact_match": false
+    }
+  ]
+}

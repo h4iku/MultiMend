@@ -1,0 +1,27 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"number of GukiZ''s students\\n\");",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "printf(\"number of student %d: \",i+1);",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    },
+    {
+      "hunk": 2,
+      "source": "system(\"pause\");",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

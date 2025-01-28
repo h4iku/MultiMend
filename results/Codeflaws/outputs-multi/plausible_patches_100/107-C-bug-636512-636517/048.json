@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "rec[b]+=(1<<a-1);",
+      "patch": "rec[b] |= (1<<a-1);",
+      "target": "rec[b]|=(1<<a-1);",
+      "exact_match": true
+    }
+  ]
+}

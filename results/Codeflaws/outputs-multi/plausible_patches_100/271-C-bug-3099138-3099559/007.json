@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return k - (i - k+1);",
+      "patch": "return k - (i - (k+1));",
+      "target": "return k - (i - (k+1));",
+      "exact_match": true
+    }
+  ]
+}

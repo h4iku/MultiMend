@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (in == null) { throw new NullPointerException(); }",
+      "target": "if ( checksum == null ){ throw new NullPointerException(\"Parameter checksum must not be null\"); }",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "if (checksum == null) throw new NullPointerException();",
+      "target": "if ( in == null ){ throw new NullPointerException(\"Parameter in must not be null\"); }",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (!_hasSegments)  return _currentSegment;",
+      "patch": "",
+      "target": "if (!_hasSegments && _currentSegment != null)  return _currentSegment;",
+      "exact_match": false
+    }
+  ]
+}

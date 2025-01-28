@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"%d %d\\n0 0 \\n%d \\n0 %d\\n\",n,m,n,m);",
+      "patch": "printf(\"%d %d\\n0 0 \\n%d 0\\n0 %d\\n\",n,m,n,m);",
+      "target": "printf(\"%d %d\\n0 0 \\n%d 0\\n0 %d\\n\",n,m,n,m);",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "return 0;",
+      "exact_match": false
+    }
+  ]
+}

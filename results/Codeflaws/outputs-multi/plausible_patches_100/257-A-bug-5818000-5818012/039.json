@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(i!=n)",
+      "patch": "if(i!=n || max>=m)",
+      "target": "if(i==n&&max>=m||i!=n)",
+      "exact_match": false
+    }
+  ]
+}

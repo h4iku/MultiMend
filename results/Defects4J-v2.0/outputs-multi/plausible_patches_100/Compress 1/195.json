@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "System.exit(0);",
+      "target": "this.finish();",
+      "exact_match": false
+    }
+  ]
+}

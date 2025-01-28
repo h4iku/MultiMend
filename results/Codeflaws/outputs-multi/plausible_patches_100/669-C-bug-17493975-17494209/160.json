@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "print();",
+      "patch": "if (i == 0) { print(); }",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "for (i = NoMatches-1; i >= 0 && Operations[i][0]!= 3; i--) { if (Operations[i][0] == 3) { SetCell(i); } else if (Operations[i][0] == 1) { Row(i); } else { Colum(i); } print(); }",
+      "target": "print();",
+      "exact_match": false
+    }
+  ]
+}

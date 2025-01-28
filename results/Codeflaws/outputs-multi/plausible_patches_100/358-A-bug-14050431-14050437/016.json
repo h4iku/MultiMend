@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "ptr->b = ptr->a;",
+      "patch": "ptr->b = ptr->a + 2;",
+      "target": "ptr->b = aux;",
+      "exact_match": false
+    }
+  ]
+}

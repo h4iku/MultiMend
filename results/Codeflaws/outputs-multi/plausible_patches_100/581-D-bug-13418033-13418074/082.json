@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(is_length(p[(j+1)%3], tmp)) {",
+      "patch": "if(is_length(p[(j+1)%3], length-tmp)) {",
+      "target": "if(!is_length(p[(j+1)%3], length)) {",
+      "exact_match": false
+    }
+  ]
+}

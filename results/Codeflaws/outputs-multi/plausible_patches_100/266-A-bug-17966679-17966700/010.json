@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "scanf(\"%s\", &a);",
+      "target": "scanf(\"%d\",&i);",
+      "exact_match": false
+    }
+  ]
+}

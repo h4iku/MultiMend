@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(a==0||a>n-5)printf(\"4\");",
+      "patch": "if(a==0||a>n-4){ printf(\"4\"); }",
+      "target": "if(a==0||a>n-4)printf(\"4\");",
+      "exact_match": true
+    }
+  ]
+}

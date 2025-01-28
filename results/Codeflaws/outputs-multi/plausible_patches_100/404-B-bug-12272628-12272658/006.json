@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int rounds = em / b4;",
+      "patch": "unsigned int rounds = em / b4;",
+      "target": "long long int rounds = em / b4;",
+      "exact_match": false
+    }
+  ]
+}

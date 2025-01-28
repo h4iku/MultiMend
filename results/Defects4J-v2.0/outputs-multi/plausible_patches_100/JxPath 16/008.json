@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return nodeType == Node.ELEMENT_NODE || nodeType == Node.DOCUMENT_NODE;",
+      "patch": "return nodeType == Node.ELEMENT_NODE || nodeType == Node.DOCUMENT_NODE || nodeType == Node.TEXT_NODE;",
+      "target": "return true;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "return (node instanceof Element) || (node instanceof Document);",
+      "patch": "return (node instanceof Element) || (node instanceof Document) || (node instanceof Text);",
+      "target": "return true;",
+      "exact_match": false
+    }
+  ]
+}

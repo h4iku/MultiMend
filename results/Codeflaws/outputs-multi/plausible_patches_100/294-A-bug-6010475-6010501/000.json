@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(num2<numOwires)",
+      "patch": "",
+      "target": "if(num2<temp)",
+      "exact_match": false
+    }
+  ]
+}

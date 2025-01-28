@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "tokens.add(token);",
+      "patch": "tokens.add(token);",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "tokens.add(token); }",
+      "patch": "tokens.add(token); } else { tokens.add(token); }",
+      "target": "}  tokens.add(token);",
+      "exact_match": false
+    }
+  ]
+}

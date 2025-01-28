@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(largest[i]<greater)greater=largest[x];",
+      "patch": "if(largest[i]<greater)greater=largest[i];",
+      "target": "if(largest[i]<greater){greater=largest[i];}",
+      "exact_match": true
+    }
+  ]
+}

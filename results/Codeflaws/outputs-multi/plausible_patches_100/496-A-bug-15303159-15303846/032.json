@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if(max>b[i]) max=b[i];",
+      "target": "max=0;",
+      "exact_match": false
+    }
+  ]
+}

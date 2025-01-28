@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": ")) {",
+      "patch": "|| defValue.length() > 1 )) {",
+      "target": "|| (defValue.charAt(0) == '\\\"' && defValue.charAt(defValue.length() - 1) == '\\\"'))) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": ") {",
+      "patch": "|| node.getType() == Token.EXPR_RESULT ) {",
+      "target": "|| exprBody.getType() == Token.NEW || exprBody.getType() == Token.CALL) {",
+      "exact_match": false
+    }
+  ]
+}

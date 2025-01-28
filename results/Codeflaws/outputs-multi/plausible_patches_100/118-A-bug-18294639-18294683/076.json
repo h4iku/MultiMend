@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(st[i]!='a'&&st[i]!='e'&&st[i]!='i'&&st[i]!='o'&&st[i]!='u'){",
+      "patch": "if(st[i]!='a'&&st[i]!='e'&&st[i]!='i'&&st[i]!='o'&&st[i]!='u'&&st[i]!='y'){",
+      "target": "if(st[i]!='a'&&st[i]!='y'&&st[i]!='e'&&st[i]!='i'&&st[i]!='o'&&st[i]!='u'){",
+      "exact_match": false
+    }
+  ]
+}

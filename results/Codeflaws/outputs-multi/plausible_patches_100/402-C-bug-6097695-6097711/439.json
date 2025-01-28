@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int t,n,p,a[25][25],i,j,count=0,k;",
+      "patch": "int t,n,p,a[25][25],i,j,count=0,k;",
+      "target": "int t,n,p,a[25][25],i,j,k;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "int t,n,p,a[25][25],i,j,count=0,k;",
+      "target": "int count=0;",
+      "exact_match": false
+    }
+  ]
+}

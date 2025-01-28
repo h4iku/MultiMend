@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(a[i]==a[j]) k++;",
+      "patch": "if(a[i]==a[j]) { k++; break; }",
+      "target": "if(a[i]==a[j]) { k++; break; }",
+      "exact_match": true
+    }
+  ]
+}

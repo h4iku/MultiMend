@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "t = (2 * v - w) / a + (2 * lv - lw - d) / v;",
+      "patch": "t = (2 * v - w) / a - (2 * lv - lw - d) / v;",
+      "target": "t = (2 * v - w) / a + (d - 2 * lv + lw) / v;",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "pos = findWrapPos(text, width, nextLineTabStop);",
+      "patch": "pos = findWrapPos(text, width, 0);",
+      "target": "pos = findWrapPos(text, width, 0);",
+      "exact_match": true
+    }
+  ]
+}

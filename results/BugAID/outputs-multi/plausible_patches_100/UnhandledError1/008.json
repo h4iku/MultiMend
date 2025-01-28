@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (typeof request.headers['if-none-match'] ==='string') { response.statusCode = 304; }",
+      "target": "try {",
+      "exact_match": false
+    }
+  ]
+}

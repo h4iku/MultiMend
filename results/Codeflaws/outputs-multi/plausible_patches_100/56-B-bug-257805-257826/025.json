@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(num[j]!=n)break;",
+      "patch": "if(num[j]!=j)break;",
+      "target": "if(num[j]!=j)break;",
+      "exact_match": true
+    }
+  ]
+}

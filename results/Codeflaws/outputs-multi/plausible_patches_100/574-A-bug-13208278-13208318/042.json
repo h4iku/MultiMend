@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (f[n]+limak+candy>n) candy+=(n-limak-candy+1)/2+1;",
+      "patch": "if (f[n]+limak+candy>n) candy+=n-limak-candy+1;",
+      "target": "if (f[n]+limak+candy>n) candy+=n-limak-candy+1;",
+      "exact_match": true
+    }
+  ]
+}

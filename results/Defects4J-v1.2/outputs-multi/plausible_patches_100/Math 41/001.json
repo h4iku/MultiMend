@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for (int i = 0; i < weights.length; i++) {",
+      "patch": "for (int i = begin; i < begin + length; i++) {",
+      "target": "for (int i = begin; i < begin + length; i++) {",
+      "exact_match": true
+    }
+  ]
+}

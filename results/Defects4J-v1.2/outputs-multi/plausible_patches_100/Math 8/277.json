@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "public T[] sample(int sampleSize) throws NotStrictlyPositiveException {",
+      "patch": "public T[] sample(int sampleSize) throws NotStrictlyPositiveException {",
+      "target": "public Object[] sample(int sampleSize) throws NotStrictlyPositiveException {",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "final T[]out = (T[]) java.lang.reflect.Array.newInstance(singletons.get(0).getClass(), sampleSize);",
+      "patch": "final T[]out = (T[]) java.lang.reflect.Array.newInstance(singletons.get(1).getClass(), sampleSize);",
+      "target": "final Object[] out = new Object[sampleSize];",
+      "exact_match": false
+    }
+  ]
+}

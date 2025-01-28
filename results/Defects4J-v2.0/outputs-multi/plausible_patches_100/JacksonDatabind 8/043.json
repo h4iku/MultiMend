@@ -1,0 +1,41 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (!explicit) { return; }",
+      "target": "boolean verify;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "verify = true; } else {  verify = !explicit;",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "if (oldOne.getClass() == newOne.getClass()) {",
+      "patch": "if (oldOne.getClass() == newOne.getClass()) {",
+      "target": "if (verify && (oldOne.getClass() == newOne.getClass())) {  Class<?> oldType = oldOne.getRawParameterType(0); Class<?> newType = newOne.getRawParameterType(0);  if (oldType == newType) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "",
+      "patch": "",
+      "target": "}  if (newType.isAssignableFrom(oldType)) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "",
+      "patch": "",
+      "target": "return; }",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for(k = 0; k <= n + j - i; k++){",
+      "patch": "for(k = 0; k < n + j - i; k++){",
+      "target": "for(k = 0; k < n + j - i; k++){",
+      "exact_match": true
+    }
+  ]
+}

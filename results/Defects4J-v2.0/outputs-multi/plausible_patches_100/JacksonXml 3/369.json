@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "_currText = _xmlTokens.getText();",
+      "patch": "_currText = _xmlTokens.getText();",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "break;",
+      "patch": "return (_currText);",
+      "target": "return (_currText = _xmlTokens.getText());",
+      "exact_match": false
+    }
+  ]
+}

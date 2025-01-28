@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if(x>0) { printf(\"%d\",x-x); return 0; }",
+      "target": "printf(\"0\");",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for(m=0; roll[m]!='\\n'; m++){",
+      "patch": "for(m=0; m<n; m++){",
+      "target": "for(m=0; m<n; m++){",
+      "exact_match": true
+    }
+  ]
+}

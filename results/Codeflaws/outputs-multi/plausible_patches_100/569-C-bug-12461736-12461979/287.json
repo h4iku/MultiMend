@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "typedef long long ll;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "if (q * npr <= p * npa) {",
+      "patch": "if (q * npr <= (unsigned int)p * npa) {",
+      "target": "if ((ll)q * npr <= (ll)p * npa) {",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "qsort(ara,n,sizeof(int),comp);",
+      "patch": "qsort(ara,n,sizeof(long),comp);",
+      "target": "qsort(ara,n,sizeof(long long),comp);",
+      "exact_match": false
+    }
+  ]
+}

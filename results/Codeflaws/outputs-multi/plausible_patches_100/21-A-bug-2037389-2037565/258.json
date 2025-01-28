@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "n=n+m;",
+      "target": "if(s[y]=='\\0' || s[y]=='/') n=n+m;",
+      "exact_match": false
+    }
+  ]
+}

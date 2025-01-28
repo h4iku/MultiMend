@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(a>b){",
+      "patch": "if(a>=b){",
+      "target": "if(a==b) printf(\"%d 0\",a); else if(a>b){",
+      "exact_match": false
+    }
+  ]
+}

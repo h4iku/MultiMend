@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(sum1>=x){",
+      "patch": "if(sum1>=x && x<sum1){",
+      "target": "if(sum1>x){",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "} else { printf(\"%d\\n\", ans); return 0;",
+      "target": "}",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "}",
+      "patch": "}",
+      "target": "",
+      "exact_match": false
+    }
+  ]
+}

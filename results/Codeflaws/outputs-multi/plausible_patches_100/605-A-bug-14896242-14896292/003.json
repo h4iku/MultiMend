@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if(k>max) max = k;",
+      "target": "if(n==1) printf(\"0\\n\"); else",
+      "exact_match": false
+    }
+  ]
+}

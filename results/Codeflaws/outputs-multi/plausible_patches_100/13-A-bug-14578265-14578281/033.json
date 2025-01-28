@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "while (x<a) x = x * i;",
+      "patch": "while (x<=a) x = x * i;",
+      "target": "while (x<=a) x = x * i;",
+      "exact_match": true
+    }
+  ]
+}

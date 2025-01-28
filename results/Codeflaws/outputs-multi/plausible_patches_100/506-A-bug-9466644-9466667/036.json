@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for (i = d * 2 - 1; i <= 30000; i++)",
+      "patch": "for (i = d + 2 - 1; i <= 30000; i++)",
+      "target": "for (i = d + 1; i <= 30000; i++)",
+      "exact_match": false
+    }
+  ]
+}

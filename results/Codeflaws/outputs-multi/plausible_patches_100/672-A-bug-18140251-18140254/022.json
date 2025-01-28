@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "printf(\"%c\", vec[n]);",
+      "patch": "printf(\"%c\", vec[n-1]);",
+      "target": "printf(\"%c\", vec[n-1]);",
+      "exact_match": true
+    }
+  ]
+}

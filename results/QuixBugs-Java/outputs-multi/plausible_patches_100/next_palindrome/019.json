@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "otherwise.addAll(Collections.nCopies(digit_list.length, 0));",
+      "patch": "otherwise.addAll(Collections.nCopies(digit_list.length - 1, 0));",
+      "target": "otherwise.addAll(Collections.nCopies(digit_list.length-1, 0));",
+      "exact_match": true
+    }
+  ]
+}

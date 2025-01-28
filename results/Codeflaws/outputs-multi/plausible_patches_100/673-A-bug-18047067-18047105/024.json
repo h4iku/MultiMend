@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(i == 1 && a[i] <= 75){",
+      "patch": "if(i >= 1 && a[i] <= 75){",
+      "target": "if(i == 1 || a[i] <= 75){",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (cntone != cnttwo)",
+      "patch": "if (cntone < cnttwo)",
+      "target": "if (cntone < cnttwo)",
+      "exact_match": true
+    }
+  ]
+}

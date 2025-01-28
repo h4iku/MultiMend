@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if(this.runningState!= STATE_STOPPED) { return; }",
+      "target": "if(this.runningState == STATE_RUNNING) {",
+      "exact_match": false
+    }
+  ]
+}

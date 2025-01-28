@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "min=(x+1)/2;",
+      "patch": "min=(x+1-1)/2;",
+      "target": "min=(x)/2;",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if(sets[0].values[i] == sets[1].values[j]) { fset.values[fset.size++] = sets[0].values[i]; i++; j++; }",
+      "target": "return 0;",
+      "exact_match": false
+    }
+  ]
+}

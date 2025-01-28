@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if(cost[i]<min){",
+      "patch": "if((int)cost[i]<min){",
+      "target": "if(cost[i]<=min){",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (A[k][l]) continue;",
+      "patch": "",
+      "target": "if (A[k][l]=='1') continue;",
+      "exact_match": false
+    }
+  ]
+}

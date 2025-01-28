@@ -1,0 +1,34 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return ctxt.handleWeirdKey(_keyClass, key, \"not a valid representation, problem: %s\", re.getMessage());",
+      "patch": "return ctxt.handleWeirdKey(_keyClass, key, \"not a valid representation, problem: %s\", re.getMessage());",
+      "target": "return ctxt.handleWeirdKey(_keyClass, key, \"not a valid representation, problem: (%s) %s\", re.getClass().getName(), re.getMessage());",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "if (isFactoryMethod(am)) {",
+      "patch": "if (am == null || am.getParameterCount() == 1) {",
+      "target": "if (isFactoryMethod(am) && am.getParameterCount() == 1) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "",
+      "patch": "",
+      "target": "if (am.getParameterCount() == 1) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "",
+      "patch": "",
+      "target": "}",
+      "exact_match": false
+    }
+  ]
+}

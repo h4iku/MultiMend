@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for x in arr:",
+      "patch": "for x in arr[k:]:",
+      "target": "for x in arr[k:]:",
+      "exact_match": true
+    }
+  ]
+}

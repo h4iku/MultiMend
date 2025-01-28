@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "found = key.equals(prop.getName());",
+      "patch": "found = key.equalsIgnoreCase(prop.getName());",
+      "target": "found = key.equals(_hashArea[i-1]);",
+      "exact_match": false
+    }
+  ]
+}

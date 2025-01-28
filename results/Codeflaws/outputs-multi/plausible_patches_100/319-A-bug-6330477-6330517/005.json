@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "no2=no2*2;",
+      "patch": "no2=(no2*2)%no;",
+      "target": "no2=(no2*2)%no;",
+      "exact_match": true
+    }
+  ]
+}

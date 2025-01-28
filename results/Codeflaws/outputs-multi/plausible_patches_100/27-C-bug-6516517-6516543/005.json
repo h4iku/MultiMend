@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if ((a[i] > a[min - 1] && a[i] < a[max - 1]) || (((a[i] > a[max-1] && min > max) || (a[i] < a[min-1] && max > min)) && max != min))",
+      "patch": "if ((a[i] >= a[min - 1] && a[i] < a[max - 1]) || (((a[i] >= a[max-1] && min > max) || (a[i] < a[min-1] && max > min)) && max!= min))",
+      "target": "if ((a[i] > a[min - 1] && a[i] < a[max - 1]) || (((a[i] >= a[max-1] && min > max) || (a[i] <= a[min-1] && max > min)) && max != min))",
+      "exact_match": false
+    }
+  ]
+}

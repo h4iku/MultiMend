@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for(j = 0; dou[j][0]; j++) printf(\"%d %d\\n\",dou[j][0],j);",
+      "patch": "for(j = 0; dou[j][0]; j++) fprintf(stderr, \"%d %d\\n\",dou[j][0],j);",
+      "target": "for(j = 0; dou[j][0]; j++);",
+      "exact_match": false
+    }
+  ]
+}

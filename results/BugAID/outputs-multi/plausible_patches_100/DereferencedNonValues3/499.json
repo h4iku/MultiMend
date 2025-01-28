@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "} else if ($('#main').css(\"display\") == \"table\") { $('#filesList').css(\"display\",\"none\"); $('#main').css(\"display\",\"none\");",
+      "target": "}",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": false,
+  "hunks": [
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "if (load.autoPlay) { load.autoPlay = true; }",
+      "target": "}",
+      "exact_match": false
+    }
+  ]
+}

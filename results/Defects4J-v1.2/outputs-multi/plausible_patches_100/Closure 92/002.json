@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "int indexOfDot = namespace.indexOf('.');",
+      "patch": "int indexOfDot = namespace.lastIndexOf('.');",
+      "target": "int indexOfDot = namespace.lastIndexOf('.');",
+      "exact_match": true
+    }
+  ]
+}
