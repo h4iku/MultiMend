@@ -25,9 +25,9 @@ model = AutoModelForSeq2SeqLM.from_pretrained(model_checkpoint)
 # Load data
 dataset_names = {
     "Python": "h4iku/coconut_python2010_preprocessed",
-    # "Java": "h4iku/coconut_java2006_preprocessed",
-    # "JavaScript": "h4iku/coconut_javascript2010_preprocessed",
-    # "C": "h4iku/coconut_c2005_preprocessed",
+    "Java": "h4iku/coconut_java2006_preprocessed",
+    "JavaScript": "h4iku/coconut_javascript2010_preprocessed",
+    "C": "h4iku/coconut_c2005_preprocessed",
 }
 
 raw_datasets = {
