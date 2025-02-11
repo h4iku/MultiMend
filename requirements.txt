@@ -1,0 +1,17 @@
+accelerate==0.34.2
+chromadb==0.5.5
+datasets==2.21.0
+huggingface_hub==0.27.1
+joblib==1.4.2
+psutil==6.1.1
+pytest==8.3.2
+sentence_transformers==3.0.1
+torch==2.4.0
+tqdm==4.67.1
+transformers==4.44.2
+tree_sitter==0.22.3
+tree_sitter_c==0.21.4
+tree_sitter_java==0.21.0
+tree_sitter_javascript==0.21.4
+tree_sitter_python==0.21.0
+unidiff==0.7.5
