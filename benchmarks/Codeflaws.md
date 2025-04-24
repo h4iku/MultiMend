@@ -1,0 +1,1 @@
+Download the [codeflaws.tar.gz](http://www.comp.nus.edu.sg/%7Erelease/codeflaws/codeflaws.tar.gz) archive and extract it in the `benchmarks/Codeflaws` directory.
