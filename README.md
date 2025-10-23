@@ -25,14 +25,14 @@
 
 3. Prepare evaluation benchmarks:
 
-    Place the evaluation benchmarks in the `benchmarks` directory. Repositories for [QuixBugs](https://github.com/jkoppel/QuixBugs), [Defects4J](https://github.com/rjust/defects4j/), and [BugAID](https://dl.acm.org/doi/abs/10.1145/2950290.2950308) are already there. Defects4J requires extra installation steps:
+    Place the evaluation benchmarks in the `benchmarks` directory. Appropriate version of repositories for [QuixBugs](https://github.com/jkoppel/QuixBugs), [Defects4J](https://github.com/rjust/defects4j/), and [BugAID](https://dl.acm.org/doi/abs/10.1145/2950290.2950308) are already there. QuixBugs needs [Gradle](https://gradle.org/) to work and Defects4J requires extra installation steps:
 
     ```bash
     cd benchmarks/Defects4J
     cpanm --installdeps .
     ./init.sh
     ```
-    For further information, follow [Defects4J set up instructions](https://github.com/rjust/defects4j/#setting-up-defects4j).
+    For further information, follow [Defects4J set up instructions](https://github.com/rjust/defects4j/tree/e85036c044320f11df22d3f23f248fdd4e99a41b#setting-up-defects4j).
 
     For the [Codeflaws](https://codeflaws.github.io/) benchmark, download [codeflaws.tar.gz](http://www.comp.nus.edu.sg/%7Erelease/codeflaws/codeflaws.tar.gz) archive and extract it in the `benchmarks/Codeflaws` directory.
 
