@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "tf.summary.histogram('{}_out'.format(layer.name), layer.output)",
+      "patch": "tf.summary.histogram('{}'.format(layer.name), layer.output[0])",
+      "target": "if isinstance(layer.output, list): for i, output in enumerate(layer.output): tf.summary.histogram('{}_out_{}'.format(layer.name, i), output) else: tf.summary.histogram('{}_out'.format(layer.name), layer.output)",
+      "exact_match": false
+    }
+  ]
+}

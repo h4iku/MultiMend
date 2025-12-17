@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "try: existing_format = next( fo for fo in formats if fo['format_id'] == representation_id) except StopIteration: full_info = formats_dict.get(representation_id, {}).copy() full_info.update(f) formats.append(full_info) else: existing_format.update(f)",
+      "patch": "full_info = formats_dict.get(representation_id, {}).copy() full_info.update(f) formats.append(full_info)",
+      "target": "full_info = formats_dict.get(representation_id, {}).copy() full_info.update(f) formats.append(full_info)",
+      "exact_match": true
+    }
+  ]
+}

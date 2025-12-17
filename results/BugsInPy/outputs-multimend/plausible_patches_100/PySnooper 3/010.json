@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "with open(output_path, 'a') as output_file:",
+      "patch": "with open(output, 'a') as output_file:",
+      "target": "with open(output, 'a') as output_file:",
+      "exact_match": true
+    }
+  ]
+}

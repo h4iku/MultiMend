@@ -1,0 +1,69 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "from typing import TYPE_CHECKING, Optional, Tuple, Union",
+      "patch": "from typing import TYPE_CHECKING, Optional, Tuple, Union",
+      "target": "from typing import TYPE_CHECKING, Optional, Tuple, Union, cast",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "from pandas._typing import FrameOrSeries",
+      "patch": "from pandas._typing import FrameOrSeries",
+      "target": "from pandas._typing import ArrayLike, FrameOrSeries",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "",
+      "patch": "",
+      "target": "is_categorical,",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "_factorize_keys(left_keys[n], right_keys[n], sort=sort)",
+      "patch": "_factorize_keys(left_keys[0], right_keys[1], sort=sort)",
+      "target": "_factorize_keys(left_keys[n], right_keys[n], sort=sort, how=how)",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "lkey, rkey, count = _factorize_keys(lkey, rkey, sort=sort)",
+      "patch": "lkey, rkey, count = _factorize_keys(lkey, rkey, sort=sort)",
+      "target": "lkey, rkey, count = _factorize_keys(lkey, rkey, sort=sort, how=how)",
+      "exact_match": false
+    },
+    {
+      "hunk": 5,
+      "source": "def _factorize_keys(lk, rk, sort=True):",
+      "patch": "def _factorize_keys(lk, rk, sort=True):",
+      "target": "def _factorize_keys( lk: ArrayLike, rk: ArrayLike, sort: bool = True, how: str = \"inner\" ) -> Tuple[np.array, np.array, int]:",
+      "exact_match": false
+    },
+    {
+      "hunk": 6,
+      "source": "is_categorical_dtype(lk) and is_categorical_dtype(rk) and lk.is_dtype_equal(rk)",
+      "patch": "is_categorical_dtype(lk) and is_categorical_dtype(rk) and lk.is_dtype_equal(rk)",
+      "target": "is_categorical_dtype(lk) and is_categorical_dtype(rk) and is_dtype_equal(lk, rk)",
+      "exact_match": false
+    },
+    {
+      "hunk": 7,
+      "source": "",
+      "patch": "",
+      "target": "assert is_categorical(lk) and is_categorical(rk) lk = cast(Categorical, lk) rk = cast(Categorical, rk)",
+      "exact_match": false
+    },
+    {
+      "hunk": 8,
+      "source": "",
+      "patch": "",
+      "target": "if how == \"right\": return rlab, llab, count",
+      "exact_match": false
+    }
+  ]
+}

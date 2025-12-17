@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "\"static_foo.txt\",",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "root = os.path.abspath(root)",
+      "patch": "root = os.path.abspath(self.path)",
+      "target": "root = os.path.abspath(root) + os.path.sep",
+      "exact_match": false
+    }
+  ]
+}

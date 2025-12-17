@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if skipna:",
+      "patch": "if skipna is None:",
+      "target": "if skipna and good.any():",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "if skipna:",
+      "patch": "if skipna is None:",
+      "target": "if skipna and good.any():",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "additionalProperties: Optional[Union[bool, Any]] = None",
+      "patch": "additionalProperties: Optional[Any] = None",
+      "target": "additionalProperties: Optional[Union[Dict[str, Any], bool]] = None",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "additionalProperties: Optional[Union[bool, SchemaBase]] = None",
+      "patch": "additionalProperties: Optional[Union[bool, SchemaBase]] = None",
+      "target": "additionalProperties: Optional[Union[SchemaBase, bool]] = None",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "responses: Union[Responses, Dict[Union[str], Response]]",
+      "patch": "responses: Union[Responses, Dict[Union[str], Response]]",
+      "target": "responses: Union[Responses, Dict[str, Response]]",
+      "exact_match": false
+    }
+  ]
+}

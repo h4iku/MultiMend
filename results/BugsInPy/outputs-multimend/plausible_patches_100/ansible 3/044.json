@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "elif path == '/etc/lsb-release' and 'Kali' in data:",
+      "patch": "elif path == '/etc/os-release' and 'Kali' in data:",
+      "target": "elif path in ('/etc/lsb-release', '/etc/os-release') and 'Kali' in data:",
+      "exact_match": false
+    }
+  ]
+}

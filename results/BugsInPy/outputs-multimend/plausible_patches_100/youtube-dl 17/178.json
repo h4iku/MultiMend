@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if not isinstance(param, bool): return []",
+      "target": "if param is None: return []",
+      "exact_match": false
+    }
+  ]
+}

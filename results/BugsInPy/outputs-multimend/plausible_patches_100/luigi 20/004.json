@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if params[param_name].significant: params_str[param_name] = params[param_name].serialize(param_value)",
+      "patch": "params_str[param_name] = params[param_name].serialize(param_value)",
+      "target": "params_str[param_name] = params[param_name].serialize(param_value)",
+      "exact_match": true
+    }
+  ]
+}

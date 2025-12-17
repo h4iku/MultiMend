@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if other.name is None: index = None else:   index = Index([other.name], name=self.index.name)",
+      "patch": "if other.name is None: index = None else:   index = Index([other.name], name=self.index.name)",
+      "target": "index = Index([other.name], name=self.index.name)",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "other = other.reindex(combined_columns, copy=False) other = DataFrame( other.values.reshape((1, len(other))), index=index, columns=combined_columns,",
+      "patch": "other = self.reindex(combined_columns, copy=False) other = DataFrame( other.values.reshape((1, len(other))), index=index, columns=combined_columns,",
+      "target": "other = ( other.reindex(combined_columns, copy=False) .to_frame() .T.infer_objects() .rename_axis(index.names, copy=False)",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "other = other._convert(datetime=True, timedelta=True)",
+      "patch": "other = other._convert(datetime=True, timedelta=True)",
+      "target": "",
+      "exact_match": false
+    }
+  ]
+}

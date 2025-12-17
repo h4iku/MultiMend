@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "f.__name__ = f\"__i{name}__\" return f",
+      "target": "self._reset_cacher()",
+      "exact_match": false
+    }
+  ]
+}

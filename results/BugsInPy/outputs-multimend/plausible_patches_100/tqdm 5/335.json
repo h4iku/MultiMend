@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "self.total = total",
+      "target": "if total is None and iterable is not None: try: total = len(iterable) except (TypeError, AttributeError): total = None",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "self.total = total",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "if total is None and iterable is not None: try: total = len(iterable) except (TypeError, AttributeError): total = None",
+      "patch": "if total is None and iterable is not None: try: total = len(iterable) except (TypeError, AttributeError): total = None",
+      "target": "",
+      "exact_match": false
+    }
+  ]
+}

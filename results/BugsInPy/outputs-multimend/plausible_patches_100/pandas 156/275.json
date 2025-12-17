@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for col, series in this.items(): new_data[col] = func(series.values, other.values)",
+      "patch": "for col, series in this.items(): new_data[col] = func(series.values, other.values)",
+      "target": "for col in this.columns: new_data[col] = func(this[col], other)",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "new_data[col] = func(left[col], float(right[col]))",
+      "patch": "new_data[col] = func(left[col], right[col])",
+      "target": "new_data[col] = func(left[col], right[col])",
+      "exact_match": true
+    }
+  ]
+}

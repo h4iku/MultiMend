@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if left_value != right_value:",
+      "patch": "if str(left_value) != str(right_value):",
+      "target": "if np.any(left_value != right_value):",
+      "exact_match": false
+    }
+  ]
+}

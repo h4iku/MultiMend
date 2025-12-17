@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "from parsel.selector import create_root_node",
+      "target": "import six",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "import six",
+      "patch": "import six",
+      "target": "from w3lib.html import strip_html5_whitespace",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "return urljoin(form.base_url, form.action)",
+      "patch": "return urljoin(form.base_url, form.action)",
+      "target": "action = form.get('action') if action is None: return form.base_url return urljoin(form.base_url, strip_html5_whitespace(action))",
+      "exact_match": false
+    }
+  ]
+}

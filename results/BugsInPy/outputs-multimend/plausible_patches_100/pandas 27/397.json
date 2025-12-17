@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "import pandas._libs.tslibs.frequencies as libfrequencies",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "freq = get_period_alias(freq)",
+      "patch": "",
+      "target": "res = get_period_alias(freq)   if res is None: base, stride = libfrequencies._base_and_stride(freq) res = f\"{stride}{base}\"  freq = res",
+      "exact_match": false
+    }
+  ]
+}

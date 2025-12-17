@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "except (KeyError, IndexError):",
+      "patch": "except (KeyError, IndexError, ValueError):",
+      "target": "except (KeyError, IndexError, ValueError):",
+      "exact_match": true
+    }
+  ]
+}

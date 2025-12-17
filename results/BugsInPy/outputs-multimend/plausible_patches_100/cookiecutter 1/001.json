@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "with open(context_file) as file_handle:",
+      "patch": "with open(context_file, 'rb') as file_handle:",
+      "target": "with open(context_file, encoding='utf-8') as file_handle:",
+      "exact_match": false
+    }
+  ]
+}

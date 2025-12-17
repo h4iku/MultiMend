@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "date_str = date_str.replace(',',' ')  date_str = re.sub(r' ?(\\+|-)[0-9:]*$', '', date_str)",
+      "patch": "date_str = date_str.replace(',',' ')  date_str = re.sub(r' ?(\\+|-)[0:9:]*$', '', date_str)",
+      "target": "date_str = date_str.replace(',', ' ')  date_str = re.sub(r' ?(\\+|-)[0-9]{2}:?[0-9]{2}$', '', date_str)",
+      "exact_match": false
+    }
+  ]
+}

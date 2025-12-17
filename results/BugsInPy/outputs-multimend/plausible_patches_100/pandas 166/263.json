@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "res = concat(frames, axis=1, join=\"outer\", verify_integrity=True)",
+      "patch": "res = concat(frames, axis=1, join=\"outer\", verify_integrity=True)",
+      "target": "res = concat( frames, axis=1, join=\"outer\", verify_integrity=True, sort=sort )",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "return concat(frames, axis=1, join=how, verify_integrity=True)",
+      "patch": "return concat(frames, axis=1, join=how, verify_integrity=True, sort=sort)",
+      "target": "return concat( frames, axis=1, join=how, verify_integrity=True, sort=sort )",
+      "exact_match": false
+    }
+  ]
+}

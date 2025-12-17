@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "output += f.extrabuf",
+      "patch": "output.append(f.extrabuf)",
+      "target": "output += f.extrabuf[-f.extrasize:]",
+      "exact_match": false
+    }
+  ]
+}

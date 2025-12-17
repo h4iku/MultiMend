@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "elif isinstance(obj, (ABCSeries, np.ndarray, ABCIndexClass)):",
+      "patch": "elif not isinstance(obj, (ABCSeries, np.ndarray, ABCIndexClass)):",
+      "target": "elif isinstance(obj, (ABCSeries, np.ndarray, ABCIndexClass, ABCExtensionArray)):",
+      "exact_match": false
+    }
+  ]
+}

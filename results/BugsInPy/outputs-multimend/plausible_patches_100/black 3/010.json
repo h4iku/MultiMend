@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "exists=False, file_okay=True, dir_okay=False, readable=True, allow_dash=False",
+      "patch": "exists=True, file_okay=True, dir_okay=False, readable=True, allow_dash=False",
+      "target": "exists=True, file_okay=True, dir_okay=False, readable=True, allow_dash=False",
+      "exact_match": true
+    }
+  ]
+}

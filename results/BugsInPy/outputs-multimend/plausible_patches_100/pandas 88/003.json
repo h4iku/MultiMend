@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if table.index.nlevels > 1:",
+      "patch": "if table.index.nlevels > 2:",
+      "target": "if table.index.nlevels > 1 and index:",
+      "exact_match": false
+    }
+  ]
+}

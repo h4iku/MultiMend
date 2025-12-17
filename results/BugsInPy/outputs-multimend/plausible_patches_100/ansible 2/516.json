@@ -1,0 +1,48 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "def __gt__(self, other): return not self.__lt__(other)",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "def __gt__(self, other): return not self.__le__(other)",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "return self.__gt__(other) or self.__eq__(other)",
+      "patch": "return self.__gt__(other) or self.__eq__(other)",
+      "target": "return not self.__lt__(other)",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "def __gt__(self, other): return not self.__lt__(other)",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    },
+    {
+      "hunk": 4,
+      "source": "",
+      "patch": "",
+      "target": "def __gt__(self, other): return not self.__le__(other)",
+      "exact_match": false
+    },
+    {
+      "hunk": 5,
+      "source": "return self.__gt__(other) or self.__eq__(other)",
+      "patch": "return self.__gt__(other) or self.__eq__(other)",
+      "target": "return not self.__lt__(other)",
+      "exact_match": false
+    }
+  ]
+}

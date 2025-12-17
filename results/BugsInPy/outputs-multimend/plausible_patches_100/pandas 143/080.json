@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if not (method is None and tolerance is None and is_list_like(target)): return super().get_indexer(target, method=method, tolerance=tolerance)",
+      "patch": "if not (method is None and tolerance is None and is_list_like(target)): return super().get_indexer(target, method=method, tolerance=tolerance, limit=limit)",
+      "target": "if com.any_not_none(method, tolerance, limit) or not is_list_like(target): return super().get_indexer( target, method=method, tolerance=tolerance, limit=limit )",
+      "exact_match": false
+    }
+  ]
+}

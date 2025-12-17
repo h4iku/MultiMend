@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "total *= unit_scale",
+      "patch": "",
+      "target": "if total: total *= unit_scale",
+      "exact_match": false
+    }
+  ]
+}

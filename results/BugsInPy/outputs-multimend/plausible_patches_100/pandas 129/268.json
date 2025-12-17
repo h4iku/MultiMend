@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "return -(self) + other",
+      "target": "if lib.is_scalar(other):  return Timestamp(other) - self",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return K.cast(K.equal(K.max(y_true, axis=-1),",
+      "patch": "return K.cast(K.equal(K.max(y_pred, axis=-1),",
+      "target": "return K.cast(K.equal(K.flatten(y_true),",
+      "exact_match": false
+    }
+  ]
+}

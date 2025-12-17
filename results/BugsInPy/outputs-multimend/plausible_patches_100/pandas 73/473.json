@@ -1,0 +1,69 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "def _combine_frame(self, other, func, fill_value=None, level=None):",
+      "patch": "def _combine_frame(self, other, func, fill_value=None, level=None):",
+      "target": "def _combine_frame(self, other: \"DataFrame\", func, fill_value=None):",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "def _combine_match_index(self, other, func):",
+      "patch": "def _combine_match_index(self, other, func):",
+      "target": "def _combine_match_index(self, other: Series, func):",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "",
+      "patch": "return ops.dispatch_to_series(self, other, func)",
+      "target": "other_vals = other.values.reshape(-1, 1)",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "new_data = func(self.values.T, other.values).T",
+      "patch": "new_data = func(self.values.T, other.values).T",
+      "target": "new_data = func(self.values, other_vals) new_data = dispatch_fill_zeros(func, self.values, other_vals, new_data)",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "shape = result.shape",
+      "patch": "shape = result.shape",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 5,
+      "source": "nan_mask = (zmask & (x == 0)).ravel()",
+      "patch": "nan_mask = (zmask & (x == 0)).ravel()",
+      "target": "nan_mask = zmask & (x == 0)",
+      "exact_match": false
+    },
+    {
+      "hunk": 6,
+      "source": "neginf_mask = ((zpos_mask & (x < 0)) | (zneg_mask & (x > 0))).ravel() posinf_mask = ((zpos_mask & (x > 0)) | (zneg_mask & (x < 0))).ravel()",
+      "patch": "neginf_mask = ((zpos_mask & (x < 0)) | (zneg_mask & (x > 0))).ravel() posinf_mask = ((zpos_mask & (x > 0)) | (zneg_mask & (x < 0))).ravel()",
+      "target": "neginf_mask = (zpos_mask & (x < 0)) | (zneg_mask & (x > 0)) posinf_mask = (zpos_mask & (x > 0)) | (zneg_mask & (x < 0))",
+      "exact_match": false
+    },
+    {
+      "hunk": 7,
+      "source": "result = result.astype(\"float64\", copy=False).ravel()",
+      "patch": "result = result.astype(\"float64\", copy=False).ravel()",
+      "target": "result = result.astype(\"float64\", copy=False)",
+      "exact_match": false
+    },
+    {
+      "hunk": 8,
+      "source": "np.putmask(result, nan_mask, np.nan) np.putmask(result, posinf_mask, np.inf) np.putmask(result, neginf_mask, -np.inf)  result = result.reshape(shape)",
+      "patch": "np.putmask(result, nan_mask, np.nan) np.putmask(result, posinf_mask, np.inf) np.putmask(result, neginf_mask, -np.inf)  result = result.reshape(shape)",
+      "target": "result[nan_mask] = np.nan result[posinf_mask] = np.inf result[neginf_mask] = -np.inf",
+      "exact_match": false
+    }
+  ]
+}

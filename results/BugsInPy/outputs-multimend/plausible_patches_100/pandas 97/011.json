@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return this._fast_union(other)",
+      "patch": "return Index._union(this, other, sort=sort)",
+      "target": "return this._fast_union(other, sort=sort)",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "def _fast_union(self, other):",
+      "patch": "def _fast_union(self, other):",
+      "target": "def _fast_union(self, other, sort=None):",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "",
+      "patch": "",
+      "target": "elif sort is False:   left, right = self, other left_start = left[0] loc = right.searchsorted(left_start, side=\"left\") right_chunk = right.values[:loc] dates = concat_compat((left.values, right_chunk)) return self._shallow_copy(dates)",
+      "exact_match": false
+    }
+  ]
+}

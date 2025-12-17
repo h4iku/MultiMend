@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "path = self.s3_load_path()",
+      "patch": "path = self.s3_load_path.strip()",
+      "target": "path = self.s3_load_path",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "setter(self, max(vmin, vmax, oldmax), min(vmin, vmax, oldmin),",
+      "patch": "if ignore: setter(self, max(vmin, vmax, oldmax), min(vmin, vmax, oldmin),",
+      "target": "setter(self, max(vmin, vmax, oldmin), min(vmin, vmax, oldmax),",
+      "exact_match": false
+    }
+  ]
+}

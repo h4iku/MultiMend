@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return type(i)._simple_new(shifted, freq=i.freq, dtype=i.dtype)",
+      "patch": "return type(i)._simple_new(shifted)",
+      "target": "return type(i)._simple_new(shifted, dtype=i.dtype)",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "return type(dtindex)._simple_new( shifted, freq=dtindex.freq, dtype=dtindex.dtype )",
+      "patch": "return type(dtindex)._simple_new( shifted)",
+      "target": "return type(dtindex)._simple_new(shifted, dtype=dtindex.dtype)",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "return type(dtindex)._simple_new( shifted, freq=dtindex.freq, dtype=dtindex.dtype )",
+      "patch": "return type(dtindex)._simple_new( shifted)",
+      "target": "return type(dtindex)._simple_new(shifted, dtype=dtindex.dtype)",
+      "exact_match": false
+    }
+  ]
+}

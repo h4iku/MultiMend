@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "(?:0[xX][0-9a-fA-F]+|0+[0-7]+)(?:\\s*:)?|",
+      "patch": "",
+      "target": "\\b(?:0[xX][0-9a-fA-F]+|0+[0-7]+)(?:\\s*:)?|",
+      "exact_match": false
+    }
+  ]
+}

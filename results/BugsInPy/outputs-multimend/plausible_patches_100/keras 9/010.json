@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "block = docstring[starting_point:(None if ending_point == -1 else ending_point - 1)]",
+      "patch": "block = docstring[starting_point:(None if ending_point == None else ending_point - 1)]",
+      "target": "block = docstring[starting_point:(ending_point - 1 if ending_point > -1 else section_end)]",
+      "exact_match": false
+    }
+  ]
+}

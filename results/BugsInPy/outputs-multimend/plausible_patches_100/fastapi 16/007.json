@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if not obj.Config.json_encoders: return jsonable_encoder( obj.dict(include=include, exclude=exclude, by_alias=by_alias), include_none=include_none, ) else: return jsonable_encoder( obj.dict(include=include, exclude=exclude, by_alias=by_alias), include_none=include_none, custom_encoder=obj.Config.json_encoders, )",
+      "patch": "return jsonable_encoder( obj.dict(include=include, exclude=exclude, by_alias=by_alias), include_none=include_none, custom_encoder=custom_encoder, )",
+      "target": "encoder = getattr(obj.Config, \"json_encoders\", custom_encoder) return jsonable_encoder( obj.dict(include=include, exclude=exclude, by_alias=by_alias), include_none=include_none, custom_encoder=encoder, )",
+      "exact_match": false
+    }
+  ]
+}

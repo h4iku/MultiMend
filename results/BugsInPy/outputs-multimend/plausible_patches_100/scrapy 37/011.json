@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if ':' not in self._url:",
+      "patch": "if not self._url.startswith(':'):",
+      "target": "if ('://' not in self._url) and (not self._url.startswith('data:')):",
+      "exact_match": false
+    }
+  ]
+}

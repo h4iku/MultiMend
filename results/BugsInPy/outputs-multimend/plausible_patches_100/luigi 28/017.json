@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return stdout and table in stdout",
+      "patch": "return stdout and table.lower() in stdout",
+      "target": "return stdout and table.lower() in stdout",
+      "exact_match": true
+    }
+  ]
+}

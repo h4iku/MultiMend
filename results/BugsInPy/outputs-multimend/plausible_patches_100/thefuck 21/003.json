@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return (command.script.split()[1] == 'stash' and 'usage:' in command.stderr)",
+      "patch": "return (command.script.split()[0] == 'stash' and 'usage:' in command.stderr)",
+      "target": "splited_script = command.script.split() if len(splited_script) > 1: return (splited_script[1] == 'stash' and 'usage:' in command.stderr) else: return False",
+      "exact_match": false
+    }
+  ]
+}

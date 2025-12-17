@@ -1,0 +1,34 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "sys PY3 = (sys.version_info[0] == 3)",
+      "target": "PY2 = not PY3",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "if pycompat.PY2: from io import open",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "encoding = 'ascii'",
+      "patch": "encoding = 'ascii'",
+      "target": "encoding = 'utf-8'",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "with open(self.path, 'w' if self.overwrite else 'a') as output_file:",
+      "patch": "with open(self.path, 'w' if self.overwrite else 'a') as output_file:",
+      "target": "with open(self.path, 'w' if self.overwrite else 'a', encoding='utf-8') as output_file:",
+      "exact_match": false
+    }
+  ]
+}

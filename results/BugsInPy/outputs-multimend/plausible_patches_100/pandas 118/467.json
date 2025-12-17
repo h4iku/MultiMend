@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "import pandas.core.common as com",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "missing = Index(np.ravel(id_vars)).difference(cols)",
+      "patch": "missing = Index(np.ravel(value_vars)).difference(cols)",
+      "target": "missing = Index(com.flatten(id_vars)).difference(cols)",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "missing = Index(np.ravel(value_vars)).difference(cols)",
+      "patch": "missing = Index(value_vars).difference(cols)",
+      "target": "missing = Index(com.flatten(value_vars)).difference(cols)",
+      "exact_match": false
+    }
+  ]
+}

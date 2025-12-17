@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if isinstance(labels, ABCMultiIndex):  if isinstance(key, (ABCSeries, np.ndarray)) and key.ndim <= 1:   key = list(key) elif isinstance(key, ABCDataFrame):  raise NotImplementedError( \"Indexing a MultiIndex with a \" \"DataFrame key is not \" \"implemented\" ) elif hasattr(key, \"ndim\") and key.ndim > 1: raise NotImplementedError( \"Indexing a MultiIndex with a \" \"multidimensional key is not \" \"implemented\" )  if ( not isinstance(key, tuple) and len(key) and not isinstance(key[0], tuple) ): key = tuple([key])",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

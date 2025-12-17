@@ -1,0 +1,55 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "_supports_partial_string_indexing = False",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "_supports_partial_string_indexing = True",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "",
+      "patch": "",
+      "target": "_supports_partial_string_indexing = True",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "",
+      "patch": "if len(key) == self.ndim: return False",
+      "target": "if isinstance(k, str) and ax._supports_partial_string_indexing:   return False",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "if isinstance(key, str) and labels.levels[0].is_all_dates:",
+      "patch": "if isinstance(key, str) and labels.levels[0].is_all_dates:",
+      "target": "if ( isinstance(key, str) and labels.levels[0]._supports_partial_string_indexing ):",
+      "exact_match": false
+    },
+    {
+      "hunk": 5,
+      "source": "if isinstance(component, str) and labels.levels[i].is_all_dates:",
+      "patch": "if isinstance(component, str) and labels.levels[i].is_all_dates:",
+      "target": "if ( isinstance(component, str) and labels.levels[i]._supports_partial_string_indexing ):",
+      "exact_match": false
+    },
+    {
+      "hunk": 6,
+      "source": "if idx.is_all_dates:",
+      "patch": "if idx.is_all_dates:",
+      "target": "if idx._supports_partial_string_indexing:",
+      "exact_match": false
+    }
+  ]
+}

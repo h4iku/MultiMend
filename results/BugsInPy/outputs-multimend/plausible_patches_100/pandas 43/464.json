@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "left: \"DataFrame\", right, axis, default_axis: int, fill_value, level",
+      "patch": "left: \"DataFrame\", right, axis, default_axis: int, fill_value, level",
+      "target": "left: \"DataFrame\", right, op, axis, default_axis: int, fill_value, level",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "if fill_value is None and level is None: return False",
+      "target": "if op is operator.pow or op is rpow:  return False",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "if _should_reindex_frame_op(self, other, axis, default_axis, fill_value, level):",
+      "patch": "if _should_reindex_frame_op(self, other, axis, default_axis, fill_value, level):",
+      "target": "if _should_reindex_frame_op( self, other, op, axis, default_axis, fill_value, level ):",
+      "exact_match": false
+    }
+  ]
+}

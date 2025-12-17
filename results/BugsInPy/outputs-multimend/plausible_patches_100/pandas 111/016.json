@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return self._invalid_indexer(\"label\", key)",
+      "patch": "return self._validate_indexer(\"label\", key, kind)",
+      "target": "self._invalid_indexer(\"label\", key)",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "return self._invalid_indexer(\"label\", key)",
+      "patch": "return self._validate_indexer(\"label\", key, kind)",
+      "target": "self._invalid_indexer(\"label\", key)",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "if self.categories._defer_to_indexing: return self.categories._convert_scalar_indexer(key, kind=kind)",
+      "patch": "if self.categories._defer_to_indexing: return self.categories._convert_scalar_indexer(key, kind=kind)",
+      "target": "if kind == \"loc\": try: return self.categories._convert_scalar_indexer(key, kind=kind) except TypeError: self._invalid_indexer(\"label\", key)",
+      "exact_match": false
+    }
+  ]
+}

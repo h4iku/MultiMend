@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if \"//\" in self.app.config.SERVER_NAME: return self.app.url_for(view_name, _external=True, **kwargs)",
+      "patch": "",
+      "target": "try: if \"//\" in self.app.config.SERVER_NAME: return self.app.url_for(view_name, _external=True, **kwargs) except AttributeError: pass",
+      "exact_match": false
+    }
+  ]
+}

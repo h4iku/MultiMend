@@ -1,0 +1,48 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "where = Period(where, freq=self.index.freq).ordinal start = start.ordinal",
+      "patch": "where = Period(where, freq=self.index.freq)",
+      "target": "where = Period(where, freq=self.index.freq)",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "if isinstance(value, Period): if value.freq != self.freq: raise raise_on_incompatible(self, value) value = value.ordinal",
+      "patch": "if isinstance(value, Period): if value.freq != self.freq: raise raise_on_incompatible(self, value) value = value.ordinal",
+      "target": "if isinstance(value, Period) or value is NaT: self._data._check_compatible_with(value)",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "value = Period(value, freq=self.freq).ordinal",
+      "patch": "value = Period(value, freq=self.freq).ordinal",
+      "target": "value = Period(value, freq=self.freq)",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "return self._ndarray_values.searchsorted(value, side=side, sorter=sorter)",
+      "patch": "return self._ndarray_values.searchsorted(value, side=side, sorter=sorter)",
+      "target": "elif not isinstance(value, PeriodArray): raise TypeError( \"PeriodIndex.searchsorted requires either a Period or PeriodArray\" )  return self._data.searchsorted(value, side=side, sorter=sorter)",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "self.searchsorted(t1.ordinal, side=\"left\"), self.searchsorted(t2.ordinal, side=\"right\"),",
+      "patch": "self.searchsorted(t1.ordinal, side=\"left\"), self.searchsorted(t2.ordinal, side=\"right\"),",
+      "target": "self.searchsorted(t1, side=\"left\"), self.searchsorted(t2, side=\"right\")",
+      "exact_match": false
+    },
+    {
+      "hunk": 5,
+      "source": "bins = memb.searchsorted(rng, side=\"left\")",
+      "patch": "bins = memb.searchsorted(rng, side=\"left\")",
+      "target": "prng = type(memb._data)(rng, dtype=memb.dtype) bins = memb.searchsorted(prng, side=\"left\")",
+      "exact_match": false
+    }
+  ]
+}

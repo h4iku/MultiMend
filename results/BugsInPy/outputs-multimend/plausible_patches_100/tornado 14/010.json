@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if IOLoop.current(instance=False) is None:",
+      "patch": "if IOLoop.current(instance=False) is not None:",
+      "target": "if IOLoop.current(instance=False) is not None:",
+      "exact_match": true
+    }
+  ]
+}

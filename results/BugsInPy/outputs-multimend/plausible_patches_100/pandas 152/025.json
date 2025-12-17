@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "to_concat = [self] + to_append",
+      "patch": "to_concat = [self] + list(to_append)",
+      "target": "to_concat = [self] to_concat.extend(to_append)",
+      "exact_match": false
+    }
+  ]
+}

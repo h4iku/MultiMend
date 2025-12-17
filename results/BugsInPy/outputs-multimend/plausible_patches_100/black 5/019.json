@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if leaf.parent and leaf.parent.type == syms.arglist:",
+      "patch": "if leaf.parent:",
+      "target": "if leaf.parent and leaf.parent.type in { syms.arglist, syms.typedargslist, }:",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "if original.is_import:",
+      "patch": "if original.is_import:",
+      "target": "no_commas = original.is_def and not any( l.type == token.COMMA for l in leaves )  if original.is_import or no_commas:",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "objs, intersect: bool = False, axis=0, sort: bool = True",
+      "patch": "objs, intersect: bool = False, axis=0, sort: bool = True",
+      "target": "objs, intersect: bool = False, axis=0, sort: bool = True, copy: bool = False",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "return _get_combined_index(obs_idxes, intersect=intersect, sort=sort)",
+      "patch": "return _get_combined_index(obs_idxes, intersect=intersect, sort=bool)",
+      "target": "return _get_combined_index(obs_idxes, intersect=intersect, sort=sort, copy=copy)",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "indexes: List[Index], intersect: bool = False, sort: bool = False",
+      "patch": "indexes: List[Index], intersect: bool = False, sort: bool = False",
+      "target": "indexes: List[Index], intersect: bool = False, sort: bool = False, copy: bool = False,",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "",
+      "patch": "",
+      "target": "if copy: index = index.copy()",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "self.objs, axis=data_axis, intersect=self.intersect, sort=self.sort",
+      "patch": "self.objs, axis=data_axis, intersect=self.intersect, sort=self.sort",
+      "target": "self.objs, axis=data_axis, intersect=self.intersect, sort=self.sort, copy=self.copy,",
+      "exact_match": false
+    }
+  ]
+}

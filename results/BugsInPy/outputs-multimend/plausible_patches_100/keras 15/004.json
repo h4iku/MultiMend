@@ -1,0 +1,41 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "import traceback traceback.print_exc() traceback.print_exc()",
+      "target": "import io import sys",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "self.file_flags = 'b' if six.PY2 and os.name == 'nt' else ''",
+      "patch": "self.file_flags = 'b' if six.PY2 and os.name == 'nt' else ''",
+      "target": "if six.PY2: self.file_flags = 'b' self._open_args = {} else: self.file_flags = '' self._open_args = {'newline': '\\n'}",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "self.csv_file = open(self.filename, 'a' + self.file_flags) else: self.csv_file = open(self.filename, 'w' + self.file_flags)",
+      "patch": "self.csv_file = open(self.filename, 'a' + self.file_flags) else: self.csv_file = open(self.filename, 'w' + self.file_flags)",
+      "target": "mode = 'a' else: mode = 'w' self.csv_file = io.open(self.filename, mode + self.file_flags, **self._open_args)",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "",
+      "patch": "",
+      "target": "fieldnames = ['epoch'] + self.keys if six.PY2: fieldnames = [unicode(x) for x in fieldnames]",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "fieldnames=['epoch'] + self.keys, dialect=CustomDialect)",
+      "patch": "fieldnames=['epoch'] + self.keys, dialect=CustomDialect)",
+      "target": "fieldnames=fieldnames, dialect=CustomDialect)",
+      "exact_match": false
+    }
+  ]
+}

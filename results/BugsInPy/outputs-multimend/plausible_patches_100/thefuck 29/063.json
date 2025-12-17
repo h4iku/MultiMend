@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "conf = dict(self) conf.update(kwargs)",
+      "patch": "conf = dict(self, **kwargs) conf.update(self)",
+      "target": "conf = dict(kwargs) conf.update(self)",
+      "exact_match": false
+    }
+  ]
+}

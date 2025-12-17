@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return np.squeeze(self.model.predict(x, **kwargs))",
+      "patch": "return np.concatenate(self.model.predict(x, **kwargs))",
+      "target": "return np.squeeze(self.model.predict(x, **kwargs), axis=-1)",
+      "exact_match": false
+    }
+  ]
+}

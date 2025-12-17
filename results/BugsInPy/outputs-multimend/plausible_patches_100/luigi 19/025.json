@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if new_status == FAILED and task.can_disable():",
+      "patch": "elif new_status == FAILED and task.can_disable():",
+      "target": "if new_status == FAILED and task.can_disable() and task.status != DISABLED:",
+      "exact_match": false
+    }
+  ]
+}

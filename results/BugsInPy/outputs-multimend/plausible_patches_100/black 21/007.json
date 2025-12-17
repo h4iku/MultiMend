@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "mode=\"w\", prefix=\"blk_\", suffix=\".log\", delete=False",
+      "patch": "mode='w', prefix='blk_', suffix='.log', delete=False",
+      "target": "mode=\"w\", prefix=\"blk_\", suffix=\".log\", delete=False, encoding=\"utf8\"",
+      "exact_match": false
+    }
+  ]
+}

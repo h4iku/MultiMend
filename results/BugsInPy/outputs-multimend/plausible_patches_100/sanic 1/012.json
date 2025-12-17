@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "self.named_response_middleware[_rn].append(middleware)",
+      "patch": "self.named_response_middleware[_rn].appendleft(middleware)",
+      "target": "self.named_response_middleware[_rn].appendleft(middleware)",
+      "exact_match": true
+    }
+  ]
+}

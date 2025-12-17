@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "self._label = str(label)",
+      "patch": "self._label = label",
+      "target": "self._label = label",
+      "exact_match": true
+    }
+  ]
+}

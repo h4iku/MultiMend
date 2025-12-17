@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "def _prepare_response_content( res: Any, *, by_alias: bool = True, exclude_unset: bool ) -> Any: if isinstance(res, BaseModel): if PYDANTIC_1: return res.dict(by_alias=by_alias, exclude_unset=exclude_unset) else: return res.dict( by_alias=by_alias, skip_defaults=exclude_unset ) elif isinstance(res, list): return [ _prepare_response_content(item, exclude_unset=exclude_unset) for item in res ] elif isinstance(res, dict): return { k: _prepare_response_content(v, exclude_unset=exclude_unset) for k, v in res.items() } return res",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "if exclude_unset and isinstance(response_content, BaseModel): if PYDANTIC_1: response_content = response_content.dict(exclude_unset=exclude_unset) else: response_content = response_content.dict( skip_defaults=exclude_unset )",
+      "patch": "response_content = jsonable_encoder(response_content, include=include, exclude=exclude, by_alias=by_alias, exclude_unset=exclude_unset, )",
+      "target": "response_content = _prepare_response_content( response_content, by_alias=by_alias, exclude_unset=exclude_unset )",
+      "exact_match": false
+    }
+  ]
+}

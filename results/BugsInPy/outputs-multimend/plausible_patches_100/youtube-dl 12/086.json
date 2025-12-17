@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "op = lambda attr, value: not str_op",
+      "patch": "op = lambda attr, value: value not in attr",
+      "target": "op = lambda attr, value: not str_op(attr, value)",
+      "exact_match": false
+    }
+  ]
+}

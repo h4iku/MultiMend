@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "configure_logging(settings) log_scrapy_info(settings)",
+      "patch": "",
+      "target": "configure_logging(self.settings) log_scrapy_info(self.settings)",
+      "exact_match": false
+    }
+  ]
+}

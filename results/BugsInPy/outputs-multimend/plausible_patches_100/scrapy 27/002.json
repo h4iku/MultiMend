@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "response.status in getattr(spider, 'handle_httpstatus_list', [])):",
+      "patch": "response.status in getattr(spider, 'handle_httpstatus_list', []), None):",
+      "target": "response.status in getattr(spider, 'handle_httpstatus_list', []) or response.status in request.meta.get('handle_httpstatus_list', []) or request.meta.get('handle_httpstatus_all', False)):",
+      "exact_match": false
+    }
+  ]
+}

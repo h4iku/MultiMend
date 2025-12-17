@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if 'Host' not in headers:",
+      "patch": "if 'Host' not in self._orig.headers:",
+      "target": "if 'Host' not in self._orig.headers:",
+      "exact_match": true
+    }
+  ]
+}

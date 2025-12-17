@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "import re",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "_is_gzipped_re = re.compile(br'^application/(x-)?gzip\\b', re.I)",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "return ctype in (b'application/x-gzip', b'application/gzip')",
+      "patch": "return ctype not in (b'application/x-gzip', b'application/gzip')",
+      "target": "return _is_gzipped_re.search(ctype) is not None",
+      "exact_match": false
+    }
+  ]
+}

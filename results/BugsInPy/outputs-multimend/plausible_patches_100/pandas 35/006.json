@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "period = weakref.ref(self)",
+      "patch": "period = weakref.ref(self, self)",
+      "target": "period = weakref.ref(self._values)",
+      "exact_match": false
+    }
+  ]
+}

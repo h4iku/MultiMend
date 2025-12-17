@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "obj._check_label_or_level_ambiguity(gpr)",
+      "patch": "obj._check_label_or_level_ambiguity(gpr)",
+      "target": "obj._check_label_or_level_ambiguity(gpr, axis=axis)",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "elif obj._is_level_reference(gpr):",
+      "patch": "elif hasattr(obj, '_is_level_reference'):",
+      "target": "elif obj._is_level_reference(gpr, axis=axis):",
+      "exact_match": false
+    }
+  ]
+}

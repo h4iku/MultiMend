@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if not use_dynamic_argparse: return",
+      "target": "if cmdline_args is None: cmdline_args = sys.argv[1:]",
+      "exact_match": false
+    }
+  ]
+}

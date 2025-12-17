@@ -1,0 +1,41 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "from ansible.module_utils import six",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "urlparse = six.moves.urllib.parse.urlparse",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "name, dummy, requirement = collection_input.partition(':')",
+      "patch": "name, dummy, requirement = collection_input.partition('?')",
+      "target": "requirement = None if os.path.isfile(to_bytes(collection_input, errors='surrogate_or_strict')) or \\ urlparse(collection_input).scheme.lower() in ['http', 'https']:  name = collection_input else: name, dummy, requirement = collection_input.partition(':')",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "elif urlparse(collection).scheme:",
+      "patch": "elif urlparse(collection).scheme:",
+      "target": "elif urlparse(collection).scheme.lower() in ['http', 'https']:",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "b_tar_path = _download_file(collection, b_temp_path, None, validate_certs)",
+      "patch": "b_tar_path = _download_file(collection, b_temp_path, None, validate_certs)",
+      "target": "try: b_tar_path = _download_file(collection, b_temp_path, None, validate_certs) except urllib_error.URLError as err: raise AnsibleError(\"Failed to download collection tar from '%s': %s\" % (to_native(collection), to_native(err)))",
+      "exact_match": false
+    }
+  ]
+}

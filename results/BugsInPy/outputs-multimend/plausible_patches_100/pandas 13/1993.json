@@ -1,0 +1,76 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return _isna_ndarraylike(obj)",
+      "patch": "return _isna_ndarraylike(obj)",
+      "target": "return _isna_ndarraylike(obj, old=False)",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "return _isna_ndarraylike(np.asarray(obj, dtype=object))",
+      "patch": "return _isna_ndarraylike(np.asarray(obj, dtype=object))",
+      "target": "return _isna_ndarraylike(np.asarray(obj, dtype=object), old=False)",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "return _isna_ndarraylike(np.asarray(obj))",
+      "patch": "return _isna_ndarraylike(np.asarray(obj))",
+      "target": "return _isna_ndarraylike(np.asarray(obj), old=False)",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "return _isna_ndarraylike_old(obj)",
+      "patch": "return _isna_ndarraylike(obj)",
+      "target": "return _isna_ndarraylike(obj, old=True)",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "return _isna_ndarraylike_old(np.asarray(obj, dtype=object))",
+      "patch": "return _isna_ndarraylike_old(np.asarray(obj, dtype=object))",
+      "target": "return _isna_ndarraylike(np.asarray(obj, dtype=object), old=True)",
+      "exact_match": false
+    },
+    {
+      "hunk": 5,
+      "source": "return _isna_ndarraylike_old(np.asarray(obj))",
+      "patch": "return _isna_ndarraylike_old(np.asarray(obj))",
+      "target": "return _isna_ndarraylike(np.asarray(obj), old=True)",
+      "exact_match": false
+    },
+    {
+      "hunk": 6,
+      "source": "def _isna_ndarraylike(obj):",
+      "patch": "def _isna_ndarraylike(obj):",
+      "target": "def _isna_ndarraylike(obj, old: bool = False):",
+      "exact_match": false
+    },
+    {
+      "hunk": 7,
+      "source": "result = values.isna()",
+      "patch": "result = values.isna()",
+      "target": "if old: result = values.isna() | (values == -np.inf) | (values == np.inf) else: result = values.isna()",
+      "exact_match": false
+    },
+    {
+      "hunk": 8,
+      "source": "result = _isna_string_dtype(values, dtype, old=False)",
+      "patch": "result = _isna_string_dtype(values, dtype, old=True)",
+      "target": "result = _isna_string_dtype(values, dtype, old=old)",
+      "exact_match": false
+    },
+    {
+      "hunk": 9,
+      "source": "result = np.isnan(values)   if isinstance(obj, ABCSeries): result = obj._constructor(result, index=obj.index, name=obj.name, copy=False)  return result   def _isna_ndarraylike_old(obj): values = getattr(obj, \"_values\", obj) dtype = values.dtype  if is_string_dtype(dtype): result = _isna_string_dtype(values, dtype, old=True)  elif needs_i8_conversion(dtype):  result = values.view(\"i8\") == iNaT else: result = ~np.isfinite(values)",
+      "patch": "result = np.isnan(values)   if isinstance(obj, ABCSeries): result = obj._constructor(result, index=obj.index, name=obj.name, copy=False)  return result   def _isna_ndarraylike_old(obj): values = getattr(obj, \"_values\", obj) dtype = values.dtype  if is_string_dtype(dtype): result = _isna_string_dtype(values, dtype, old=True)  elif needs_i8_conversion(dtype):  result = values.view(\"i8\") == iNaT else: result = ~np.isfinite(values)",
+      "target": "if old: result = ~np.isfinite(values) else: result = np.isnan(values)",
+      "exact_match": false
+    }
+  ]
+}

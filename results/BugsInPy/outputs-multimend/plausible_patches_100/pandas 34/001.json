@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "ambiguous=\"infer\",",
+      "patch": "ambiguous=True,",
+      "target": "ambiguous=True,",
+      "exact_match": true
+    }
+  ]
+}

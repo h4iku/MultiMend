@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if task.id not in necessary_tasks and self._state.prune(task, self._config):",
+      "patch": "if task.id not in necessary_tasks or self._state.prune(task, self._config):",
+      "target": "removed = self._state.prune(task, self._config) if removed and task.id not in necessary_tasks:",
+      "exact_match": false
+    }
+  ]
+}

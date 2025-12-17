@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "elif task.scheduler_disable_time is not None:",
+      "patch": "",
+      "target": "elif task.scheduler_disable_time is not None and new_status != DISABLED:",
+      "exact_match": false
+    }
+  ]
+}

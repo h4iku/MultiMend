@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if not (task.status in (RUNNING, BATCH_RUNNING) and status == PENDING) or new_deps:",
+      "patch": "",
+      "target": "if not (task.status in (RUNNING, BATCH_RUNNING) and (status not in (DONE, FAILED, RUNNING) or task.worker_running != worker_id)) or new_deps:",
+      "exact_match": false
+    }
+  ]
+}

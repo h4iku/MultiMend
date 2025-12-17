@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return [pygram.python_grammar]",
+      "patch": "return [pygram.python_grammar_no_print_statement]",
+      "target": "return [pygram.python_grammar_no_print_statement, pygram.python_grammar]",
+      "exact_match": false
+    }
+  ]
+}

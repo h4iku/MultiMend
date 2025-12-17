@@ -1,0 +1,41 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "def parse_from_input(self, param_name, x):",
+      "patch": "def parse_from_input(self, param_name, x):",
+      "target": "def parse_from_input(self, param_name, x, task_name=None):",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "if self.has_value: return self.value",
+      "patch": "if self.has_value: return self.value",
+      "target": "if self.has_task_value(param_name=param_name, task_name=task_name): return self.task_value(param_name=param_name, task_name=task_name)",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "if self.has_value: description.append(\" [default: %s]\" % (self.value,))",
+      "patch": "if self.has_value: description.append(\" [default: %s]\" % (self.value,))",
+      "target": "if self.has_task_value(param_name=param_name, task_name=task_name): value = self.task_value(param_name=param_name, task_name=task_name) description.append(\" [default: %s]\" % (value,))",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "params[param_name] = self.parse_from_input(param_name, value)",
+      "patch": "if value: params[param_name] = self.parse_from_input(param_name, value)",
+      "target": "params[param_name] = self.parse_from_input(param_name, value, task_name=task_name)",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "self.set_global(self.parse_from_input(param_name, value))",
+      "patch": "self.set_global(self.parse_from_input(param_name, value))",
+      "target": "self.set_global(self.parse_from_input(param_name, value, task_name=task_name))",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "and \"Transfer-Encoding\" not in headers",
+      "patch": "",
+      "target": "and ( \"Transfer-Encoding\" not in headers or headers[\"Transfer-Encoding\"] == \"chunked\" )",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "idx for idx in range(len(result.columns)) if is_object_dtype(result.dtypes[idx])",
+      "patch": "",
+      "target": "idx for idx in range(len(result.columns)) if is_object_dtype(result.dtypes.iloc[idx])",
+      "exact_match": false
+    }
+  ]
+}

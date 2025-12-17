@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "x0, x1 = map(x_trf.inverted().transform, dL.intervalx) y0, y1 = map(y_trf.inverted().transform, dL.intervaly)",
+      "patch": "x0, x1 = map(x_trf.inverted().transform, dL.intervalx-1) y0, y1 = map(y_trf.inverted().transform, dL.intervaly-1)",
+      "target": "x0, x1 = map(x_trf.transform, dL.intervalx) y0, y1 = map(y_trf.transform, dL.intervaly)",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "commands = self._remove_duplicates(self._commands) self._cached = [self._cached[0]] + sorted( commands, key=lambda corrected_command: corrected_command.priority)",
+      "patch": "",
+      "target": "if self._cached: commands = self._remove_duplicates(self._commands) self._cached = [self._cached[0]] + sorted( commands, key=lambda corrected_command: corrected_command.priority)",
+      "exact_match": false
+    }
+  ]
+}

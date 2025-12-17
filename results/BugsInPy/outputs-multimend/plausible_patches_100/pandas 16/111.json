@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "new_freq = self._get_addsub_freq(other)",
+      "patch": "new_freq = getattr(self, 'addsub_freq', None)",
+      "target": "new_freq = self._get_addsub_freq(other, result)",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "def _get_addsub_freq(self, other) -> Optional[DateOffset]:",
+      "patch": "def _get_addsub_freq(self, other) -> Optional[DateOffset]:",
+      "target": "def _get_addsub_freq(self, other, result) -> Optional[DateOffset]:",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "return self.freq",
+      "patch": "return self.freq",
+      "target": "if is_period_dtype(result.dtype):  return self.freq return None",
+      "exact_match": false
+    }
+  ]
+}

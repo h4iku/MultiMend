@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "from pandas.core.ops import invalid_comparison",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "result = op(self._data, other)",
+      "patch": "return op(self._data, other)",
+      "target": "method = getattr(self._data, f\"__{op_name}__\") result = method(other)  if result is NotImplemented: result = invalid_comparison(self._data, other, op)",
+      "exact_match": false
+    }
+  ]
+}

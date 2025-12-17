@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "input_shape = (input_shape[0], input_shape[1], output_dim)",
+      "patch": "input_shape = (input_shape[0], output_dim)",
+      "target": "input_shape = (input_shape[0], output_dim)",
+      "exact_match": true
+    }
+  ]
+}

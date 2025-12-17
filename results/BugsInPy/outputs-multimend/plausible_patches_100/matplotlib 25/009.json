@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if (orientation is None or orientation.lower() == 'none' or orientation.lower() == 'horizontal'): return",
+      "target": "if positions is None: raise ValueError('positions must be an array-like object')  positions = np.array(positions, copy=True)",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "if positions is None or len(positions) == 0:",
+      "patch": "if positions is None or len(positions) == 0:",
+      "target": "if positions.size == 0:",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "elif hasattr(positions, 'ndim') and positions.ndim > 1:",
+      "patch": "elif hasattr(positions, 'ndim') and positions.ndim > 1:",
+      "target": "elif positions.ndim > 1:",
+      "exact_match": false
+    }
+  ]
+}

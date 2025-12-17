@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if len(self.columns) > 0:",
+      "patch": "if self.columns and len(self.columns) > 0:",
+      "target": "if self.columns and len(self.columns) > 0:",
+      "exact_match": true
+    }
+  ]
+}

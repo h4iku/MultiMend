@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "elif tz is None:",
+      "patch": "if tz is None:",
+      "target": "if tz is None:",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "try: match = cls._match.match(string) if match: d = match.groupdict()",
+      "patch": "try: match = cls._match.match(string) if match: d = match.groupdict()",
+      "target": "match = cls._match.match(string) if match: d = match.groupdict() try:",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "except Exception:  pass",
+      "patch": "except Exception:  pass",
+      "target": "except (KeyError, TypeError, ValueError) as err:     raise TypeError(msg.format(string)) from err",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "and 'set-upstream' in command.output)",
+      "patch": "and 'set-upstream' not in command.output)",
+      "target": "and 'git push --set-upstream' in command.output)",
+      "exact_match": false
+    }
+  ]
+}

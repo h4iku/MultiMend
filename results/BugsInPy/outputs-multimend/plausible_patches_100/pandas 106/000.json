@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "elif self.is_all_dates:",
+      "patch": "",
+      "target": "elif self.is_all_dates and target.is_all_dates:",
+      "exact_match": false
+    }
+  ]
+}

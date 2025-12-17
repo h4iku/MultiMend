@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "else self.total)",
+      "patch": "else len(self.iterable))",
+      "target": "else getattr(self, \"total\", None))",
+      "exact_match": false
+    }
+  ]
+}

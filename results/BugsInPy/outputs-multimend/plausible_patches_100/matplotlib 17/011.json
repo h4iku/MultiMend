@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "vmin = float(vmin) vmax = float(vmax)",
+      "target": "vmin, vmax = map(float, [vmin, vmax])",
+      "exact_match": false
+    }
+  ]
+}

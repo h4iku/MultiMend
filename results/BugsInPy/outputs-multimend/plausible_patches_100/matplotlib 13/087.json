@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if len(args) > 1: return args[0]",
+      "target": "last_vert = None if codes.size > 0 and codes[-1] == cls.STOP: last_vert = vertices[-1] vertices = vertices[codes != cls.STOP, :] codes = codes[codes != cls.STOP] if last_vert is not None: vertices = np.append(vertices, [last_vert], axis=0) codes = np.append(codes, cls.STOP)",
+      "exact_match": false
+    }
+  ]
+}

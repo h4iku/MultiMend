@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "while len(self) >= self.limit: self.popitem(last=False)",
+      "patch": "",
+      "target": "if self.limit: while len(self) >= self.limit: self.popitem(last=False)",
+      "exact_match": false
+    }
+  ]
+}

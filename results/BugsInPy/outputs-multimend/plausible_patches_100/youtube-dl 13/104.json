@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if re.match(r'^(?:https?:)?//', path):",
+      "patch": "if re.search(r'(?:https?:)?//', path):",
+      "target": "if re.match(r'^(?:[a-zA-Z][a-zA-Z0-9+-.]*:)?//', path):",
+      "exact_match": false
+    }
+  ]
+}

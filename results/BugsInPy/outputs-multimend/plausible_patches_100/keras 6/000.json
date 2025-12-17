@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "score_array /= K.mean(mask)",
+      "patch": "",
+      "target": "score_array /= K.mean(mask) + K.epsilon()",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if not self.holds_integer():",
+      "patch": "if self.holds_integer():",
+      "target": "if not (is_integer_dtype(self.dtype) or is_object_dtype(self.dtype)):",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "return self.index.get_value(self, label)",
+      "patch": "return self.index.get_value(self, label)",
+      "target": "loc = self.index.get_loc(label)   return self.index._get_values_for_loc(self, loc, label)",
+      "exact_match": false
+    }
+  ]
+}

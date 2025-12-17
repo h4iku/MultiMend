@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "RE_SHLEX = re.compile(r'\\s*--?([^\\s=]+)(?:\\s*|=|$)')",
+      "patch": "RE_SHLEX = re.compile(r'\\s.*--?([^\\s=]+)(?:\\s*|=|$)')",
+      "target": "RE_SHLEX = re.compile(r'\\s*(?<!\\S)--?([^\\s=]+)(?:\\s*|=|$)')",
+      "exact_match": false
+    }
+  ]
+}

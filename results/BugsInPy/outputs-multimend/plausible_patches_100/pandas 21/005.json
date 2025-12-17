@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if isinstance(key, list):  return self.loc[key]  return self.reindex(key)",
+      "patch": "return self.loc[key]  return self.reindex(key)",
+      "target": "return self.loc[key]",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "current_selector = None selectors.append(FormatSelector(PICKFIRST, (first_choice, second_choice), []))",
+      "patch": "current_selector = FormatSelector(PICKFIRST, (first_choice, second_choice), [])",
+      "target": "current_selector = FormatSelector(PICKFIRST, (first_choice, second_choice), [])",
+      "exact_match": true
+    }
+  ]
+}

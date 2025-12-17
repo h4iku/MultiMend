@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "left_keys = [self.left.index.values]",
+      "patch": "self.left_keys = [self.left.index.values]",
+      "target": "left_keys = [self.left.index._values]",
+      "exact_match": false
+    }
+  ]
+}

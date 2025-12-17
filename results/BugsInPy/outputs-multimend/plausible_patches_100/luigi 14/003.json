@@ -1,0 +1,41 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "disable_failures = parameter.IntParameter(default=None,",
+      "patch": "disable_failures = parameter.IntParameter(default=86400,",
+      "target": "disable_failures = parameter.IntParameter(default=999999999,",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "disable_hard_timeout = parameter.IntParameter(default=None,",
+      "patch": "disable_hard_timeout = parameter.IntParameter(default=None,",
+      "target": "disable_hard_timeout = parameter.IntParameter(default=999999999,",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "if (self.failures.first_failure_time is not None and self.disable_hard_timeout):",
+      "patch": "if (self.failures.first_failure_time is not None and self.disable_hard_timeout):",
+      "target": "if self.failures.first_failure_time is not None:",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "def can_disable(self): return (self.disable_failures is not None or self.disable_hard_timeout is not None)",
+      "patch": "def can_disable(self): return (self.disable_failures is not None or self.disable_hard_timeout is not None)",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "if new_status == FAILED and task.can_disable() and task.status != DISABLED:",
+      "patch": "if new_status == FAILED and task.can_disable() and task.status != DISABLED:",
+      "target": "if new_status == FAILED and task.status != DISABLED:",
+      "exact_match": false
+    }
+  ]
+}

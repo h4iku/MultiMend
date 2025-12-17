@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "if responses is None: responses = {}",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "if responses is None: responses = {} responses = {**responses, **route.responses}",
+      "patch": "if responses: responses = {} responses = {**responses, **route.responses}",
+      "target": "combined_responses = {**responses, **route.responses}",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "responses=responses,",
+      "patch": "responses=responses,",
+      "target": "responses=combined_responses,",
+      "exact_match": false
+    }
+  ]
+}

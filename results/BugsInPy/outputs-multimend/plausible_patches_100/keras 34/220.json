@@ -1,0 +1,41 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "validation_generator = validation_data",
+      "patch": "if validation_data: return validation_data",
+      "target": "if isinstance(validation_data, Sequence): validation_generator = iter(validation_data) else: validation_generator = validation_data",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "output_generator = generator",
+      "patch": "output_generator = generator",
+      "target": "if is_sequence: output_generator = iter(generator) else: output_generator = generator",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "output_generator = generator",
+      "patch": "output_generator = generator",
+      "target": "if is_sequence: output_generator = iter(generator) else: output_generator = generator",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "output_generator = generator",
+      "patch": "output_generator = generator",
+      "target": "if is_sequence: output_generator = iter(generator) else: output_generator = generator",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "",
+      "patch": "",
+      "target": "def __iter__(self):  while True: for item in (self[i] for i in range(len(self))): yield item",
+      "exact_match": false
+    }
+  ]
+}

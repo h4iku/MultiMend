@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return objcls.from_crawler(crawler, *args, **kwargs)",
+      "patch": "return objcls.from_crawler(crawler, *args, **kwargs)",
+      "target": "instance = objcls.from_crawler(crawler, *args, **kwargs) method_name = 'from_crawler'",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "return objcls.from_settings(settings, *args, **kwargs)",
+      "patch": "return objcls.from_settings(settings, *args, **kwargs)[0]",
+      "target": "instance = objcls.from_settings(settings, *args, **kwargs) method_name = 'from_settings'",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "return objcls(*args, **kwargs)",
+      "patch": "return objcls(*args, **kwargs)",
+      "target": "instance = objcls(*args, **kwargs) method_name = '__new__' if instance is None: raise TypeError(\"%s.%s returned None\" % (objcls.__qualname__, method_name)) return instance",
+      "exact_match": false
+    }
+  ]
+}

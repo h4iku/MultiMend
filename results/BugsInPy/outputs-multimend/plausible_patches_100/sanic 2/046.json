@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "import traceback traceback.print_exc() traceback.print_exc()",
+      "target": "def start_serving(self): if self.server: try: return self.server.start_serving() except AttributeError: raise NotImplementedError( \"server.start_serving not available in this version \" \"of asyncio or uvloop.\" )  def serve_forever(self): if self.server: try: return self.server.serve_forever() except AttributeError: raise NotImplementedError( \"server.serve_forever not available in this version \" \"of asyncio or uvloop.\" )",
+      "exact_match": false
+    }
+  ]
+}

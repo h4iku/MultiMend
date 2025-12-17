@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return enumerate(tqdm_class(iterable, start, **tqdm_kwargs))",
+      "patch": "return enumerate(iterable, start)",
+      "target": "return enumerate(tqdm_class(iterable, **tqdm_kwargs), start)",
+      "exact_match": false
+    }
+  ]
+}

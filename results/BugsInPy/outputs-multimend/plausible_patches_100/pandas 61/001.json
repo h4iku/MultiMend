@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return self._get_values(key)",
+      "patch": "result = self._get_values(key)",
+      "target": "return self.iloc[key]",
+      "exact_match": false
+    }
+  ]
+}

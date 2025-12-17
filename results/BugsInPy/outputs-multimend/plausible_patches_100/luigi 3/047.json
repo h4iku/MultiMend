@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "except ValueError: return literal_eval(x)",
+      "patch": "except: return tuple(literal_eval(x))",
+      "target": "except (ValueError, TypeError): return tuple(literal_eval(x))",
+      "exact_match": false
+    }
+  ]
+}

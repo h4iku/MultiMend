@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if c.size == xsize:",
+      "patch": "if c.size != xsize:",
+      "target": "if c.shape == (1, 4) or c.shape == (1, 3): c_is_mapped = False if c.size != xsize: valid_shape = False   elif c.size == xsize:",
+      "exact_match": false
+    }
+  ]
+}

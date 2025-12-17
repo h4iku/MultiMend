@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if is_integer(i) and not ax.holds_integer():",
+      "patch": "if is_integer(i) and ax.holds_integer():",
+      "target": "if is_integer(i) and not (ax.holds_integer() or ax.is_floating()):",
+      "exact_match": false
+    }
+  ]
+}

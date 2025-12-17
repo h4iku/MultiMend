@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return [Series(others._values, index=others)]",
+      "patch": "return [Series(others._values)]",
+      "target": "return [Series(others._values, index=idx)]",
+      "exact_match": false
+    }
+  ]
+}

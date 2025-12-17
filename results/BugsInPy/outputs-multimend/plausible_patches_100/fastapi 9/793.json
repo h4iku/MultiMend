@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "BodySchema_kwargs: Dict[str, Any] = dict(default=None)",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "body_param_media_types = [ getattr(f.schema, \"media_type\") for f in flat_dependant.body_params if isinstance(f.schema, params.Body) ] if len(set(body_param_media_types)) == 1: BodySchema_kwargs[\"media_type\"] = body_param_media_types[0]",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "schema=BodySchema(None),",
+      "patch": "schema=f.schema,",
+      "target": "schema=BodySchema(**BodySchema_kwargs),",
+      "exact_match": false
+    }
+  ]
+}

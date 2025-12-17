@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "batch_shape = first_layer.batch_input_shape dtype = first_layer.dtype",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

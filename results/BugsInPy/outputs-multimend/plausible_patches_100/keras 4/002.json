@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "grads = self.optimizer.compute_gradients(loss, params)",
+      "patch": "grads = self.optimizer.compute_gradients(loss)",
+      "target": "grads = self.optimizer.compute_gradients(loss, var_list=params)",
+      "exact_match": false
+    }
+  ]
+}

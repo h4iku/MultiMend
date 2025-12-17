@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "if not lines: return \"\", encoding, \"\\n\"",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "if src_txt[-1] != \"\\n\":",
+      "patch": "if src_txt and src_txt[-1] != \"\\n\":",
+      "target": "if src_txt[-1:] != \"\\n\":",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "self._filled = True",
+      "patch": "self._filled = False",
+      "target": "self._filled = self._fillstyle != 'none'",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if headers.get(\"Transfer-Encoding\") == \"chunked\":",
+      "patch": "if headers.get(\"Transfer-Encoding\", \"\").lower() == \"chunked\":",
+      "target": "if headers.get(\"Transfer-Encoding\", \"\").lower() == \"chunked\":",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "command += [name, '\"{0}={1}\"'.format(prop, value)]",
+      "patch": "command += [name, '{0}={1}'.format(prop, value)]",
+      "target": "command += [name, '{0}={1}'.format(prop, value)]",
+      "exact_match": true
+    }
+  ]
+}

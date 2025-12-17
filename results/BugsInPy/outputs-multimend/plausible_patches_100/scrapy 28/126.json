@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "self.file.seek(0)",
+      "target": "self.file.seek(0)",
+      "exact_match": true
+    }
+  ]
+}

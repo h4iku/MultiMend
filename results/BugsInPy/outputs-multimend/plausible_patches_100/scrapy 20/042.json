@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for url in sitemap_urls_from_robots(response.body):",
+      "patch": "for url in sitemap_urls_from_robots(response.text):",
+      "target": "for url in sitemap_urls_from_robots(response.text):",
+      "exact_match": true
+    }
+  ]
+}

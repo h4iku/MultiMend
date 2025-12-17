@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if not command.stdout.lower(): return False",
+      "target": "if command.script_parts and command.script_parts[0] == 'sudo': return False",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "raise HTTPException( status_code=HTTP_403_FORBIDDEN, detail=\"Invalid authentication credentials\", )",
+      "patch": "return None",
+      "target": "if self.auto_error: raise HTTPException( status_code=HTTP_403_FORBIDDEN, detail=\"Invalid authentication credentials\", ) else: return None",
+      "exact_match": false
+    }
+  ]
+}

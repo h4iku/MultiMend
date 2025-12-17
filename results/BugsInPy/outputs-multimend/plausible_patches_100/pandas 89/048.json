@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "result = result.unstack(val)",
+      "patch": "result = result.unstack(val, fill_value)",
+      "target": "result = result.unstack(val, fill_value=fill_value)",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "return jsonable_encoder(response, include=include, exclude=exclude, by_alias=by_alias, skip_defaults=skip_defaults)",
+      "target": "if skip_defaults and isinstance(response, BaseModel): value = response.dict(skip_defaults=skip_defaults)",
+      "exact_match": false
+    }
+  ]
+}

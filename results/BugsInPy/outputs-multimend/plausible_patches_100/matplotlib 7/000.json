@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if hasattr(intensity, 'mask'):",
+      "patch": "",
+      "target": "if np.ma.is_masked(intensity):",
+      "exact_match": false
+    }
+  ]
+}

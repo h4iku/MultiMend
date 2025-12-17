@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if hasattr(o, \"dtypes\"):",
+      "patch": "if isinstance(o, np.ndarray):",
+      "target": "if hasattr(o, \"dtypes\") and o.ndim > 1:",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "elif isinstance(o, np.ndarray):",
+      "patch": "if isinstance(o, np.ndarray):",
+      "target": "elif hasattr(o, \"dtype\"):",
+      "exact_match": false
+    }
+  ]
+}

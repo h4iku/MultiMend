@@ -1,0 +1,90 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "import sys",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "return tf_state_ops.assign(x, new_x)",
+      "patch": "return tf_state_ops.assign(x, new_x)",
+      "target": "op = tf_state_ops.assign(x, new_x) with tf.control_dependencies([op]): return tf.identity(x)",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "return tf_state_ops.assign_add(x, increment)",
+      "patch": "return tf_state_ops.assign_add(x, increment)",
+      "target": "op = tf_state_ops.assign_add(x, increment) with tf.control_dependencies([op]): return tf.identity(x)",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "return tf_state_ops.assign_sub(x, decrement)",
+      "patch": "return tf_state_ops.assign_sub(x, decrement)",
+      "target": "op = tf_state_ops.assign_sub(x, decrement) with tf.control_dependencies([op]): return tf.identity(x)",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "",
+      "patch": "",
+      "target": "@symbolic",
+      "exact_match": false
+    },
+    {
+      "hunk": 5,
+      "source": "return tf.Print(x, [x], message)",
+      "patch": "return tf.Print(x, [x], message)",
+      "target": "op = tf.print(message, x, output_stream=sys.stdout) with tf.control_dependencies([op]): return tf.identity(x)",
+      "exact_match": false
+    },
+    {
+      "hunk": 6,
+      "source": "return K.random_normal(shape, self.mean, self.stddev, dtype=dtype, seed=self.seed)",
+      "patch": "return K.random_normal(shape, self.mean, self.stddev, dtype=dtype)",
+      "target": "x = K.random_normal(shape, self.mean, self.stddev, dtype=dtype, seed=self.seed) if self.seed is not None: self.seed += 1 return x",
+      "exact_match": false
+    },
+    {
+      "hunk": 7,
+      "source": "return K.random_uniform(shape, self.minval, self.maxval, dtype=dtype, seed=self.seed)",
+      "patch": "return K.random_uniform(shape, self.minval, self.maxval, dtype=dtype)",
+      "target": "x = K.random_uniform(shape, self.minval, self.maxval, dtype=dtype, seed=self.seed) if self.seed is not None: self.seed += 1 return x",
+      "exact_match": false
+    },
+    {
+      "hunk": 8,
+      "source": "return K.truncated_normal(shape, self.mean, self.stddev, dtype=dtype, seed=self.seed)",
+      "patch": "return K.truncated_normal(shape, self.mean, self.stddev, dtype=dtype)",
+      "target": "x = K.truncated_normal(shape, self.mean, self.stddev, dtype=dtype, seed=self.seed) if self.seed is not None: self.seed += 1 return x",
+      "exact_match": false
+    },
+    {
+      "hunk": 9,
+      "source": "return K.truncated_normal(shape, 0., stddev, dtype=dtype, seed=self.seed)",
+      "patch": "return K.truncated_normal(shape, 0., stddev, dtype=dtype)",
+      "target": "x = K.truncated_normal(shape, 0., stddev, dtype=dtype, seed=self.seed)",
+      "exact_match": false
+    },
+    {
+      "hunk": 10,
+      "source": "return K.random_uniform(shape, -limit, limit, dtype=dtype, seed=self.seed)",
+      "patch": "return K.random_uniform(shape, -limit, limit, dtype=dtype, seed=self.seed)",
+      "target": "x = K.random_uniform(shape, -limit, limit, dtype=dtype, seed=self.seed) if self.seed is not None: self.seed += 1 return x",
+      "exact_match": false
+    },
+    {
+      "hunk": 11,
+      "source": "",
+      "patch": "rng = np.random.RandomState()",
+      "target": "self.seed += 1",
+      "exact_match": false
+    }
+  ]
+}

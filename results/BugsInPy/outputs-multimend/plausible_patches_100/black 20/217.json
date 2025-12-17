@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "src_name = f\"{src.name}  (original)\" dst_name = f\"{src.name}  (formatted)\"",
+      "patch": "src_name = f\"{src}  (original)\" dst_name = f\"{src}  (formatted)\"",
+      "target": "src_name = f\"{src}  (original)\" dst_name = f\"{src}  (formatted)\"",
+      "exact_match": true
+    }
+  ]
+}

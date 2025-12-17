@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "ret[mask] = False",
+      "patch": "ret[mask] = True",
+      "target": "if opname == \"__ne__\": ret[(self._codes == -1) & (other_codes == -1)] = True else: ret[mask] = False",
+      "exact_match": false
+    }
+  ]
+}

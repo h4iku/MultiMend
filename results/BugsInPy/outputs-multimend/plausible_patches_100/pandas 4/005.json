@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return multi_join_idx, lidx, ridx",
+      "patch": "return multi_join_idx",
+      "target": "if return_indexers: return multi_join_idx, lidx, ridx else: return multi_join_idx",
+      "exact_match": false
+    }
+  ]
+}

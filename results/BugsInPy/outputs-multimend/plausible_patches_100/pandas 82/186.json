@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return np.dtype(\"M8[ns]\"), tslibs.iNaT",
+      "patch": "return np.dtype(\"M8[ns]\"), np.nan",
+      "target": "return np.dtype(\"M8[ns]\"), np.datetime64(\"NaT\", \"ns\")",
+      "exact_match": false
+    }
+  ]
+}

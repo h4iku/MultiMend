@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "self.fs.mkdir(d)",
+      "patch": "if not os.path.exists(d): os.mkdir(d)",
+      "target": "self.mkdir(d)",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "before -= self.previous_after",
+      "patch": "before = after - self.previous_after",
+      "target": "before = (   0 if self.previous_line is None else before - self.previous_after )",
+      "exact_match": false
+    }
+  ]
+}

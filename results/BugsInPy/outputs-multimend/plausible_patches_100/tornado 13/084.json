@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "or start_line.method in (\"HEAD\", \"GET\")):",
+      "patch": "or \"HEAD\" in headers or \"GET\" in headers or \"GET\" in headers):",
+      "target": "or getattr(start_line, 'method', None) in (\"HEAD\", \"GET\")):",
+      "exact_match": false
+    }
+  ]
+}

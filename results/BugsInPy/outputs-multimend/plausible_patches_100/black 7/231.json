@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "check_lpar = True",
+      "target": "if ( index == 0 and isinstance(child, Node) and child.type == syms.testlist_star_expr ): check_lpar = True",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "node.insert_child(index, Node(syms.atom, [lpar, child, rpar]))",
+      "patch": "node.insert_child(index, Node(syms.atom, [lpar, child, rpar]))",
+      "target": "prefix = child.prefix child.prefix = \"\" new_child = Node(syms.atom, [lpar, child, rpar]) new_child.prefix = prefix node.insert_child(index, new_child)",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "def column_op(a, b): return {i: func(a.iloc[:, i], b.iloc[i]) for i in range(len(a.columns))}",
+      "patch": "def column_op(a, b): return {i: func(a.iloc[:, i], b) for i in range(len(a.columns))}",
+      "target": "if right.dtype == \"timedelta64[ns]\":    right = np.asarray(right)  def column_op(a, b): return {i: func(a.iloc[:, i], b[i]) for i in range(len(a.columns))}  else:  def column_op(a, b): return {i: func(a.iloc[:, i], b.iloc[i]) for i in range(len(a.columns))}",
+      "exact_match": false
+    }
+  ]
+}

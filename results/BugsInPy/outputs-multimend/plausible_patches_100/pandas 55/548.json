@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "def _iget_item_cache(self, item):",
+      "patch": "def _iget_item_cache(self, item):",
+      "target": "def _iget_item_cache(self, item: int):",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "lower = self._take_with_is_copy(item, axis=self._info_axis_number)",
+      "patch": "lower = self._take_with_is_copy(item, axis=self._info_axis_number)",
+      "target": "return self._ixs(item, axis=1)",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "ax = self.obj.axes[i] if not ax.is_unique: return False",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

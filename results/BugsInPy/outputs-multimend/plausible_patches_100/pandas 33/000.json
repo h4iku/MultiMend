@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "data[self._mask] = data.min() - 1",
+      "patch": "",
+      "target": "if self._mask.any(): data[self._mask] = data.min() - 1",
+      "exact_match": false
+    }
+  ]
+}

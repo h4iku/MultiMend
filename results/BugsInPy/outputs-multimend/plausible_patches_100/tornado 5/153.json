@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "current_time = self._next_timeout",
+      "target": "callback_time_sec = self.callback_time / 1000.0",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "callback_time_sec = self.callback_time / 1000.0",
+      "patch": "callback_time_sec = self.callback_time / 1000.0",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "",
+      "patch": "",
+      "target": "else:               self._next_timeout += callback_time_sec",
+      "exact_match": false
+    }
+  ]
+}

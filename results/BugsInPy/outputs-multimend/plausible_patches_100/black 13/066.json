@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if token == 'def':",
+      "patch": "if token != 'def':",
+      "target": "if token in ('def', 'for'):",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "async_def = True async_def_indent = indents[-1]",
+      "patch": "async_def = True async_def_indent = indents[-1]",
+      "target": "if token == 'def': async_def = True async_def_indent = indents[-1]",
+      "exact_match": false
+    }
+  ]
+}

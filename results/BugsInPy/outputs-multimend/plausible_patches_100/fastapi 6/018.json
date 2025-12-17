@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if field.shape in sequence_shapes and isinstance( received_body, FormData ):",
+      "patch": "if is_scalar_sequence_field(field) and isinstance( received_body, FormData ):",
+      "target": "if ( field.shape in sequence_shapes or field.type_ in sequence_types ) and isinstance(received_body, FormData):",
+      "exact_match": false
+    }
+  ]
+}

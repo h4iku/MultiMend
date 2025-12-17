@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "rs = rs.loc[~rs.index.duplicated()] rs = rs.reindex_like(data) if freq is None: mask = isna(com.values_from_object(data)) np.putmask(rs.values, mask, np.nan)",
+      "patch": "",
+      "target": "if freq is not None:   rs = rs.loc[~rs.index.duplicated()] rs = rs.reindex_like(data)",
+      "exact_match": false
+    }
+  ]
+}

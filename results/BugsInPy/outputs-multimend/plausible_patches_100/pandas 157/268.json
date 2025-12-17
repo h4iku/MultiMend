@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "is_datetime64_dtype,",
+      "patch": "is_datetime64_dtype,",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "if is_datetime64_dtype(lt) or is_datetime64tz_dtype(lt):",
+      "patch": "if not is_datetime64tz_dtype(lt) or is_datetime64tz_dtype(lt):",
+      "target": "if is_datetimelike(lt):",
+      "exact_match": false
+    }
+  ]
+}

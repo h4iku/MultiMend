@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "assert self.stream is not None self.stream.set_nodelay(value)",
+      "patch": "pass",
+      "target": "assert self.ws_connection is not None self.ws_connection.set_nodelay(value)",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "pass",
+      "target": "raise NotImplementedError()  @abc.abstractmethod def set_nodelay(self, x: bool) -> None:",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "",
+      "patch": "pass",
+      "target": "def set_nodelay(self, x: bool) -> None: self.stream.set_nodelay(x)",
+      "exact_match": false
+    }
+  ]
+}

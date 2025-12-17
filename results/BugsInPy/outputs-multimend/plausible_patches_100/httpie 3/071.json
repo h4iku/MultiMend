@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if not name.lower().startswith('HTTPie/'): continue",
+      "target": "if value is None: continue",
+      "exact_match": false
+    }
+  ]
+}

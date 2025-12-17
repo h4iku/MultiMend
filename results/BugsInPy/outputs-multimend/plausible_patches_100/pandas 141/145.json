@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "start, stop, step = (self.stop - self.step, self.start + 1, -self.step)",
+      "patch": "return super().get_indexer(target, method=method, tolerance=tolerance, limit=limit)",
+      "target": "reverse = self._range[::-1] start, stop, step = reverse.start, reverse.stop, reverse.step",
+      "exact_match": false
+    }
+  ]
+}

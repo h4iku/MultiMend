@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if sys.version_info < (3,) and isinstance(text, unicode): translate_map = dict((ord(c), unicode(split)) for c in filters)",
+      "patch": "if isinstance(text, str): translate_map = dict((ord(c), str(split)) for c in filters)",
+      "target": "if sys.version_info < (3,): if isinstance(text, unicode): translate_map = dict((ord(c), unicode(split)) for c in filters) text = text.translate(translate_map) elif len(split) == 1: translate_map = maketrans(filters, split * len(filters)) text = text.translate(translate_map) else: for c in filters: text = text.replace(c, split)",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "translate_map = maketrans(filters, split * len(filters))  text = text.translate(translate_map)",
+      "patch": "translate_map = maketrans(filters, split * len(filters))  text = text.translate(translate_map)",
+      "target": "translate_dict = dict((c, split) for c in filters) translate_map = maketrans(translate_dict) text = text.translate(translate_map)",
+      "exact_match": false
+    }
+  ]
+}

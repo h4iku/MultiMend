@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "ordinal_op = getattr(self.asi8, opname)",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    },
+    {
+      "hunk": 1,
+      "source": "elif isinstance(other, int):   other = Period(other, freq=self.freq) result = ordinal_op(other.ordinal)",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

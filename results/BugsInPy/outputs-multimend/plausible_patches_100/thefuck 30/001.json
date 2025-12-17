@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return 'EDITOR' in os.environ and _search(command.stderr)",
+      "patch": "return 'EDITOR' in os.environ and _search(command.stdout)",
+      "target": "if 'EDITOR' not in os.environ: return False  m = _search(command.stderr)  return m and os.path.isfile(m.group('file'))",
+      "exact_match": false
+    }
+  ]
+}

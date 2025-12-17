@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "import pandas.core.common as com",
+      "patch": "import pandas.core.common as com",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "return [ np.tile( np.repeat(np.asarray(com.values_from_object(x)), b[i]), np.product(a[i]) ) for i, x in enumerate(X) ]",
+      "patch": "return [ np.tile( np.repeat(np.asarray(x), b[i]), np.product(a[i]) ) for i, x in enumerate(X) ]",
+      "target": "return [_tile_compat(np.repeat(x, b[i]), np.product(a[i])) for i, x in enumerate(X)]   def _tile_compat(arr, num: int):        if isinstance(arr, np.ndarray): return np.tile(arr, num)   taker = np.tile(np.arange(len(arr)), num) return arr.take(taker)",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "@task._task_wraps(task_that_inherits) class Wrapped(task_that_inherits):  def clone_parent(_self, **args): return _self.clone(cls=self.task_to_inherit, **args)  return Wrapped",
+      "patch": "return task_that_inherits",
+      "target": "def clone_parent(_self, **args): return _self.clone(cls=self.task_to_inherit, **args) task_that_inherits.clone_parent = clone_parent  return task_that_inherits",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "@task._task_wraps(task_that_requires) class Wrapped(task_that_requires):  def requires(_self): return _self.clone_parent()  return Wrapped",
+      "patch": "def __call__(self, task_that_requires): task_that_requires = self.inherit_decorator(task_that_requires) return task_that_requires",
+      "target": "def requires(_self): return _self.clone_parent() task_that_requires.requires = requires  return task_that_requires",
+      "exact_match": false
+    }
+  ]
+}

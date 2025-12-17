@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "from io import BytesIO",
+      "patch": "from io import BytesIO",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "contents = filepath_or_buffer.read() try: contents = contents.encode(self._encoding) except UnicodeEncodeError: pass self.filepath_or_buffer = BytesIO(contents)",
+      "patch": "try: contents = filepath_or_buffer.read() except UnicodeEncodeError: pass self.filepath_or_buffer = BytesIO(contents)",
+      "target": "self.filepath_or_buffer = filepath_or_buffer",
+      "exact_match": false
+    }
+  ]
+}

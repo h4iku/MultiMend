@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return ('did not match any file(s) known to git.' in command.stderr and \"Did you forget to 'git add'?\" in command.stderr)",
+      "patch": "return ('did not match any file(s) known to git.' in command.stderr, \"Did you forget to 'git add'?\" in command.stderr)",
+      "target": "return 'did not match any file(s) known to git.' in command.stderr",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "r\"error: pathspec '([^']*)' \" r\"did not match any file\\(s\\) known to git.\", command.stderr)[0]",
+      "patch": "r\"error: pathspec '([^']*)' \" r\"did not match any file\\(s\\) known to git.\", command.stderr)[0]",
+      "target": "r\"error: pathspec '([^']*)' \" r'did not match any file\\(s\\) known to git.', command.stderr)[0]",
+      "exact_match": false
+    }
+  ]
+}

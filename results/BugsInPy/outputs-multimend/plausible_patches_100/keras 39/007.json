@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "current < self.target):",
+      "patch": "current < self.total_width):",
+      "target": "(self.target is not None and current < self.target)):",
+      "exact_match": false
+    }
+  ]
+}

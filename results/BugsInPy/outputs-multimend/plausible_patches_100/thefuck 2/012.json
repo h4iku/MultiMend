@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for path in os.environ.get('PATH', '').split(':')",
+      "patch": "for path in os.environ.get('PATH', '').split(os.pathsep)",
+      "target": "for path in os.environ.get('PATH', '').split(os.pathsep)",
+      "exact_match": true
+    }
+  ]
+}

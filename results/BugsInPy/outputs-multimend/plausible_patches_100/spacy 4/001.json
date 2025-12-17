@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "head = (int(head) - 1) if head != \"0\" else id_",
+      "patch": "head = (int(head) - 1) if head == \"0\" else id_",
+      "target": "head = (int(head) - 1) if head not in [\"0\", \"_\"] else id_",
+      "exact_match": false
+    }
+  ]
+}

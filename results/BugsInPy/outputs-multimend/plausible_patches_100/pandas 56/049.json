@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "series = self._iget_item_cache(col) return com.maybe_box_datetimelike(series._values[index])",
+      "patch": "series = self._iget_item_cache(col) return series._values[index]",
+      "target": "series = self._ixs(col, axis=1) return series._values[index]",
+      "exact_match": false
+    }
+  ]
+}

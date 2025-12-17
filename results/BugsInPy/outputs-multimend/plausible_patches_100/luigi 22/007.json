@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "def __init__(self, worker_id, last_active=None):",
+      "patch": "def __init__(self, worker_id, last_active=False):",
+      "target": "def __init__(self, worker_id, last_active=time.time()):",
+      "exact_match": false
+    }
+  ]
+}

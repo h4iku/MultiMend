@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if isinstance(data, TimedeltaArray):",
+      "patch": "",
+      "target": "if isinstance(data, TimedeltaArray) and freq is None:",
+      "exact_match": false
+    }
+  ]
+}

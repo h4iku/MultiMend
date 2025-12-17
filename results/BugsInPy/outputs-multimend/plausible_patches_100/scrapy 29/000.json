@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "s += b\"Host: \" + to_bytes(parsed.hostname) + b\"\\r\\n\"",
+      "patch": "",
+      "target": "s += b\"Host: \" + to_bytes(parsed.hostname or b'') + b\"\\r\\n\"",
+      "exact_match": false
+    }
+  ]
+}

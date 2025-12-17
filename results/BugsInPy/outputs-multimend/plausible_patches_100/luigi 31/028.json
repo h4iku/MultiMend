@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "in_workers = assistant or worker in task.workers",
+      "patch": "if not task.workers: continue in_workers = assistant or worker in task.workers",
+      "target": "in_workers = (assistant and task.workers) or worker in task.workers",
+      "exact_match": false
+    }
+  ]
+}

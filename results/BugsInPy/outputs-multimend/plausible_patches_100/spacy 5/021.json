@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "docs = _pipe(pipe, docs, kwargs)",
+      "patch": "return _pipe(pipe, docs, kwargs)",
+      "target": "docs = _pipe(docs, pipe, kwargs)",
+      "exact_match": false
+    }
+  ]
+}

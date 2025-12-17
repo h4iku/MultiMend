@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "command.script_parts.pop(upstream_option_index)",
+      "patch": "try: command.script_parts.pop(upstream_option_index) except: pass",
+      "target": "try: command.script_parts.pop(upstream_option_index) except IndexError:  pass",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "target = np.asarray(target) left_distances = abs(self.values[left_indexer] - target) right_distances = abs(self.values[right_indexer] - target)",
+      "patch": "left_distances = abs(self._values[left_indexer] - target) right_distances = abs(self._values[right_indexer] - target)",
+      "target": "left_distances = np.abs(self[left_indexer] - target) right_distances = np.abs(self[right_indexer] - target)",
+      "exact_match": false
+    }
+  ]
+}

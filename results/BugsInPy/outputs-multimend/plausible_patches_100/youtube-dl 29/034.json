@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return compat_str(upload_date)",
+      "patch": "else: return compat_str(upload_date)",
+      "target": "if upload_date is not None: return compat_str(upload_date)",
+      "exact_match": false
+    }
+  ]
+}

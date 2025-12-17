@@ -1,0 +1,69 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "import io",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "with tokenize.open(src) as src_buffer: src_contents = src_buffer.read()",
+      "patch": "return tokenize.open(src)",
+      "target": "with open(src, \"rb\") as buf: newline, encoding, src_contents = prepare_input(buf.read())",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "with open(src, \"w\", encoding=src_buffer.encoding) as f:",
+      "patch": "with open(src, \"w\", encoding=src_buffer.encoding) as f:",
+      "target": "with open(src, \"w\", encoding=encoding, newline=newline) as f:",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "sys.stdout.write(diff_contents)",
+      "patch": "sys.stdout.write(diff_contents)",
+      "target": "f = io.TextIOWrapper( sys.stdout.buffer, encoding=encoding, newline=newline, write_through=True, ) f.write(diff_contents) f.detach()",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "src = sys.stdin.read()",
+      "patch": "src = sys.stdin.read()",
+      "target": "newline, encoding, src = prepare_input(sys.stdin.buffer.read())",
+      "exact_match": false
+    },
+    {
+      "hunk": 5,
+      "source": "sys.stdout.write(dst)",
+      "patch": "sys.stdout.write(dst)",
+      "target": "f = io.TextIOWrapper( sys.stdout.buffer, encoding=encoding, newline=newline, write_through=True, ) f.write(dst) f.detach()",
+      "exact_match": false
+    },
+    {
+      "hunk": 6,
+      "source": "sys.stdout.write(diff(src, dst, src_name, dst_name))",
+      "patch": "sys.stdout.write(diff(src, dst, src_name, dst_name))",
+      "target": "f = io.TextIOWrapper( sys.stdout.buffer, encoding=encoding, newline=newline, write_through=True, ) f.write(diff(src, dst, src_name, dst_name)) f.detach()",
+      "exact_match": false
+    },
+    {
+      "hunk": 7,
+      "source": "",
+      "patch": "",
+      "target": "def prepare_input(src: bytes) -> Tuple[str, str, str]:      srcbuf = io.BytesIO(src) encoding, lines = tokenize.detect_encoding(srcbuf.readline) newline = \"\\r\\n\" if b\"\\r\\n\" == lines[0][-2:] else \"\\n\" srcbuf.seek(0) return newline, encoding, io.TextIOWrapper(srcbuf, encoding).read()",
+      "exact_match": false
+    },
+    {
+      "hunk": 8,
+      "source": "nl = \"\\r\\n\" if \"\\r\\n\" in src_txt[:1024] else \"\\n\" src_txt += nl",
+      "patch": "nl = \"\\r\\n\" if \"\\r\\n\" in src_txt[:1024] else \"\\n\" src_txt += nl",
+      "target": "src_txt += \"\\n\"",
+      "exact_match": false
+    }
+  ]
+}

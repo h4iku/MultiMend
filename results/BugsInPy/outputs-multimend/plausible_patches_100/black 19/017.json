@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if current_line.depth == 0: return 0, 0",
+      "target": "if is_decorator and self.previous_line and self.previous_line.is_comment:  return 0, 0",
+      "exact_match": false
+    }
+  ]
+}

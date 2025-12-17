@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if needs_update('state') and not needs_update('vrf'):",
+      "patch": "if needs_update('state') and not needs_update('vrfs'):",
+      "target": "if needs_update('state'):",
+      "exact_match": false
+    }
+  ]
+}

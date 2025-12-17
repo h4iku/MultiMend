@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if isinstance(new, np.ndarray) and len(new) == len(mask):",
+      "patch": "if len(new) == len(mask):",
+      "target": "if isinstance(new, (np.ndarray, ExtensionArray)) and len(new) == len(mask):",
+      "exact_match": false
+    }
+  ]
+}

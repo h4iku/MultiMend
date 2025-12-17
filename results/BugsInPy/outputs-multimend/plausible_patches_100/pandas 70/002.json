@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "cls = dtype.construct_array_type() result = try_cast_to_ea(cls, result, dtype=dtype)",
+      "patch": "result = try_cast_to_ea(dtype, result, dtype=dtype)",
+      "target": "if len(result) and isinstance(result[0], dtype.type): cls = dtype.construct_array_type() result = try_cast_to_ea(cls, result, dtype=dtype)",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "elif ( how == \"add\" and is_integer_dtype(orig_values.dtype) and is_extension_array_dtype(orig_values.dtype) ):      result = result.astype(\"int64\")",
+      "exact_match": false
+    }
+  ]
+}

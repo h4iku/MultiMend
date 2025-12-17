@@ -1,0 +1,27 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "self.escapes = ['\\\\\\\\' + sep for sep in separators]",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "found_escapes = [] for esc in self.escapes: found_escapes += [m.span() for m in re.finditer(esc, string)]",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "regex = '[^\\\\\\\\]' + sep match = re.search(regex, string) if match: found[match.start() + 1] = sep",
+      "patch": "regex = '[^\\\\\\\\]' + sep match = re.search(regex, string) if match: found[match.start() + 2] = sep",
+      "target": "matches = re.finditer(sep, string) for match in matches: start, end = match.span() inside_escape = False for estart, eend in found_escapes: if start >= estart and end <= eend: inside_escape = True break if not inside_escape: found[start] = sep",
+      "exact_match": false
+    }
+  ]
+}

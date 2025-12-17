@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "'descendant::*[(self::input or self::button)' ' and re:test(@type, \"^submit$\", \"i\")]' '|descendant::button[not(@type)]',",
+      "patch": "'descendant::*[(self::input or self::button)' ' and re:test(@type, \"i\")]' '|descendant::button[not(@type)]',",
+      "target": "'descendant::input[re:test(@type, \"^(submit|image)$\", \"i\")]' '|descendant::button[not(@type) or re:test(@type, \"^submit$\", \"i\")]',",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "filename = to_native_str(content_disposition).split(';')[1].split('=')[1]",
+      "patch": "filename = str(content_disposition).split(';')[1].split('=')[1]",
+      "target": "filename = to_native_str(content_disposition, encoding='latin-1', errors='replace').split(';')[1].split('=')[1]",
+      "exact_match": false
+    }
+  ]
+}

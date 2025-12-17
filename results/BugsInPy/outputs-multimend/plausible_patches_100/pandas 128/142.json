@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "if encoding is None: encoding = 'utf-8'",
+      "target": "if encoding is None: encoding = \"utf-8\"",
+      "exact_match": true
+    }
+  ]
+}

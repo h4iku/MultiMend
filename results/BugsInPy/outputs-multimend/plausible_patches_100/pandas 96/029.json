@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "skip_bd = BusinessDay(n=bd)",
+      "patch": "skip_bd = BusinessDay(n=bd + 1)",
+      "target": "if isinstance(self, _CustomMixin): skip_bd = CustomBusinessDay( n=bd, weekmask=self.weekmask, holidays=self.holidays, calendar=self.calendar, ) else: skip_bd = BusinessDay(n=bd)",
+      "exact_match": false
+    }
+  ]
+}

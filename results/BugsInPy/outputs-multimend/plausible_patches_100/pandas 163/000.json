@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "values[np.isinf(values)] = np.NaN",
+      "patch": "",
+      "target": "inf = np.isinf(values) if inf.any(): values = np.where(inf, np.nan, values)",
+      "exact_match": false
+    }
+  ]
+}

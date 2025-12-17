@@ -1,0 +1,34 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "def hlines(self, y, xmin, xmax, colors='k', linestyles='solid',",
+      "patch": "def hlines(self, y, xmin, xmax, colors='k', linestyles='solid',",
+      "target": "def hlines(self, y, xmin, xmax, colors=None, linestyles='solid',",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "def vlines(self, x, ymin, ymax, colors='k', linestyles='solid',",
+      "patch": "def vlines(self, x, ymin, ymax, colors=None, linestyles='solid',",
+      "target": "def vlines(self, x, ymin, ymax, colors=None, linestyles='solid',",
+      "exact_match": true
+    },
+    {
+      "hunk": 2,
+      "source": "y, xmin, xmax, colors='k', linestyles='solid', label='', *,",
+      "patch": "y, xmin, xmax, colors='k', linestyles='solid', label='', *,",
+      "target": "y, xmin, xmax, colors=None, linestyles='solid', label='', *,",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "x, ymin, ymax, colors='k', linestyles='solid', label='', *,",
+      "patch": "x, ymin, ymax, colors='k', linestyles='solid', label='', *,",
+      "target": "x, ymin, ymax, colors=None, linestyles='solid', label='', *,",
+      "exact_match": false
+    }
+  ]
+}
