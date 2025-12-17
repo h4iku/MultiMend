@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "return this.front;",
+      "patch": "return this.top;",
+      "target": "return this.top;",
+      "exact_match": true
+    }
+  ]
+}

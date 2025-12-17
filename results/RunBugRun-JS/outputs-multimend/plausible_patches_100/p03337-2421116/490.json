@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "s = s.split(/\\s/);",
+      "patch": "s = s.split(/\\s/);",
+      "target": "s = s.split(/\\n|\\s/);",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "console.log(a);",
+      "target": "console.log(a | 0);",
+      "exact_match": false
+    }
+  ]
+}

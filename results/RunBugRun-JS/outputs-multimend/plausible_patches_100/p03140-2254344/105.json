@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "answer += new Set([ input[0][i], input[1][i], input[2][i] ]).size - 1",
+      "patch": "answer += new Set([ input[1][i], input[2][i], input[3][i] ]).size - 1",
+      "target": "answer += new Set([ input[1][i], input[2][i], input[3][i] ]).size - 1",
+      "exact_match": true
+    }
+  ]
+}

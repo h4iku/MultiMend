@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "let [a, b] = require(\"fs\").readFileSync(\"/dev/stdin\", \"utf8\").split(\" \").trim(); console.log(a == b ? \"H\" : \"D\");",
+      "patch": "let [a, b] = require(\"fs\").readFileSync(\"/dev/stdin\", \"utf8\").split(\" \"); console.log(a == b? \"H\" : \"D\");",
+      "target": "let [a, b] = require(\"fs\") .readFileSync(\"/dev/stdin\", \"utf8\") .split(\" \") .map(n => n.trim()); console.log(a == b ? \"H\" : \"D\");",
+      "exact_match": false
+    }
+  ]
+}

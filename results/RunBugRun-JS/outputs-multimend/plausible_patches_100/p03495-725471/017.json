@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "size_sorted_A.sort(b => b);",
+      "patch": "size_sorted_A.sort(b => b).sort();",
+      "target": "size_sorted_A.sort((a, b) => a - b);",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "r_S = \"\" + (S / 2);",
+      "target": "var last = lines.pop(); if (last.length == 2) { lines.push(last); }",
+      "exact_match": false
+    }
+  ]
+}

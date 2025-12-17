@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "console.log((input[0] - 1) + (input[1] - 1))",
+      "patch": "console.log((input[0] - 1) + (input[1] - 2))",
+      "target": "console.log((input[0] - 1) * (input[1] - 1))",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (allUnique(l[i], l[j], l[k])) {",
+      "patch": "if (!allUnique(l[i], l[j], l[k])) {",
+      "target": "if (!allUnique(l[i], l[j], l[k])) {",
+      "exact_match": true
+    }
+  ]
+}

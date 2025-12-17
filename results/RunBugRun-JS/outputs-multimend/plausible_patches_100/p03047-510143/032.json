@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "const N = lines.split(' ').map(x => parseInt(x))[0]; const K = lines.split(' ').map(x => parseInt(x))[1];",
+      "patch": "const N = input.split(' ').map(x => parseInt(x))[0]; const K = input.split(' ').map(x => parseInt(x))[1];",
+      "target": "const N = lines[0].split(' ').map(x => parseInt(x))[0]; const K = lines[0].split(' ').map(x => parseInt(x))[1];",
+      "exact_match": false
+    }
+  ]
+}

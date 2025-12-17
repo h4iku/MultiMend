@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "const num = str.split('\\s');",
+      "patch": "const num = str.split(/\\s+/);",
+      "target": "const num = str.split(' ');",
+      "exact_match": false
+    }
+  ]
+}

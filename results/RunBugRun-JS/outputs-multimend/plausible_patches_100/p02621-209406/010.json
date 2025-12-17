@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "var a = Number(input[0]);",
+      "patch": "var a = Number(input);",
+      "target": "var a = Number(input);",
+      "exact_match": true
+    }
+  ]
+}

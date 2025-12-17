@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for (var i = 1; i < inputArr.length; i++) {",
+      "patch": "for (var i = 1; i < inputArr.length && inputArr[i]; i++) {",
+      "target": "for (var i = 1; i <= inputArr[0]; i++) {",
+      "exact_match": false
+    }
+  ]
+}

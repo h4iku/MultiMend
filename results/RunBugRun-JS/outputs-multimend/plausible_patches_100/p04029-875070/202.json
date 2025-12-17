@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "const a = input.split(\"\").map(Number);",
+      "patch": "const a = Number(input);",
+      "target": "const [a] = input.split(\" \").map(Number);",
+      "exact_match": false
+    }
+  ]
+}

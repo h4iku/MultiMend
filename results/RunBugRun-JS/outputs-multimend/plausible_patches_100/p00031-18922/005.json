@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for (a = [], j = 0; j < 9; j++)",
+      "patch": "for (a = [], j = 0; j < 10; j++)",
+      "target": "for (a = [], j = 0; j <= 9; j++)",
+      "exact_match": false
+    }
+  ]
+}

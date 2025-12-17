@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (lr[i][1] === lr[i][0]) { console.log(1) } else { console.log(sum[lr[i][1]] - sum[lr[i][0] - 1]) }",
+      "patch": "console.log(sum[lr[i][1]] - sum[lr[i][0] - 1])",
+      "target": "console.log(sum[lr[i][1]] - sum[lr[i][0] - 1]);",
+      "exact_match": true
+    }
+  ]
+}

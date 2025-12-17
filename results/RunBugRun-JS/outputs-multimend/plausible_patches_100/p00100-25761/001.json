@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "Main(require(\"fs\").readFileSync(\"input.txt\", \"utf8\"));",
+      "patch": "Main(require(\"fs\").readFileSync(\"/dev/stdin\", \"utf8\"));",
+      "target": "Main(require(\"fs\").readFileSync(\"/dev/stdin\", \"utf8\"));",
+      "exact_match": true
+    }
+  ]
+}

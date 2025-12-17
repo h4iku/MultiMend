@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "console.log(A[2] - A[0]);",
+      "patch": "console.log(A[0] - A[2]);",
+      "target": "console.log(A[0] - A[2]);",
+      "exact_match": true
+    }
+  ]
+}

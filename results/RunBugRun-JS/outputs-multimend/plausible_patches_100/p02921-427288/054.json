@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": ".forEach((item, index) => item === input[1][index])",
+      "patch": ".filter((item, index) => item === input[1][index])",
+      "target": ".filter((item, index) => item === input[1][index])",
+      "exact_match": true
+    }
+  ]
+}

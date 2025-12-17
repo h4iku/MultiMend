@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (characters[i] = \"?\")",
+      "patch": "if (characters[i] == \"?\")",
+      "target": "if (characters[i] == \"?\")",
+      "exact_match": true
+    }
+  ]
+}

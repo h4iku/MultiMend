@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "const a = inp[0].split(\" \"); const b = inp[1].split(\" \");",
+      "patch": "const a = inp[0]; const b = inp[1];",
+      "target": "const a = inp[0].split(\"\"); const b = inp[1].split(\"\");",
+      "exact_match": false
+    }
+  ]
+}

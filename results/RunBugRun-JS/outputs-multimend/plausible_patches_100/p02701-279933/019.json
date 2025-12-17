@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "const result = input.split('\\n');",
+      "patch": "const result = input.trim().split('\\n');",
+      "target": "const result = input.trim().split('\\n');",
+      "exact_match": true
+    }
+  ]
+}

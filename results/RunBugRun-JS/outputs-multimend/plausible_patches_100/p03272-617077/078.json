@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "function main(arg) { console.log((arg.split(\" \")[0] - arg.split(\" \")[0]) + 1) }",
+      "patch": "function main(arg) { console.log((arg.split(\" \")[0] - arg.split(\" \")[1]) + 1) }",
+      "target": "function main(arg) { console.log((arg.split(\" \")[0] - arg.split(\" \")[1]) + 1) }",
+      "exact_match": true
+    }
+  ]
+}

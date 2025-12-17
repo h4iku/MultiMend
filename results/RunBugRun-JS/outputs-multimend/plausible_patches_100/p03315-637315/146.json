@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "const S = lines[0];",
+      "patch": "const S = lines[0].split('');",
+      "target": "const S = lines[0].split('');",
+      "exact_match": true
+    }
+  ]
+}

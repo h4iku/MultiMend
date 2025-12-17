@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "var mid = input.length - 3; var last = input[input.length - 2];",
+      "patch": "var mid = input.length - 2; var last = input[input.length - 1];",
+      "target": "var mid = input.length - 2; var last = input[input.length - 1];",
+      "exact_match": true
+    }
+  ]
+}

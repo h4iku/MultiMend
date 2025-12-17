@@ -1,0 +1,27 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "",
+      "patch": "",
+      "target": "var zumi = 0;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "",
+      "patch": "",
+      "target": "} else if (zumi == 0) { total += exp / 2; zumi = 1;",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "console.log(total + \" bf\"); total += exp / 2;",
+      "patch": "total += exp / 2;",
+      "target": "",
+      "exact_match": false
+    }
+  ]
+}

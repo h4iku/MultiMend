@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "const result1 = Math.max(a, b) const result2 = Math.max(c, d)",
+      "patch": "const result1 = Math.min(a, b); const result2 = Math.min(c, d);",
+      "target": "const result1 = Math.min(a, b) const result2 = Math.min(c, d)",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "const result = Array.from(S).filter((s, i) => i === T[i]).length;",
+      "patch": "const result = Array.from(S).filter((s, i) => s === T[i]).length;",
+      "target": "const result = Array.from(S).filter((s, i) => s === T[i]).length;",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "var a = input[0]; var b = input[1]; console.log(math.max(a + b, a - b, a * b));",
+      "patch": "var a = parseInt(input[0]); var b = parseInt(input[1]); console.log(Math.max(a + b, a - b, a * b));",
+      "target": "var a = Number(input[0]); var b = Number(input[1]); console.log(Math.max(a + b, a - b, a * b));",
+      "exact_match": false
+    }
+  ]
+}

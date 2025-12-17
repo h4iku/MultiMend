@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "var L = S.charAt(S.length);",
+      "patch": "var L = S.charAt(S.length - 1);",
+      "target": "var L = S.charAt(S.length - 1);",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "const data = input;",
+      "patch": "var data = input;",
+      "target": "const data = input.trim();",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "const num = nums[i + 1];",
+      "patch": "const num = nums[i + 1];",
+      "target": "var num = nums[i + 1];",
+      "exact_match": false
+    }
+  ]
+}

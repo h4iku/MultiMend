@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "let init = n.slice(1)[0];",
+      "patch": "let init = n.slice(0)[0];",
+      "target": "let init = n.slice(0)[0];",
+      "exact_match": true
+    }
+  ]
+}

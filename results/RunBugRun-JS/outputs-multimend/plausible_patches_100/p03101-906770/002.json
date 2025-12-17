@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "let a = lines[0].split(\" \"); let b = lines[1].split(\" \"); Console.log((a[0] - b[0]) * (a[1] - b[1])); });",
+      "patch": "let a = lines[0].split(\" \"); let b = lines[1].split(\" \"); console.log((a[0] - b[0]) * (a[1] - b[1])); });",
+      "target": "var a = lines[0].split(\" \"); var b = lines[1].split(\" \"); console.log((a[0] - b[0]) * (a[1] - b[1])); });",
+      "exact_match": false
+    }
+  ]
+}

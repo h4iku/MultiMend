@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "input = input.split('');",
+      "patch": "",
+      "target": "input = input.split();",
+      "exact_match": false
+    }
+  ]
+}

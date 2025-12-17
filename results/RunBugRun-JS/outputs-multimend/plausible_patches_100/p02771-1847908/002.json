@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "var numbers = input.split(\" \");",
+      "patch": "var numbers = input.split(/\\s+/);",
+      "target": "var numbers = input.split(\" \").map(x => Number(x));",
+      "exact_match": false
+    }
+  ]
+}

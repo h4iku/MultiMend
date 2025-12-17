@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "function Main(input) { console.log(x * x); }",
+      "patch": "function Main(x) { console.log(x * x); }",
+      "target": "function Main(x) { console.log(x * x); }",
+      "exact_match": true
+    }
+  ]
+}

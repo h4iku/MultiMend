@@ -1,0 +1,27 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for (var i = 0; i < 16; i++) for (var j = 0; j < 16; j++) for (var k = 0; k < 16; k++) for (var l = 0; l < 16; l++) for (var m = 0; m < 9; m++) {",
+      "patch": "for (var i = 0; i < 16; i++) for (var j = 0; j < 16; j++) for (var k = 0; k < 16; k++) for (var l = 0; l < 16; l++) for (var m = 0; m < 9; m++) {",
+      "target": "var i, j, k, l, m; for (i = 0; i < 16; i++) for (j = 0; j < 16; j++) for (k = 0; k < 16; k++) for (l = 0; l < 16; l++) for (m = 0; m < 9; m++) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "var cnt = [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ]; arr.forEach(function(v) { cnt[v]++; }); var max = Math.max.apply(null, cnt); if (max >= 5)",
+      "patch": "var cnt = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]; arr.forEach(function(v) { cnt[v]++; }); var max = Math.max.apply(null, cnt); if (max >= 5)",
+      "target": "var v = arr.join(\"\"); if (/(.)\\1\\1\\1\\1/.test(v))",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "if (P.hasOwnProperty(arr.join(\"\")))",
+      "patch": "if (P.hasOwnProperty(arr.join(\"\")))",
+      "target": "if (P.hasOwnProperty(v))",
+      "exact_match": false
+    }
+  ]
+}

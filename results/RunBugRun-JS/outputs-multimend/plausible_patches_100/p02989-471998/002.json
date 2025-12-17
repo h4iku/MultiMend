@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "console.log(\"ans\", ans);",
+      "patch": "console.log(ans);",
+      "target": "console.log(ans);",
+      "exact_match": true
+    }
+  ]
+}

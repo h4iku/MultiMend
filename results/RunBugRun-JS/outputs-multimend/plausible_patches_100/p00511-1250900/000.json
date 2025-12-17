@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "x = x.toFixed(0) - 0;",
+      "patch": "",
+      "target": "x = parseInt(x);",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "});",
+      "patch": "",
+      "target": "",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (max_hight <= parceInt(each_data[cnt])) {",
+      "patch": "if (max_hight <= parseInt(each_data[cnt])) {",
+      "target": "if (max_hight <= parseInt(each_data[cnt])) {",
+      "exact_match": true
+    }
+  ]
+}

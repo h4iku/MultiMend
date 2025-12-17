@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "const s = arg[0].split(\" \").map(n => parseInt(n));",
+      "patch": "const s = arg[1].split(\" \").map(n => parseInt(n));",
+      "target": "const N = parseInt(arg[0]); const s = arg[1].split(\" \").map(n => parseInt(n));",
+      "exact_match": false
+    }
+  ]
+}

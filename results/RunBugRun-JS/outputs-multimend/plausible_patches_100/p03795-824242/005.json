@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "var y = 200 * (input / 15);",
+      "patch": "var y = 200 * parseInt(input / 15);",
+      "target": "var y = 200 * Math.floor(input / 15);",
+      "exact_match": false
+    }
+  ]
+}

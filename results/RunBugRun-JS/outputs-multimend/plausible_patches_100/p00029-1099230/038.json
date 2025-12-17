@@ -1,0 +1,20 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "a = [], m = l = 0, n = c = '';",
+      "patch": "a = [], m = l = 0, n = j = '';",
+      "target": "a = [], m = l = n = c = 0;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": ".some(function(i) { a[i] ? (++a[i] > m ? m = a[n = i] : 0) : a[i] = 1; (t = i.length) > l ? (c = j, l = t) : 0",
+      "patch": ".some(function(j) { a[j]? (++a[j] > m? m = a[n = j] : 0) : a[j] = 1; (t = j.length) > l? (c = j, l = t) : 0",
+      "target": ".map(function(i) { a[i] ? ++a[i] > m ? m = a[n = i] : 0 : a[i] = 1; (t = i.length) > l ? (c = i, l = t) : 0",
+      "exact_match": false
+    }
+  ]
+}

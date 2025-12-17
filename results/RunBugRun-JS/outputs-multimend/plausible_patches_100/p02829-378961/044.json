@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "} else if (a == 3 && b == 1) {",
+      "patch": "} else if (a == 1 && b == 3) {",
+      "target": "} else if (a == 1 && b == 3) {",
+      "exact_match": true
+    }
+  ]
+}

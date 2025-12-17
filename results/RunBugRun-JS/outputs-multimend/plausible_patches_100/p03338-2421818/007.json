@@ -1,0 +1,27 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "let half = Math.ceil(input[0] / 2);",
+      "patch": "let half = Math.ceil(input[0]);",
+      "target": "",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "for (let i = half; i >= 0; i--) {",
+      "patch": "for (let i = half; i >= 0; i--) {",
+      "target": "for (let i = 0; i < ary.length; i++) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "matched[a[j]] = 1",
+      "patch": "matched[a[j]] = 1",
+      "target": "matched[a[j]] = true",
+      "exact_match": false
+    }
+  ]
+}

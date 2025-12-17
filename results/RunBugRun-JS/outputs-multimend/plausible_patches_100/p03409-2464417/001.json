@@ -1,0 +1,13 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "blist.sort(function() { return a.child.length - b.child.length; });",
+      "patch": "blist.sort(function(a, b) { return a.child.length - b.child.length; });",
+      "target": "blist.sort(function(a, b) { return a.x - b.x; });",
+      "exact_match": false
+    }
+  ]
+}

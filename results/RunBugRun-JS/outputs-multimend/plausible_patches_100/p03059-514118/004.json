@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "var b = parseInt(args[0]); var t = parseInt(args[0]);",
+      "patch": "var b = parseInt(args[1]); var t = parseInt(args[2]);",
+      "target": "var b = parseInt(args[1]); var t = parseInt(args[2]);",
+      "exact_match": true
+    }
+  ]
+}

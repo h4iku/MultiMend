@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for (let k = 1; k < n; k++) {",
+      "patch": "for (let k = 1; k <= n; k++) {",
+      "target": "for (let k = 1; k < n + 1; k++) {",
+      "exact_match": false
+    }
+  ]
+}

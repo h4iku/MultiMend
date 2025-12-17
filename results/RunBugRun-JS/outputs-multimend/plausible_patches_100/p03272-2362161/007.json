@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "var n = args[0]; var i = args[0];",
+      "patch": "var n = args.shift(); var i = args.shift();",
+      "target": "var n = parseInt(args[0], 10); var i = parseInt(args[1], 10);",
+      "exact_match": false
+    }
+  ]
+}

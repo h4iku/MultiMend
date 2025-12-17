@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "console.log(800 * N - Math.floor((N / 15) * 200));",
+      "patch": "console.log(800 * N - Math.floor(N / 15) * 200);",
+      "target": "console.log(800 * N - Math.floor((N / 15)) * 200);",
+      "exact_match": true
+    }
+  ]
+}

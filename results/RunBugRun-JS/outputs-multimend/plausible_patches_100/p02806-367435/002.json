@@ -1,0 +1,20 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "var titles = lines.map(l => l.split(' ')[0]).splice(1, lines.length - 2) var sleptAt = titles.indexOf(lines[lines.length - 1])",
+      "patch": "var titles = lines.map(l => l.split(' ')[0]).splice(1, lines.length - 2); var sleptAt = titles.indexOf(lines[lines.length - 1]);",
+      "target": "var titles = lines.map(l => l.split(' ')[0]).splice(1, lines.length - 3) var sleptAt = titles.indexOf(lines[lines.length - 2])",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "for (var i = sleptAt + 2; i < lines.length - 1; i++) {",
+      "patch": "for (var i = sleptAt + 2; i < lines.length - 1; i++) {",
+      "target": "for (var i = sleptAt + 2; i < lines.length - 2; i++) {",
+      "exact_match": false
+    }
+  ]
+}

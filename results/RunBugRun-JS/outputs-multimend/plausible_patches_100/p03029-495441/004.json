@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "input = input.trim().sprit(/\\s+/).map(x => x - 0);",
+      "patch": "input = input.trim().split(/\\s+/).map(x => x - 0);",
+      "target": "input = input.trim().split(/\\s+/).map(x => x - 0);",
+      "exact_match": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "console.log(parseInt(sum - (max / 2)), 10)",
+      "patch": "console.log(parseInt(sum - (max / 2)));",
+      "target": "console.log(parseInt(sum - (max / 2), 10))",
+      "exact_match": false
+    }
+  ]
+}

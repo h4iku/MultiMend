@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "console.log(require(\"fs\").readFileSync(\"/dev/stdin\", \"utf8\").replace(/./, \"x\"));",
+      "patch": "console.log(require(\"fs\").readFileSync(\"/dev/stdin\", \"utf8\").replace(/./g, \"x\"));",
+      "target": "console.log( require(\"fs\").readFileSync(\"/dev/stdin\", \"utf8\").replace(/./g, \"x\"));",
+      "exact_match": true
+    }
+  ]
+}

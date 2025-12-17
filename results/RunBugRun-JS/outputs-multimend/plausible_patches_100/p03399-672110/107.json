@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "const a = parseInt(input.split(\" \")[0], 10); const b = parseInt(input.split(\" \")[1], 10); const c = parseInt(input.split(\" \")[2], 10); const d = parseInt(input.split(\" \")[3], 10);",
+      "patch": "const a = parseInt(input.split(\"\\n\")[0], 10); const b = parseInt(input.split(\"\\n\")[1], 10); const c = parseInt(input.split(\"\\n\")[2], 10); const d = parseInt(input.split(\"\\n\")[3], 10);",
+      "target": "const a = parseInt(input.split(\"\\n\")[0], 10); const b = parseInt(input.split(\"\\n\")[1], 10); const c = parseInt(input.split(\"\\n\")[2], 10); const d = parseInt(input.split(\"\\n\")[3], 10);",
+      "exact_match": true
+    }
+  ]
+}

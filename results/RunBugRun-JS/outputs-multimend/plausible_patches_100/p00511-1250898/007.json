@@ -1,0 +1,41 @@
+{
+  "correct": false,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "var Arr = (input.trim()).split(\"\\n\"); var x = Arr[0] - 0; for (var i = 1; i < arr.length - 1; i = i + 2) {",
+      "patch": "var arr = input.split(\"\\n\"); var x = arr[0] - 0; for (var i = 1; i < arr.length - 1; i = i + 2) {",
+      "target": "var arr = (input.trim()).split(\"\\n\"); var x = arr[0] - 0; for (var i = 1; i < arr.length; i = i + 2) { if (arr[i] == \"=\") break;",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "x += arr[i + 1] - 0;",
+      "patch": "x += arr[i + 1] - 0;",
+      "target": "x += (arr[i + 1] - 0);",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "x -= arr[i + 1] - 0;",
+      "patch": "x -= arr[i + 1] - 0;",
+      "target": "x -= (arr[i + 1] - 0);",
+      "exact_match": false
+    },
+    {
+      "hunk": 3,
+      "source": "x *= arr[i + 1] - 0;",
+      "patch": "x *= arr[i + 1] - 0;",
+      "target": "x *= (arr[i + 1] - 0);",
+      "exact_match": false
+    },
+    {
+      "hunk": 4,
+      "source": "x /= arr[i + 1] - 0; x = x.toFixed(0);",
+      "patch": "x /= arr[i + 1] - 0; x = x.toFixed(0);",
+      "target": "x /= (arr[i + 1] - 0); x = x.toFixed(0) - 0;",
+      "exact_match": false
+    }
+  ]
+}

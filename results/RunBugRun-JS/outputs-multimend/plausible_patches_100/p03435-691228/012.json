@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (c[1][1] - c[1][0] !== difcol[0] || c[1][2] - c[1][0] !== difcol[1]) {",
+      "patch": "if (c[1][1] - c[1][0]!== difcol[0] || c[1][2] - c[1][1]!== difcol[1]) {",
+      "target": "if (c[1][1] - c[1][0] !== difcol[0] || c[1][2] - c[1][1] !== difcol[1]) {",
+      "exact_match": true
+    }
+  ]
+}

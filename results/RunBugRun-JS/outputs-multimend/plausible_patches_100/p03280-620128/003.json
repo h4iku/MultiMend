@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "const b = parseIny(arrays[1], 10) - 1;",
+      "patch": "const b = parseInt(arrays[1], 10) - 1;",
+      "target": "const b = parseInt(arrays[1], 10) - 1;",
+      "exact_match": true
+    }
+  ]
+}

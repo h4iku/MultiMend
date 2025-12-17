@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (heights[i] < threshold) {",
+      "patch": "if (Math.abs(heights[i]) < threshold) {",
+      "target": "if (parseInt(heights[i]) < parseInt(threshold)) {",
+      "exact_match": false
+    }
+  ]
+}

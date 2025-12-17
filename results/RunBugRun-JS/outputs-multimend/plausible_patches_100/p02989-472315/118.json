@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "ds = ds.sort((n, m) => n > m);",
+      "patch": "ds = ds.sort((n, m) => (n - m));",
+      "target": "ds = ds.sort((a, b) => a - b);",
+      "exact_match": false
+    }
+  ]
+}

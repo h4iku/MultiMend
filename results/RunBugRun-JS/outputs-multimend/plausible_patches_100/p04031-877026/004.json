@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "const ave = Math.ceil(sum / input.length)",
+      "patch": "const ave = Math.round(sum / input.length)",
+      "target": "const ave = Math.round(sum / input.length)",
+      "exact_match": true
+    }
+  ]
+}

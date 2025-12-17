@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for (var i = 0; i < (input.length - 1); i++) { console.log(waitTime[parseInt(input[i], 10)]);",
+      "patch": "for (var i = 0; i < input.length; i++) { console.log(waitTime[parseInt(input[i], 10)]);",
+      "target": "for (var i = 0; i < input.length; i++) { var idx = parseInt(input[i], 10); console.log(waitTime[idx]);",
+      "exact_match": false
+    }
+  ]
+}

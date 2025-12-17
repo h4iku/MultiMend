@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "const lines = require(\"fs\").readFileSync(\"/dev/stdin\", \"utf8\").split(\"\");",
+      "patch": "const lines = require(\"fs\").readFileSync(\"/dev/stdin\", \"UTF-8\").split(\"\");",
+      "target": "const lines = require(\"fs\").readFileSync(\"/dev/stdin\", \"utf8\").trim().split(\"\");",
+      "exact_match": false
+    }
+  ]
+}

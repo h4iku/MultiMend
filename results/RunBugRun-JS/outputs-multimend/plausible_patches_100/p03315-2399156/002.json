@@ -1,0 +1,27 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "for (var i = 0; i < input.length; i++) {",
+      "patch": "for (var i = 0; i < inputArr.length; i++) {",
+      "target": "for (var i = 0; i < 4; i++) {",
+      "exact_match": false
+    },
+    {
+      "hunk": 1,
+      "source": "sum++;",
+      "patch": "sum++;",
+      "target": "sum += 1;",
+      "exact_match": false
+    },
+    {
+      "hunk": 2,
+      "source": "sum--;",
+      "patch": "sum--;",
+      "target": "sum -= 1;",
+      "exact_match": false
+    }
+  ]
+}

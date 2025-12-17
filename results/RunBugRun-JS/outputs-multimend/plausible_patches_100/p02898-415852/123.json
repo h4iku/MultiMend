@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "if (x >= k)",
+      "patch": "if (x >= parseInt(k))",
+      "target": "if (parseInt(x) >= parseInt(k))",
+      "exact_match": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "correct": true,
+  "plausible": true,
+  "hunks": [
+    {
+      "hunk": 0,
+      "source": "console.log(N * (N - 1) + M * (M - 1) / 2);",
+      "patch": "console.log((N * (N - 1) + M * (M - 1)) / 2);",
+      "target": "console.log((N * (N - 1) + M * (M - 1)) / 2);",
+      "exact_match": true
+    }
+  ]
+}
