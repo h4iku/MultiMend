@@ -25,7 +25,9 @@
 
 3. Prepare evaluation benchmarks:
 
-    Place the evaluation benchmarks in the `benchmarks` directory. Appropriate version of repositories for [QuixBugs](https://github.com/jkoppel/QuixBugs), [Defects4J](https://github.com/rjust/defects4j/), and [BugAID](https://dl.acm.org/doi/abs/10.1145/2950290.2950308) are already there. QuixBugs needs [Gradle](https://gradle.org/) to work and Defects4J requires extra installation steps:
+    Place the evaluation benchmarks in the `benchmarks` directory. Appropriate version of repositories for [QuixBugs](https://github.com/jkoppel/QuixBugs), [Defects4J](https://github.com/rjust/defects4j/), [BugAID](https://dl.acm.org/doi/abs/10.1145/2950290.2950308), [BugsInPy](https://github.com/soarsmu/BugsInPy), and [RunBugRun-JS](https://github.com/giganticode/run_bug_run) are already there. QuixBugs needs [Gradle](https://gradle.org/) and BugsInPy requires [pyenv](https://github.com/pyenv/pyenv) with Python versions 3.6, 3.7, and 3.8 installed.
+    
+    Defects4J also requires extra installation steps:
 
     ```bash
     cd benchmarks/Defects4J

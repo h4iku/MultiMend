@@ -1,0 +1,43 @@
+diff --git a/pandas/core/arrays/masked.py b/pandas/core/arrays/masked.py
+index 47605413f..5eaed7072 100644
+--- a/pandas/core/arrays/masked.py
++++ b/pandas/core/arrays/masked.py
+@@ -50,6 +50,9 @@ class BaseMaskedArray(ExtensionArray, ExtensionOpsMixin):
+     def __len__(self) -> int:
+         return len(self._data)
+ 
++    def __invert__(self):
++        return type(self)(~self._data, self._mask)
++
+     def to_numpy(
+         self, dtype=None, copy=False, na_value: "Scalar" = lib.no_default,
+     ):
+diff --git a/pandas/core/generic.py b/pandas/core/generic.py
+index 6c04212e2..cdaf12392 100644
+--- a/pandas/core/generic.py
++++ b/pandas/core/generic.py
+@@ -1393,8 +1393,9 @@ class NDFrame(PandasObject, SelectionMixin, indexing.IndexingMixin):
+             # inv fails with 0 len
+             return self
+ 
+-        arr = operator.inv(com.values_from_object(self))
+-        return self.__array_wrap__(arr)
++        new_data = self._data.apply(operator.invert)
++        result = self._constructor(new_data).__finalize__(self)
++        return result
+ 
+     def __nonzero__(self):
+         raise ValueError(
+diff --git a/pandas/core/indexing.py b/pandas/core/indexing.py
+index 722fe152e..17a817116 100755
+--- a/pandas/core/indexing.py
++++ b/pandas/core/indexing.py
+@@ -2233,7 +2233,7 @@ def check_bool_indexer(index: Index, key) -> np.ndarray:
+         result = result.astype(bool)._values
+     else:
+         if is_sparse(result):
+-            result = result.to_dense()
++            result = np.asarray(result)
+         result = check_bool_array_indexer(index, result)
+ 
+     return result

@@ -4,10 +4,12 @@ import pandas as pd
 
 from .configs import (
     bugaid_gen_dir,
+    bugsinpy_gen_dir,
     codeflaws_gen_dir,
     d4j_gen_dir,
     quixbugs_genjava_dir,
     quixbugs_genpy_dir,
+    runbugrunjs_gen_dir,
 )
 
 # Config
@@ -29,6 +31,12 @@ elif dataset == "BugAID":
 elif dataset == "Codeflaws":
     gen_dir = codeflaws_gen_dir
     bugs_metadata_file = "Codeflaws.jsonl"
+elif dataset == "BugsInPy":
+    gen_dir = bugsinpy_gen_dir
+    bugs_metadata_file = "BugsInPy.jsonl"
+elif dataset == "RunBugRun-JS":
+    gen_dir = runbugrunjs_gen_dir
+    bugs_metadata_file = "RunBugRun-JS.jsonl"
 else:
     raise ValueError("Wrong dataset name")
 

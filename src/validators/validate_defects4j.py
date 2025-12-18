@@ -23,7 +23,6 @@ from tqdm import tqdm
 from ..configs import d4j_bin, d4j_gen_dir
 
 gen_dir = d4j_gen_dir
-gen_dir = gen_dir.parent / "Defects4J"
 bugs_metadata_file = "Defects4J.jsonl"
 model = "multimend"
 output_dir = gen_dir / f"outputs-{model}"

@@ -1,0 +1,67 @@
+#!/usr/bin/env bash
+
+# PYTHONPATH Setup Script
+# Extracted from BugsInPy compile script
+# This script builds and exports PYTHONPATH for the current session
+
+# Input parameters:
+# $1 - work_dir: The working directory containing bugsinpy_bug.info
+
+work_dir="$1"
+
+if [ "$work_dir" = "" ]; then
+    work_dir=$(pwd)
+fi
+
+# Remove trailing slash if present
+if [[ $work_dir == */ ]]; then 
+   temp_work_dir="$work_dir"
+   work_dir=${temp_work_dir::-1}
+fi
+
+# Check if bug.info file exists
+if [[ ! -e "$work_dir/bugsinpy_bug.info" ]]; then
+   echo "Error: bugsinpy_bug.info not found in $work_dir"
+   return 1
+fi
+
+###Build pythonpath from bug.info
+pythonpath_set=""
+
+# echo "Reading bug.info file from: $work_dir/bugsinpy_bug.info"
+
+DONE=false
+until $DONE; do
+    read || DONE=true
+    if [[ "$REPLY" == "pythonpath"* ]]; then
+        pythonpath_all="$(cut -d'"' -f 2 <<< $REPLY)"
+        if [ "$pythonpath_all" != "" ]; then
+            if [[ $work_dir != /* ]]; then
+                work_dir_py=${work_dir:1}
+                temp_folder=":${work_dir_py}/"
+            else
+                temp_folder=":${work_dir}/"
+            fi
+            check_py="$(cut -d';' -f 1 <<< $pythonpath_all; )"
+            string2="$(cut -d'/' -f 1 <<< $check_py/ )"
+            temp_change_py=";$pythonpath_all"
+            deli=";$string2"
+            pythonpath_set=${temp_change_py//$deli/$temp_folder}
+            pythonpath_set="${pythonpath_set:1}"
+            pythonpath_set=$(echo "$pythonpath_set" | sed s#//*#/#g)
+        fi
+    fi
+done < "$work_dir/bugsinpy_bug.info"
+
+if [ "$pythonpath_set" = "" ]; then
+    # echo "No pythonpath found in bug.info file"
+    return 0
+fi
+
+# echo "Built PYTHONPATH: $pythonpath_set"
+
+###Export pythonpath for current session
+export PYTHONPATH="$pythonpath_set${PYTHONPATH:+:$PYTHONPATH}"
+
+# echo "PYTHONPATH exported for current session"
+echo "Current PYTHONPATH: $PYTHONPATH"

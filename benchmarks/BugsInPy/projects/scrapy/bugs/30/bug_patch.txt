@@ -1,0 +1,33 @@
+diff --git a/scrapy/cmdline.py b/scrapy/cmdline.py
+index a619c349..35050c13 100644
+--- a/scrapy/cmdline.py
++++ b/scrapy/cmdline.py
+@@ -18,10 +18,10 @@ def _iter_command_classes(module_name):
+     # TODO: add `name` attribute to commands and and merge this function with
+     # scrapy.utils.spider.iter_spider_classes
+     for module in walk_modules(module_name):
+-        for obj in vars(module).itervalues():
++        for obj in vars(module).values():
+             if inspect.isclass(obj) and \
+-               issubclass(obj, ScrapyCommand) and \
+-               obj.__module__ == module.__name__:
++                    issubclass(obj, ScrapyCommand) and \
++                    obj.__module__ == module.__name__:
+                 yield obj
+ 
+ def _get_commands_from_module(module, inproject):
+diff --git a/scrapy/utils/testproc.py b/scrapy/utils/testproc.py
+index adddad09..f268e91f 100644
+--- a/scrapy/utils/testproc.py
++++ b/scrapy/utils/testproc.py
+@@ -35,8 +35,8 @@ class TestProcessProtocol(protocol.ProcessProtocol):
+ 
+     def __init__(self):
+         self.deferred = defer.Deferred()
+-        self.out = ''
+-        self.err = ''
++        self.out = b''
++        self.err = b''
+         self.exitcode = None
+ 
+     def outReceived(self, data):

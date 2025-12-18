@@ -1,0 +1,19 @@
+# Environments
+.vscode/
+.env*/
+.venv*/
+env*/
+venv*/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Hugging Face cache
+.cache
+
+models/
+outputs/
+
+chroma_db/

@@ -48,6 +48,17 @@ codeflaws_gen_dir: Path = outputs_root / "Codeflaws"
 bugaid_data_dir: Path = benchmarks_root / "BugAID/data"
 bugaid_gen_dir: Path = outputs_root / "BugAID"
 
+# BugsInPy configs
+bugsinpy_root: Path = benchmarks_root / "BugsInPy"
+bugsinpy_bin_dir: Path = bugsinpy_root / "framework/bin"
+bugsinpy_projects_dir: Path = bugsinpy_root / "projects"
+bugsinpy_gen_dir: Path = outputs_root / "BugsInPy"
+bugsinpy_tmp_dir: Path = bugsinpy_gen_dir / "tmp"
+
+# RunBugRun configs
+runbugrun_data_dir: Path = benchmarks_root / "RunBugRun"
+runbugrunjs_gen_dir: Path = outputs_root / "RunBugRun-JS"
+
 results_dir = project_root / "results"
 
 # Embedding DBs

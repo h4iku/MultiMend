@@ -1,0 +1,40 @@
+diff --git a/pandas/core/groupby/groupby.py b/pandas/core/groupby/groupby.py
+index aa21aa452..02e938331 100644
+--- a/pandas/core/groupby/groupby.py
++++ b/pandas/core/groupby/groupby.py
+@@ -813,9 +813,10 @@ b  2""",
+                 # datetime64tz is handled correctly in agg_series,
+                 #  so is excluded here.
+ 
+-                # return the same type (Series) as our caller
+-                cls = dtype.construct_array_type()
+-                result = try_cast_to_ea(cls, result, dtype=dtype)
++                if len(result) and isinstance(result[0], dtype.type):
++                    cls = dtype.construct_array_type()
++                    result = try_cast_to_ea(cls, result, dtype=dtype)
++
+             elif numeric_only and is_numeric_dtype(dtype) or not numeric_only:
+                 result = maybe_downcast_to_dtype(result, dtype)
+ 
+diff --git a/pandas/core/groupby/ops.py b/pandas/core/groupby/ops.py
+index 679d36685..2e95daa39 100644
+--- a/pandas/core/groupby/ops.py
++++ b/pandas/core/groupby/ops.py
+@@ -543,6 +543,17 @@ class BaseGrouper:
+             if mask.any():
+                 result = result.astype("float64")
+                 result[mask] = np.nan
++        elif (
++            how == "add"
++            and is_integer_dtype(orig_values.dtype)
++            and is_extension_array_dtype(orig_values.dtype)
++        ):
++            # We need this to ensure that Series[Int64Dtype].resample().sum()
++            # remains int64 dtype.
++            # Two options for avoiding this special case
++            # 1. mask-aware ops and avoid casting to float with NaN above
++            # 2. specify the result dtype when calling this method
++            result = result.astype("int64")
+ 
+         if kind == "aggregate" and self._filter_empty_groups and not counts.all():
+             assert result.ndim != 2
